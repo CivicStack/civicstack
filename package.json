@@ -1,11 +1,11 @@
 {
-  "name": "nodejs-starter",
+  "name": "civic-stack",
   "version": "0.0.1",
-  "description": "Simple demo app for beginners. Node.js, express, mongoose, passport.js, component.io, stylus and jade.",
+  "description": "Stack of online civic webapps",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/gravityonmars/nodejs-starter.git"
+    "url": "git://github.com/democracyos/civic-stack.git"
   },
   "keywords": [
     "nodejs",
@@ -16,46 +16,46 @@
     "stylus",
     "jade"
   ],
-  "author": "",
+  "author": "slifszyc",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gravityonmars/nodejs-starter/issues"
+    "url": "https://github.com/democracyos/civic-stack/issues"
   },
   "engines": {
     "node": "0.10.28",
     "npm": "1.4.9"
   },
   "dependencies": {
-    "passport": "~0.2.0",
-    "express": "4.10.4",
-    "express-session": "v1.9.2",
-    "cookie-parser": "1.3.3",
+    "batch": "~0.5.2",
     "body-parser": "1.9.3",
-    "errorhandler": "1.3.0",
+    "builder-jade": "1.0.1",
     "compression": "1.2.1",
-    "nowww": "~1.1.3",
-    "serve-favicon": "2.1.7",
-    "jade": "1.7.0 ",
-    "passport-facebook": "~1.0.3",
-    "passport-twitter": "~1.0.2",
-    "mongoose": "~3.8.19",
-    "connect-mongo": "0.4.1",
-    "string-to-js": "0.0.1",
     "commander": "~2.5.0",
     "component": "1.0.0",
     "component-builder": "1.1.13",
     "component-resolver": "1.2.7",
-    "builder-jade": "1.0.1",
-    "stylus": "0.49.3",
-    "mkdirp": "0.5.0",
-    "ready": "0.1.1",
-    "merge-util": "0.1.0",
-    "node-path": "0.0.3",
+    "connect-mongo": "0.4.1",
+    "cookie-parser": "1.3.3",
     "crypto": "0.0.3",
     "debug": "2.0.0",
-    "batch": "~0.5.2"
+    "errorhandler": "1.3.0",
+    "express": "4.10.4",
+    "express-session": "v1.9.2",
+    "jade": "1.7.0 ",
+    "merge-util": "0.1.0",
+    "mkdirp": "0.5.0",
+    "mongoose": "~3.8.19",
+    "node-path": "0.0.3",
+    "nowww": "~1.1.3",
+    "passport": "~0.2.0",
+    "passport-facebook": "~1.0.3",
+    "passport-twitter": "~1.0.2",
+    "ready": "0.1.1",
+    "serve-favicon": "2.1.7",
+    "string-to-js": "0.0.1",
+    "stylus": "0.49.3"
   },
   "scripts": {
-    "postinstall": "node ./bin/njs-install --config && node ./bin/njs-config && node ./bin/njs-build"
+    "postinstall": "node ./bin/cstack-install --config && node ./bin/cstack-config && node ./bin/cstack-build"
   }
 }

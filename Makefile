@@ -1,5 +1,5 @@
 ifndef DEBUG
-  DEBUG="njs*"
+  DEBUG="cstack*"
 endif
 
 ifndef NODE_ENV
