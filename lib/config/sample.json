@@ -1,8 +1,10 @@
 {
   "port": 3000,
   "mongoUrl": "mongodb://localhost/civicstack-dev",
+  "locale": "en",
   "client": [
-    "organization name"
+    "organization name",
+    "locale"
   ],
   "organization name": "Civic Stack",
   "auth": {
