@@ -56,6 +56,6 @@
     "t-component": "1.0.0"
   },
   "scripts": {
-    "postinstall": "node ./bin/cstack-install --config && node ./bin/cstack-config && node ./bin/cstack-build"
+    "postinstall": "node ./bin/civicstack-install --config && node ./bin/civicstack-config && node ./bin/civicstack-build"
   }
 }

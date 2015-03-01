@@ -5,7 +5,7 @@
 var http = require('http');
 var express = require('express');
 var app = module.exports = require('lib/boot');
-var debug = require('debug')('cstack');
+var debug = require('debug')('civicstack');
 
 /**
  * Launch server

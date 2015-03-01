@@ -1,5 +1,5 @@
 ifndef DEBUG
-  DEBUG="cstack*"
+  DEBUG="civicstack*"
 endif
 
 ifndef NODE_ENV

@@ -1,6 +1,6 @@
 {
   "port": 3000,
-  "mongoUrl": "mongodb://localhost/civicstack-dev",
+  "mongoUrl": "mongodb://localhost/civicivicstack-dev",
   "locale": "en",
   "client": [
     "env",
@@ -15,5 +15,5 @@
       "callback": "http://127.0.0.1:3000/auth/twitter/callback"
     }
   },
-  "secret": "civicstack"
+  "secret": "civicivicstack"
 }
