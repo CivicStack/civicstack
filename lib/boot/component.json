@@ -2,15 +2,18 @@
   "name": "boot",
   "description": "Application Booting component.",
   "dependencies": {
+    "component/t": "1.0.0",
     "visionmedia/page.js": "1.3.7"
   },
   "local": [
+    "styleguide",
+    "header",
     "homepage",
     "restricted",
+    "translations",
     "user"
   ],
   "scripts": [ "boot.js" ],
-  "styles": ["index.styl"],
   "images": [
     "images/bg.jpg",
     "images/favicon.ico"

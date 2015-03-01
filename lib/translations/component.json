@@ -1,0 +1,10 @@
+{
+  "name": "translations",
+  "description": "Translations dictionary",
+  "scripts": [ "index.js" ],
+  "json": [
+    "lib/en.json",
+    "lib/es.json"
+    ],
+  "main": "index.js"
+}
