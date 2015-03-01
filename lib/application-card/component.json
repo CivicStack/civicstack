@@ -1,6 +1,7 @@
 {
   "name": "application-card",
   "dependencies": {
+    "logo/logo": "0.0.1",
     "ractivejs/ractive": "v0.6.1"
   },
   "locals": [ "render" ],

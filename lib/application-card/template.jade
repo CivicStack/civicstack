@@ -1,10 +1,8 @@
 .col-xs-12.col-sm-6.col-md-3
   | {{#with application }}
   article.application-card
-    a(href='/apps/{{ _id }}')
-      section.app-logo(style='background-color: {{ backgroundColor }}')
-        .vertical-align
-        img(src="{{ logo }}", title="{{ name }}")
+    a.app-logo.logo(href='/apps/{{ _id }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})')
+      h1='{{ name }}'
     section.app-detail
       header
         h1: a(href='/apps/{{ _id }}')='{{ name }}'
