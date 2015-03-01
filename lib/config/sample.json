@@ -3,8 +3,9 @@
   "mongoUrl": "mongodb://localhost/civicstack-dev",
   "locale": "en",
   "client": [
-    "organization name",
-    "locale"
+    "env",
+    "locale",
+    "organization name"
   ],
   "organization name": "Civic Stack",
   "auth": {

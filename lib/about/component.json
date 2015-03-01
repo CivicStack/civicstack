@@ -1,0 +1,14 @@
+{
+  "name": "about",
+  "dependencies": {
+    "component/classes": "1.2.3",
+    "component/domify": "1.2.2",
+    "visionmedia/page.js": "1.6.1",
+    "yields/empty": "0.0.1"
+  },
+  "locals": [ "render" ],
+  "scripts": [ "about.js", "view.js" ],
+  "styles": [ "about.styl" ],
+  "templates": [ "template.jade" ],
+  "main": "about.js"
+}

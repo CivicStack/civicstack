@@ -3,8 +3,7 @@
   "description": "Homepage page.",
   "dependencies": {
     "component/domify": "1.2.2",
-    "visionmedia/page.js": "1.3.7",
-    "jadejs/jade": "1.9.2",
+    "visionmedia/page.js": "1.6.1",
     "yields/empty": "0.0.1"
   },
   "scripts": ["homepage.js"],
