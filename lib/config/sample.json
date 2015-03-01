@@ -13,5 +13,6 @@
       "consumerSecret": "TwitterConsumerSecret",
       "callback": "http://127.0.0.1:3000/auth/twitter/callback"
     }
-  }
+  },
+  "secret": "civicstack"
 }
