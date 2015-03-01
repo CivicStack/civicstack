@@ -2,11 +2,15 @@
   "name": "homepage",
   "description": "Homepage page.",
   "dependencies": {
-    "component/domify": "1.2.2",
+    "ractivejs/ractive": "v0.6.1",
     "visionmedia/page.js": "1.6.1",
     "yields/empty": "0.0.1"
   },
-  "scripts": ["homepage.js"],
-  "templates": [ "splash.jade" ],
+  "locals": [
+    "application-card",
+    "render"
+  ],
+  "scripts": [ "homepage.js", "view.js" ],
+  "templates": [ "template.jade" ],
   "main": "homepage.js"
 }

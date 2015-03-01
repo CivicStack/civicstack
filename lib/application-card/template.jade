@@ -1,0 +1,18 @@
+.col-xs-12.col-sm-6.col-md-3
+  | {{#with application }}
+  article.application-card
+    a(href='/apps/{{ _id }}')
+      section.app-logo(style='background-color: {{ backgroundColor }}')
+        .vertical-align
+        img(src="{{ logo }}", title="{{ name }}")
+    section.app-detail
+      header
+        h1: a(href='/apps/{{ _id }}')='{{ name }}'
+        h2='{{ countryName }}'
+      p.description='{{ description }}'
+      p.working-at='{{ workingAt }}'
+    footer
+      .twitter.pull-left
+        a(href='http://twitter.com/{{ twitter }}' target='_blank')='@{{ twitter }}'
+      .license.pull-right='Lic: {{ license }}'
+  | {{/with application}}

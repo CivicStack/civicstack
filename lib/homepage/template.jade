@@ -1,0 +1,5 @@
+section.container
+  .row
+    | {{#each applications}}
+    application(application='{{ this }}')
+    | {{/each applications}}
