@@ -1,4 +1,13 @@
 {
   "global.app-name": "Stack cívico",
-  "header.login-with": "Entrar con"
+
+  "header.login-with": "Entrar con",
+
+  "about.what-is-it.title": "¿Qué es?",
+  "about.what-is-it.text": "Repositorio de herramientas cívicas open source de distintos países y organizaciones.",
+  "about.goal.title": "Objetivo",
+  "about.goal.1": "Hacer que esté disponible información generada colaborativamente y facilitar el acceso a herramientas cívicas virtuales y digitales que puedan fortalecer procesos organizativos y de toma de decisiones, así como las acciones activistas que llevan a cabo",
+  "about.goal.2": "Evitar que las organizaciones que desarrollan tecnología reinventen la rueda",
+  "about.what-information-is-available.title": "¿Qué información aparece?",
+  "about.what-information-is-available.text": "Información sobre cada app o web. Es crowdsourced data. Las organizaciones pueden crear sus propios perfiles y cargar sus propias herramientas igual que en GitHub."
 }

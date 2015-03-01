@@ -1,4 +1,13 @@
 {
   "global.app-name": "Civic stack",
-  "header.login-with": "Login with"
+
+  "header.login-with": "Login with",
+
+  "about.what-is-it.title": "What is it?",
+  "about.what-is-it.text": "Repository civic open source tools from different countries and organizations.",
+  "about.goal.title": "Goal",
+  "about.goal.1": "Make available information generated collaboratively and provide access to virtual civic and digital tools that can strengthen organizational and decision-making processes and actions activists held",
+  "about.goal.2": "Evitar que las organizaciones que desarrollan tecnología reinventen la rueda",
+  "about.what-information-is-available.title": "What information is available?",
+  "about.what-information-is-available.text": "Information about each app or web. It is crowdsourced data. Organizations can create their own profiles and upload your own tools like GitHub."
 }
