@@ -1,9 +1,9 @@
 {
   "name": "header",
   "dependencies": {
-    "component/reactive": "1.2.0",
-    "cristiandouce/render": "0.1.1"
+    "component/reactive": "1.2.0"
   },
+  "locals": [ "render" ],
   "templates": [ "template.jade" ],
   "scripts": [ "header.js" ],
   "styles": [ "header.styl" ],

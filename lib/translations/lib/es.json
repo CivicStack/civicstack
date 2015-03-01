@@ -1,6 +1,7 @@
 {
   "global.app-name": "Stack cívico",
 
+  "header.about": "Nosotros",
   "header.login-with": "Entrar con",
 
   "about.what-is-it.title": "¿Qué es?",

@@ -1,6 +1,7 @@
 {
   "global.app-name": "Civic stack",
 
+  "header.about": "About us",
   "header.login-with": "Login with",
 
   "about.what-is-it.title": "What is it?",

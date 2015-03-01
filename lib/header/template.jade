@@ -2,5 +2,5 @@
   .navbar-header
     a(href='/').navbar-brand Civic Stack
   ul.nav.navbar-nav.navbar-right.hidden-xs
-    li: a(href='/about') Nosotros
-    li: a(href='#') Login con
+    li: a(href='/about')=t('header.about')
+    li: p.navbar-text: strong=t('header.login-with')
