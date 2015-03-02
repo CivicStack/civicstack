@@ -1,0 +1,11 @@
+{
+  "name": "tags",
+  "description": "Collection of tags",
+  "locals": [
+    "collection"
+  ],
+  "scripts": [
+    "tags.js"
+  ],
+  "main": "tags.js"
+}
