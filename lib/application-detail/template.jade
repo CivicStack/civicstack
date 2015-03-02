@@ -1,0 +1,38 @@
+article.row.no-gutter.app-detail
+  | {{#application}}
+  section.main-info.col-xs-12.col-lg-3
+    a.app-logo.logo(href='/apps/{{ id }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})')
+      h1 {{ name }}
+    .app-data
+      h1 {{ name }}
+        small {{ countryName }}
+      h2 Organization name
+        small {{ organization }}
+      h3 Contact
+        small {{ contact }}
+
+      footer.text-center
+        .twitter: a(href='{{ twitterUrl }}' target='_blank') {{ twitterUsername }}
+        .license Lic: {{ license }}
+
+  aside.col-xs-12.col-lg-9.more-info-container
+    .more-info
+      h4 Website:
+        small: a.link(href='{{ website }}', target='_blank') {{ website }}
+      h4 Description:
+        small {{ description }}
+      h4 Working at:
+        small {{ workingAt }}
+      h4 Team:
+        small {{ team }}
+      h4 Technlogy:
+        small {{ technlogy }}
+      h4 Github code:
+        small: a.link(href='{{ github }}', target='_blank') {{ github }}
+      h4 Tags:
+        small {{ tags }}
+  
+      a.btn.btn-default(href='/')
+        span.glyphicon.glyphicon-arrow-left
+        |  Back
+  | {{/application}}
