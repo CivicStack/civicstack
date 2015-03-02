@@ -15,5 +15,6 @@
       "callback": "http://127.0.0.1:3000/auth/twitter/callback"
     }
   },
-  "secret": "civicivicstack"
+  "secret": "civicivicstack",
+  "languages": [ "en", "es" ]
 }
