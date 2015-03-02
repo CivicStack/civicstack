@@ -1,0 +1,16 @@
+.col-xs-12.col-sm-6.col-md-3
+  | {{#with application }}
+  article.application-card
+    a.app-logo.logo(href='/apps/{{ id }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})')
+      h1='{{ name }}'
+    section.app-detail
+      header
+        h1: a(href='/apps/{{ id }}')='{{ name }}'
+        h2='{{ countryName }}'
+      p.description='{{ description }}'
+      p.working-at='{{ workingAt }}'
+    footer
+      .twitter.pull-left
+        a(href='http://twitter.com/{{ twitter }}' target='_blank')='@{{ twitter }}'
+      .license.pull-right='Lic: {{ license }}'
+  | {{/with application}}
