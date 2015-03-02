@@ -2,7 +2,7 @@
   | {{#with application }}
   article.application-card
     a.app-logo.logo(href='/apps/{{ id }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})')
-      h1='{{ name }}'
+      h1 {{ name }}
     section.app-detail
       header
         h1: a(href='/apps/{{ id }}')='{{ name }}'
