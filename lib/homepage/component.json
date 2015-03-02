@@ -7,6 +7,7 @@
     "yields/empty": "0.0.1"
   },
   "locals": [
+    "applications",
     "application-card",
     "render"
   ],
