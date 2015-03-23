@@ -2,7 +2,7 @@
   "name": "application-detail",
   "dependencies": {
     "ractivejs/ractive": "v0.6.1",
-    "visionmedia/debug": "2.1.1",
+    "visionmedia/debug": "2.1.3",
     "visionmedia/page.js": "1.6.1",
     "yields/empty": "0.0.1"
   },
