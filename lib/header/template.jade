@@ -3,4 +3,14 @@
     a(href='/').navbar-brand Civic Stack
   ul.nav.navbar-nav.navbar-right.hidden-xs
     li: a(href='/about')=t('header.about')
-    li: p.navbar-text: strong=t('header.login-with')
+    | {{#if !user.logged() }}
+    li: p.navbar-text
+      strong=t('header.login-with')
+    li: p.navbar-text.login
+      a(href='/auth/twitter'): i.fa.fa-twitter
+    | {{ else }}
+    li
+      a(href='/logout')
+        img(src='{{ user.avatar }}', title='{{ user.fullName }}')
+        =t('header.logout')
+    | {{ /if }}
