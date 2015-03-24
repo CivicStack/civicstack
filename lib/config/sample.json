@@ -16,5 +16,8 @@
     }
   },
   "secret": "civicivicstack",
-  "languages": [ "en", "es" ]
+  "languages": [ "en", "es" ],
+  "admins": {
+    "twitter": []
+  }
 }
