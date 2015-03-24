@@ -2,10 +2,9 @@
   "name": "user-model",
   "description": "User model component.",
   "dependencies": {
-    "component/emitter": "1.1.2",
+    "component/emitter": "1.2.0",
     "visionmedia/superagent": "0.18.0"
   },
-  "local": [],
   "scripts": [ "model.js" ],
   "main": "model.js",
   "license": "MIT"

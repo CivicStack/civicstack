@@ -3,6 +3,7 @@
 
   "header.about": "About us",
   "header.login-with": "Login with",
+  "header.logout": "Logout",
 
   "about.what-is-it.title": "What is it?",
   "about.what-is-it.text": "Repository civic open source tools from different countries and organizations.",
