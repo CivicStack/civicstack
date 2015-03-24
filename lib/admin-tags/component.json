@@ -1,0 +1,19 @@
+{
+  "name": "admin-tags",
+  "description": "Admin tags view",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "config",
+    "render",
+    "tags"
+  ],
+  "templates": [
+    "template.jade"
+  ],
+  "scripts": [
+    "view.js"
+  ],
+  "main": "view.js"
+}

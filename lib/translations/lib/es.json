@@ -5,6 +5,12 @@
   "header.login-with": "Entrar con",
   "header.logout": "Salir",
 
+  "admin-sidebar.applications.title": "Aplicaciones",
+  "admin-sidebar.categories.title": "Categorías",
+  "admin-sidebar.tags.title": "Etiquetas",
+  "admin.list.new": "Nuevo",
+  "admin.list.search.placeholder": "Buscar",
+
   "about.what-is-it.title": "¿Qué es?",
   "about.what-is-it.text": "Repositorio de herramientas cívicas open source de distintos países y organizaciones.",
   "about.goal.title": "Objetivo",

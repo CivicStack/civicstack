@@ -7,6 +7,8 @@
     "visionmedia/page.js": "1.6.1"
   },
   "locals": [
+    "admin-sidebar",
+    "admin-tags",
     "render",
     "tags",
     "user"

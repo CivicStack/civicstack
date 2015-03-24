@@ -1,0 +1,18 @@
+#tags-wrapper
+  .tags-admin
+    .row.well.well-lg
+      .col-xs-12.col-md-2
+        .btn.btn-success.btn-block.new
+          span.glyphicon.glyphicon-plus
+          = ' ' + t('admin.list.new')
+      .col-xs-12.col-md-7.col-md-offset-3
+        .input-group.input-group-md
+          span.input-group-addon
+            i.glyphicon.glyphicon-search
+          input.form-control.search(type='text', placeholder=t("admin.list.search.placeholder"), value='{{search}}')
+    .row
+      .list.list-group
+        | {{#each tags }}
+        a.list-group-item(href="/admin/tags/{{id}}")
+          span.tag-title='{{name[config.locale]}}'
+        | {{/each}}
