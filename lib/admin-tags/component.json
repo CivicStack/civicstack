@@ -2,7 +2,8 @@
   "name": "admin-tags",
   "description": "Admin tags view",
   "dependencies": {
-    "ractivejs/ractive": "v0.6.1"
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
   },
   "locals": [
     "config",
@@ -13,7 +14,8 @@
     "template.jade"
   ],
   "scripts": [
+    "admin-tags.js",
     "view.js"
   ],
-  "main": "view.js"
+  "main": "admin-tags.js"
 }
