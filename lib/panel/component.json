@@ -1,0 +1,9 @@
+{
+  "name": "panel",
+  "locals": [
+    "render"
+  ],
+  "scripts": [ "index.js" ],
+  "templates": [ "template.jade" ],
+  "main": "index.js"
+}

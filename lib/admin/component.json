@@ -9,6 +9,7 @@
   "locals": [
     "admin-sidebar",
     "admin-tags",
+    "admin-tags-form",
     "render",
     "tags",
     "user"

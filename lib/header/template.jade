@@ -9,6 +9,10 @@
     li: p.navbar-text.login
       a(href='/auth/twitter'): i.fa.fa-twitter
     | {{ else }}
+    | {{#if (user.admin) }}
+    li: p.navbar-text
+      a(href='/admin')=t('header.admin')
+    | {{/if}}
     li
       a(href='/logout')
         img(src='{{ user.avatar }}', title='{{ user.fullName }}')

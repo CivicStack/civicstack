@@ -1,0 +1,18 @@
+.panels
+form.panel.panel-default.form-horizontal(on-submit='save')
+  .panel-heading='[[ tag.name[config.locale] ]]'
+  .panel-body
+    .form-group
+      label.col-sm-12.text-left=t('Name')
+    .form-group
+      label.col-sm-2.control-label(for='name[en]')=t('common.english')
+      .col-sm-10
+        input.form-control(type='text' id='name[en]' placeholder='Name' value='{{ tag.name.en }}')
+    .form-group
+      label.col-sm-2.control-label(for='name[es]')=t('common.spanish')
+      .col-sm-10
+        input.form-control(type='text' id='name[es]' placeholder='Nombre' value='{{ tag.name.es }}')
+  .panel-footer
+    .col-sm-offset-2
+      button.btn.btn-success(type='submit')=t('Save')
+      a.btn.btn-danger(type='submit' href='/admin/tags')=t('Cancel')

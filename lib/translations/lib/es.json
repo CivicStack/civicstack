@@ -1,7 +1,15 @@
 {
   "global.app-name": "Stack cívico",
 
+  "common.english": "Inglés",
+  "common.spanish": "Español",
+
+  "Name": "Nombre",
+  "Save": "Guardar",
+  "Cancel": "Cancelar",
+
   "header.about": "Nosotros",
+  "header.admin": "Administrador",
   "header.login-with": "Entrar con",
   "header.logout": "Salir",
 
@@ -10,6 +18,7 @@
   "admin-sidebar.tags.title": "Etiquetas",
   "admin.list.new": "Nuevo",
   "admin.list.search.placeholder": "Buscar",
+  "admin.tags.save.success": "Se ha guardado la etiqueta con éxito",
 
   "about.what-is-it.title": "¿Qué es?",
   "about.what-is-it.text": "Repositorio de herramientas cívicas open source de distintos países y organizaciones.",
@@ -17,5 +26,9 @@
   "about.goal.1": "Hacer que esté disponible información generada colaborativamente y facilitar el acceso a herramientas cívicas virtuales y digitales que puedan fortalecer procesos organizativos y de toma de decisiones, así como las acciones activistas que llevan a cabo",
   "about.goal.2": "Evitar que las organizaciones que desarrollan tecnología reinventen la rueda",
   "about.what-information-is-available.title": "¿Qué información aparece?",
-  "about.what-information-is-available.text": "Información sobre cada app o web. Es crowdsourced data. Las organizaciones pueden crear sus propios perfiles y cargar sus propias herramientas igual que en GitHub."
+  "about.what-information-is-available.text": "Información sobre cada app o web. Es crowdsourced data. Las organizaciones pueden crear sus propios perfiles y cargar sus propias herramientas igual que en GitHub.",
+
+  "panel.heading.error": "Error",
+  "panel.body.error": "Se ha producido un error, intente de nuevo más tarde",
+  "panel.heading.success": "Éxito"
 }
