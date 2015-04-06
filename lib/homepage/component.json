@@ -9,9 +9,11 @@
   "locals": [
     "applications",
     "application-card",
-    "render"
+    "render",
+    "user"
   ],
   "scripts": [ "homepage.js", "view.js" ],
+  "styles": [ "styles.styl" ],
   "templates": [ "template.jade" ],
   "main": "homepage.js"
 }
