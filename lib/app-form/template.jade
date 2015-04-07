@@ -1,8 +1,8 @@
 section.container
   .row
-    .col-xs-12.col-md-2.col-md-offset-3.text-center: h2 1. #{t('app-form.header.cover')}
-    .col-xs-12.col-md-2.text-center.disabled.hidden-xs.hidden-sm: h2 2. #{t('app-form.header.content')}
-    .col-xs-12.col-md-2.text-center.disabled.hidden-xs.hidden-sm: h2 3. #{t('app-form.header.publish')}
+    .col-xs-12.col-md-2.col-md-offset-3.text-center.header-step.header-step-1: h2 1. #{t('app-form.header.cover')}
+    .col-xs-12.col-md-2.hidden-xs.hidden-sm.text-center.disabled.header-step.header-step-2: h2 2. #{t('app-form.header.content')}
+    .col-xs-12.col-md-2.hidden-xs.hidden-sm.text-center.disabled.header-step.header-step-3: h2 3. #{t('app-form.header.publish')}
   | {{#if step == 1 }}
   .row.step.step-1
     .col-xs-12.col-sm-6.col-sm-offset-3.col-md-3.col-md-offset-3.left-container
@@ -25,4 +25,16 @@ section.container
       button.btn.btn-success.btn-block.continue(on-click='goto: 2')
         =t('app-form.button.continue') + ' '
         i.glyphicon.glyphicon-ok-circle
+  | {{/if}}
+  | {{#if step == 2 }}
+  .row.step.step-2
+    .col-xs-12.col-sm-2.col-sm-offset-4
+      button.btn.btn-danger.btn-block.continue(on-click='goto: 1')
+        i.glyphicon.glyphicon-remove-circle
+        =' ' + t('app-form.button.cancel')
+    .col-xs-12.col-sm-2
+      button.btn.btn-success.btn-block.continue(on-click='goto: 2')
+        =t('app-form.button.continue') + ' '
+        i.glyphicon.glyphicon-ok-circle
+      
   | {{/if}}

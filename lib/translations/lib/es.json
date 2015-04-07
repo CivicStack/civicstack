@@ -40,5 +40,6 @@
   "app-form.cover.logo-instructions": "Solamente los enlaces URL en línea, asegúrese de que es una URL pública <br> Tamaño: Al menos 000 x 000 px.",
   "app-form.cover.background-instructions": "Por favor elige un color de fondo:",
   "app-form.title.placeholder": "Título",
-  "app-form.button.continue": "Continuar"
+  "app-form.button.continue": "Continuar",
+  "app-form.button.cancel": "Cancelar"
 }
