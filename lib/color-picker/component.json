@@ -1,0 +1,13 @@
+{
+  "name": "color-picker",
+  "dependencies": {
+    "component/color-picker": "master",
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "render"
+  ],
+  "templates": [ "template.jade" ],
+  "scripts": ["color-picker.js"],
+  "main": "color-picker.js"
+}

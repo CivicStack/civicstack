@@ -1,0 +1,28 @@
+section.container
+  .row
+    .col-xs-12.col-md-2.col-md-offset-3.text-center: h2 1. #{t('app-form.header.cover')}
+    .col-xs-12.col-md-2.text-center.disabled.hidden-xs.hidden-sm: h2 2. #{t('app-form.header.content')}
+    .col-xs-12.col-md-2.text-center.disabled.hidden-xs.hidden-sm: h2 3. #{t('app-form.header.publish')}
+  | {{#if step == 1 }}
+  .row.step.step-1
+    .col-xs-12.col-sm-6.col-sm-offset-3.col-md-3.col-md-offset-3.left-container
+      .background-color.app-logo(style='background-image: url({{ app.logo }})')
+        | {{#if !app.logo }}
+        h1 Logo
+        | {{/if}}
+      .title-container
+        textarea(placeholder=t('app-form.title.placeholder'), value='{{ app.title }}')
+    .col-xs-12.col-sm-6.col-sm-offset-3.col-md-offset-0.col-md-3
+      h4=t('app-form.cover.logo-title')
+      input.logo(type='text' value='{{ app.logo }}')
+      ol
+        li!=t('app-form.cover.logo-instructions')
+        li!=t('app-form.cover.background-instructions')
+      colorpicker(value='{{ app.backgroundColor }}')
+      input(type='text' value='{{ app.backgroundColor }}' disabled)
+  .row
+    .col-xs-12.col-sm-4.col-sm-offset-4
+      button.btn.btn-success.btn-block.continue(on-click='goto: 2')
+        =t('app-form.button.continue') + ' '
+        i.glyphicon.glyphicon-ok-circle
+  | {{/if}}

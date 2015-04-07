@@ -31,5 +31,14 @@
 
   "panel.heading.error": "Error",
   "panel.body.error": "Se ha producido un error, intente de nuevo más tarde",
-  "panel.heading.success": "Éxito"
+  "panel.heading.success": "Éxito",
+
+  "app-form.header.cover": "Portada",
+  "app-form.header.content": "Contenido",
+  "app-form.header.publish": "Publicación",
+  "app-form.cover.logo-title": "Logo",
+  "app-form.cover.logo-instructions": "Solamente los enlaces URL en línea, asegúrese de que es una URL pública <br> Tamaño: Al menos 000 x 000 px.",
+  "app-form.cover.background-instructions": "Por favor elige un color de fondo:",
+  "app-form.title.placeholder": "Título",
+  "app-form.button.continue": "Continuar"
 }

@@ -1,0 +1,17 @@
+{
+  "name": "app-form",
+  "description": "Upload new app form",
+  "dependencies": {
+    "component/classes": "1.2.4",
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
+  },
+  "locals": [
+    "color-picker",
+    "render"
+  ],
+  "scripts": [ "app-form.js", "view.js" ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade" ],
+  "main": "app-form.js"
+}
