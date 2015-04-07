@@ -18,10 +18,11 @@ body.app-form
   input
     color #6d6d6d
     padding 12px
-    text-align center
-    text-transform uppercase
     margin-bottom 10px
     width 100%
+    &.rgb
+      text-align center
+      text-transform uppercase
 
   .background-color
     background-color #262626
@@ -51,6 +52,12 @@ body.app-form
       padding 6px 12px
       resize none
       width 80%
+      
+  textarea.description
+    height 100px
+      
+  .checkbox .label:hover
+    cursor default
 
   .continue
     margin-top 10px

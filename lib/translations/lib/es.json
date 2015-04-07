@@ -41,5 +41,18 @@
   "app-form.cover.background-instructions": "Por favor elige un color de fondo:",
   "app-form.title.placeholder": "Título",
   "app-form.button.continue": "Continuar",
-  "app-form.button.cancel": "Cancelar"
+  "app-form.button.cancel": "Cancelar",
+
+  "app.organization-name": "Nombre de la organización",
+  "app.description": "Descripción",
+  "app.location": "Ubicación",
+  "app.website": "Sitio web",
+  "app.twitter": "Twitter",
+  "app.license": "Licencia",
+  "app.contact": "Contacto",
+  "app.working-at": "Trabajando en",
+  "app.team": "Equipo",
+  "app.technology": "Tecnología",
+  "app.github-repository": "Repositorio de Github",
+  "app.tags": "Etiquetas"
 }

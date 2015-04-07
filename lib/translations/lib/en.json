@@ -41,5 +41,18 @@
   "app-form.cover.background-instructions": "Please choose a background color:",
   "app-form.title.placeholder": "Title",
   "app-form.button.continue": "Continue",
-  "app-form.button.cancel": "Cancel"
+  "app-form.button.cancel": "Cancel",
+
+  "app.organization-name": "Organization name",
+  "app.description": "Description",
+  "app.location": "Location",
+  "app.website": "Website",
+  "app.twitter": "Twitter",
+  "app.license": "License",
+  "app.contact": "Contact",
+  "app.working-at": "Working at",
+  "app.team": "Team",
+  "app.technology": "Technology",
+  "app.github-repository": "Github repository",
+  "app.tags": "Tags"
 }

@@ -8,6 +8,8 @@
   },
   "locals": [
     "color-picker",
+    "config",
+    "tags",
     "render"
   ],
   "scripts": [ "app-form.js", "view.js" ],
