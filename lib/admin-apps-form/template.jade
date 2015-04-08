@@ -1,0 +1,89 @@
+.panels
+form.panel.panel-default.form-horizontal(on-submit='save')
+  .panel-heading: h4
+    | {{#if app.title }}
+    ='[[ app.title ]]'
+    | {{ else }}
+    =t('app-form.new-app')
+    | {{/if}}
+  .panel-body
+    | {{#if app.logo }}
+    .form-group
+      .row
+        .col-md-4.col-md-offset-4
+          .app-logo(style='background-image: url({{ app.logo }}); background-color: {{ app.backgroundColor }}')
+    | {{/if}}
+    .form-group
+      label.col-sm-2.control-label(for='logo')=t('app.logo')
+      .col-sm-10
+        input.form-control(type='text' id='logo' placeholder=t('app.logo') value='{{ app.logo }}')
+    .form-group
+      label.col-sm-2.control-label(for='backgroundColor')=t('app.backgroundColor')
+      .col-sm-10
+        input.form-control(type='text' id='backgroundColor' placeholder=t('app.backgroundColor') value='{{ app.backgroundColor }}')
+    .form-group
+      label.col-sm-2.control-label(for='title')=t('app.title')
+      .col-sm-10
+        input.form-control(type='text' id='title' placeholder=t('app.title') value='{{ app.title }}')
+    .form-group
+      label.col-sm-2.control-label=t('app.description')
+      .col-sm-offset-2.col-sm-10
+        label(for='description[en]')=t('common.spanish')
+        textarea.form-control(type='text' id='description[en]' placeholder=t('app.description.en') value='{{ app.description.en }}')
+      .col-sm-offset-2.col-sm-10
+        label(for='description[es]')=t('common.spanish')
+        textarea.form-control(type='text' id='description[es]' placeholder=t('app.description.es') value='{{ app.description.es }}')
+    .form-group
+      label.col-sm-2.control-label(for='organization')=t('app.organization-name')
+      .col-sm-10
+        input.form-control(type='text' id='organization' placeholder=t('app.organization-name') value='{{ app.organization }}')
+    .form-group
+      label.col-sm-2.control-label(for='website')=t('app.website')
+      .col-sm-10
+        input.form-control(type='text' id='website' placeholder=t('app.website') value='{{ app.website }}')
+    .form-group
+      label.col-sm-2.control-label(for='team')=t('app.team')
+      .col-sm-10
+        input.form-control(type='text' id='team' placeholder=t('app.team') value='{{ app.team }}')
+    .form-group
+      label.col-sm-2.control-label(for='twitter')=t('app.twitter')
+      .col-sm-10
+        input.form-control(type='text' id='twitter' placeholder=t('app.twitter') value='{{ app.twitter }}')
+    .form-group
+      label.col-sm-2.control-label(for='github')=t('app.github-repository')
+      .col-sm-10
+        input.form-control(type='text' id='github' placeholder=t('app.github-repository') value='{{ app.github }}')
+    .form-group
+      label.col-sm-2.control-label(for='technology')=t('app.technology')
+      .col-sm-10
+        input.form-control(type='text' id='technology' placeholder=t('app.technology') value='{{ app.technology }}')
+    .form-group
+      label.col-sm-2.control-label(for='license')=t('app.license')
+      .col-sm-10
+        input.form-control(type='text' id='license' placeholder=t('app.license') value='{{ app.license }}')
+    .form-group
+      label.col-sm-2.control-label(for='contact')=t('app.contact')
+      .col-sm-10
+        input.form-control(type='text' id='contact' placeholder=t('app.contact') value='{{ app.contact }}')
+    .form-group
+      label.col-sm-2.control-label(for='workingAt')=t('app.working-at')
+      .col-sm-10
+        input.form-control(type='text' id='workingAt' placeholder=t('app.working-at') value='{{ app.workingAt }}')
+    .form-group
+      label.col-sm-2.control-label=t('app.tags')
+      | {{#each tags:index }}
+      .col-sm-offset-2.col-sm-10
+        .checkbox
+          label
+            input(type='checkbox' name='{{ app.tagids }}' value='{{ this.id }}')
+            | {{ this.name[config.locale] }}
+      | {{/each }}
+    .form-group
+      label.col-sm-2.control-label(for='approved')=t('app.approved')
+      .col-sm-10
+        .checkbox
+          input(type='checkbox' id='approved' value='{{ app.approved }}')
+  .panel-footer
+    .col-sm-offset-2
+      button.btn.btn-success(type='submit')=t('Save')
+      a.btn.btn-danger(type='submit' href='/admin/apps')=t('Cancel')

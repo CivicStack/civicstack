@@ -44,7 +44,11 @@
   "app-form.button.cancel": "Cancelar",
   "app-form.button.done": "Listo",
   "app-form.button.edit": "Editar",
+  "app-form.new-app": "Nueva aplicación",
 
+  "app.logo": "Logo",
+  "app.backgroundColor": "Color de fondo",
+  "app.title": "Título",
   "app.organization-name": "Nombre de la organización",
   "app.description": "Descripción",
   "app.location": "Ubicación",
@@ -56,5 +60,8 @@
   "app.team": "Equipo",
   "app.technology": "Tecnología",
   "app.github-repository": "Repositorio de Github",
-  "app.tags": "Etiquetas"
+  "app.tags": "Etiquetas",
+  "app.approved": "Aprobada",
+  "app.description.en": "Descripción en inglés",
+  "app.description.es": "Descripción en español"
 }
