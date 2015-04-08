@@ -1,0 +1,21 @@
+{
+  "name": "admin-apps",
+  "description": "Admin apps view",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
+  },
+  "locals": [
+    "config",
+    "render",
+    "applications"
+  ],
+  "templates": [
+    "template.jade"
+  ],
+  "scripts": [
+    "admin-apps.js",
+    "view.js"
+  ],
+  "main": "admin-apps.js"
+}
