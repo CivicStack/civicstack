@@ -19,7 +19,11 @@
     "admin.js",
     "view.js"
   ],
-  "styles": [ ],
+  "images": [
+    "images/cancel.svg",
+    "images/edit.svg"
+  ],
+  "styles": [ "admin.styl" ],
   "templates": [ "template.jade"],
   "main": "admin.js"
 }
