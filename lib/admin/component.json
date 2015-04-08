@@ -9,6 +9,7 @@
   "locals": [
     "admin-sidebar",
     "admin-apps",
+    "admin-apps-form",
     "admin-tags",
     "admin-tags-form",
     "render",
