@@ -42,6 +42,8 @@
   "app-form.title.placeholder": "Title",
   "app-form.button.continue": "Continue",
   "app-form.button.cancel": "Cancel",
+  "app-form.button.done": "Done",
+  "app-form.button.edit": "Edit",
 
   "app.organization-name": "Organization name",
   "app.description": "Description",
