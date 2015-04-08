@@ -3,15 +3,16 @@
   "description": "Homepage page.",
   "dependencies": {
     "ractivejs/ractive": "v0.6.1",
-    "visionmedia/page.js": "1.6.1",
-    "yields/empty": "0.0.1"
+    "visionmedia/page.js": "1.6.1"
   },
   "locals": [
     "applications",
     "application-card",
-    "render"
+    "render",
+    "user"
   ],
   "scripts": [ "homepage.js", "view.js" ],
+  "styles": [ "styles.styl" ],
   "templates": [ "template.jade" ],
   "main": "homepage.js"
 }

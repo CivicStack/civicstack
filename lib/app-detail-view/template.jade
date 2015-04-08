@@ -1,10 +1,10 @@
 article.row.app-detail
   | {{#application}}
   section.main-info.col-xs-12.col-lg-3
-    a.app-logo.logo(href='/apps/{{ id }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})')
-      h1 {{ name }}
+    a.app-logo.logo(href='{{ website }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})', target='_blank')
+      h1 {{ title }}
     .app-data
-      h1 {{ name }}
+      h1 {{ title }}
         small {{ countryName }}
       h2 Organization name
         small {{ organization }}
@@ -32,7 +32,7 @@ article.row.app-detail
       h4 Tags:
         small {{ tagnames }}
   
-      a.btn.btn-default(href='/')
+      a.btn.btn-default.back(href='/')
         span.glyphicon.glyphicon-arrow-left
         |  Back
   | {{/application}}

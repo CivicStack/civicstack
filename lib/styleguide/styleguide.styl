@@ -2,6 +2,7 @@ body
 	background-color #dfdfdf
 	font-family "Lucida Grande"
 	padding-top 112px
+	transition all ease .3s
 	-webkit-font-smoothing antialiased
 
   .no-gutter [class*="col-"]
@@ -21,6 +22,10 @@ a
 .btn
 	letter-spacing 2px
 	text-transform uppercase
+	&.btn-default
+		background-color #e76056
+		border-color #cb694b
+		color #fff
 
 .site-content
 	padding-bottom 20px
@@ -35,3 +40,6 @@ a
 	display block
 	height 175px
 	width 100%
+
+textarea
+	resize none
