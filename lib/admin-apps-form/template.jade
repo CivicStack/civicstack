@@ -71,7 +71,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
         input.form-control(type='text' id='workingAt' placeholder=t('app.working-at') value='{{ app.workingAt }}')
     .form-group
       label.col-sm-2.control-label=t('app.tags')
-      | {{#each tags:index }}
+      | {{#each tags }}
       .col-sm-offset-2.col-sm-10
         .checkbox
           label

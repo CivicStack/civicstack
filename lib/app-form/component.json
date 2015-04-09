@@ -11,7 +11,9 @@
     "color-picker",
     "config",
     "tags",
-    "render"
+    "render",
+    "request",
+    "user"
   ],
   "scripts": [ "app-form.js", "view.js" ],
   "styles": [ "styles.styl" ],
