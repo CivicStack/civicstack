@@ -82,7 +82,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       label.col-sm-2.control-label(for='approved')=t('app.approved')
       .col-sm-10
         .checkbox
-          input(type='checkbox' id='approved' value='{{ app.approved }}')
+          input(type='checkbox' id='approved' checked='{{ app.approved }}')
   .panel-footer
     .col-sm-offset-2
       button.btn.btn-success(type='submit')=t('Save')
