@@ -7,7 +7,7 @@
       header
         h1: a(href='/apps/{{ id }}')='{{ name }}'
         h2='{{ countryName }}'
-      p.description {{ description["#{config.locale}"] }}
+      p.description='{{ description[config.locale] }}'
       p.working-at='{{ workingAt }}'
     footer
       .twitter.pull-left

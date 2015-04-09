@@ -1,0 +1,5 @@
+{
+  "name": "scroll",
+  "scripts": [ "scroll.js" ],
+  "main": "scroll.js"
+}

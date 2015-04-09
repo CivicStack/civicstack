@@ -19,7 +19,8 @@
   "admin-sidebar.tags.title": "Tags",
   "admin.list.new": "New",
   "admin.list.search.placeholder": "Search",
-  "admin.tags.save.success": "Se ha guardado la etiqueta con éxito",
+  "admin.tags.save.success": "Tag was saved successfully",
+  "admin.tags.save.success": "App was saved successfully",
 
   "about.what-is-it.title": "What is it?",
   "about.what-is-it.text": "Repository civic open source tools from different countries and organizations.",

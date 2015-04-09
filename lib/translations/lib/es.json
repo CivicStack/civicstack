@@ -19,7 +19,8 @@
   "admin-sidebar.tags.title": "Etiquetas",
   "admin.list.new": "Nuevo",
   "admin.list.search.placeholder": "Buscar",
-  "admin.tags.save.success": "Se ha guardado la etiqueta con éxito",
+  "admin.tags.save.success": "La etiqueta se ha guardado con éxito",
+  "admin.apps.save.success": "La aplicación se ha guardado con éxito",
 
   "about.what-is-it.title": "¿Qué es?",
   "about.what-is-it.text": "Repositorio de herramientas cívicas open source de distintos países y organizaciones.",

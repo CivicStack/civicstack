@@ -4,7 +4,10 @@
     "logo/logo": "0.0.1",
     "ractivejs/ractive": "v0.6.1"
   },
-  "locals": [ "render" ],
+  "locals": [
+    "config",
+    "render"
+  ],
   "templates": [ "template.jade" ],
   "scripts": [ "view.js" ],
   "styles": [ "styles.styl" ],
