@@ -51,7 +51,7 @@ section.container
               input.form-control(placeholder=t('app.contact') value='{{ app.contact }}')
           .col-xs-12.col-sm-3
             .form-group
-              textarea.description.form-control(placeholder=t('app.description') value='{{ app.description.en }}')
+              textarea.description.form-control(placeholder=t('app.description') value='{{ app.description[config.locale] }}')
             .form-group
               input.form-control(placeholder=t('app.team') value='{{ app.team }}')
             .form-group
@@ -88,7 +88,7 @@ section.container
         i.glyphicon.glyphicon-edit
         =' ' + t('app-form.button.edit')
     .col-xs-12.col-sm-2
-      button.btn.btn-success.btn-block.continue
+      button.btn.btn-success.btn-block.continue(on-click='save')
         =t('app-form.button.done') + ' '
         i.glyphicon.glyphicon-ok
   | {{/if}}

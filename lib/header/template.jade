@@ -7,7 +7,7 @@
       span.icon-bar
   .collapse.navbar-collapse.ul-navbar-collapse
     ul.nav.navbar-nav.navbar-right
-      li: a(href='/about' data-toggle='collapse' data-target='.ul-navbar-collapse')=t('header.about')
+      li: a(href='/about')=t('header.about')
       | {{#if !user.logged() }}
       li: p.navbar-text
         strong=t('header.login-with')
@@ -16,10 +16,10 @@
       | {{ else }}
       | {{#if (user.admin) }}
       li
-        a(href='/admin' data-toggle='collapse' data-target='.ul-navbar-collapse')=t('header.admin')
+        a(href='/admin')=t('header.admin')
       | {{/if}}
       li
-        a(href='/logout' data-toggle='collapse' data-target='.ul-navbar-collapse')
+        a(href='/logout')
           img(src='{{ user.avatar }}' title='{{ user.fullName }}')
           =t('header.logout')
       | {{ /if }}
