@@ -8,6 +8,7 @@
     "render",
     "user"
   ],
+  "images": [ "images/border.png" ],
   "templates": [ "template.jade" ],
   "scripts": [ "header.js" ],
   "styles": [ "header.styl" ],
