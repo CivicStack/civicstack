@@ -70,6 +70,10 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       .col-sm-10
         input.form-control(type='text' id='workingAt' placeholder=t('app.working-at') value='{{ app.workingAt }}')
     .form-group
+      label.col-sm-2.control-label(for='comments')=t('app.comments')
+      .col-sm-10
+        textarea.form-control(type='text' id='comments' placeholder=t('app.comments') value='{{ app.comments }}')
+    .form-group
       label.col-sm-2.control-label=t('app.tags')
       | {{#each tags }}
       .col-sm-offset-2.col-sm-10

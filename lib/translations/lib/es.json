@@ -66,5 +66,6 @@
   "app.tags": "Etiquetas",
   "app.approved": "Aprobada",
   "app.description.en": "Descripción en inglés",
-  "app.description.es": "Descripción en español"
+  "app.description.es": "Descripción en español",
+  "app.comments": "Comentarios"
 }

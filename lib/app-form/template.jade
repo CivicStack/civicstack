@@ -63,6 +63,10 @@ section.container
         .row
           .col-xs-12.col-sm-6.col-sm-offset-3
             .form-group
+              textarea.form-control(placeholder=t('app.comments') value='{{ app.comments }}')
+        .row
+          .col-xs-12.col-sm-6.col-sm-offset-3
+            .form-group
               h4: strong=t('app.tags')
             | {{#each tags }}
             .checkbox
