@@ -1,0 +1,14 @@
+{
+  "name": "modal",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "config",
+    "render"
+  ],
+  "scripts": [ "modal.js" ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade" ],
+  "main": "modal.js"
+}

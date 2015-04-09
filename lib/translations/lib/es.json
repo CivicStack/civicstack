@@ -46,6 +46,8 @@
   "app-form.button.done": "Listo",
   "app-form.button.edit": "Editar",
   "app-form.new-app": "Nueva aplicación",
+  "app-form.modal.title": "¡Genial!",
+  "app-form.modal.body": "Tu aplicación fue recibida exitosamente y ¡pronto la mostraremos!",
 
   "app.logo": "Logo",
   "app.backgroundColor": "Color de fondo",

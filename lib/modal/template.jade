@@ -1,0 +1,7 @@
+.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header {{ title }}
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body {{ body }}

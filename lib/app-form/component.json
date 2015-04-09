@@ -3,6 +3,7 @@
   "description": "Upload new app form",
   "dependencies": {
     "component/classes": "1.2.4",
+    "component/t": "1.0.0",
     "ractivejs/ractive": "v0.6.1",
     "visionmedia/page.js": "1.6.1"
   },
@@ -10,6 +11,7 @@
     "app-detail-view",
     "color-picker",
     "config",
+    "modal",
     "tags",
     "render",
     "request",
