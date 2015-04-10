@@ -1,0 +1,11 @@
+{
+  "name": "licenses",
+  "description": "Collection of licenses",
+  "locals": [
+    "collection"
+  ],
+  "scripts": [
+    "licenses.js"
+  ],
+  "main": "licenses.js"
+}

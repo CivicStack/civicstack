@@ -40,7 +40,7 @@
   "app-form.cover.logo-title": "Logo",
   "app-form.cover.logo-instructions": "Only online url links, make sure that’s a public route.<br>Size: at least 000 x 000 px.",
   "app-form.cover.background-instructions": "Please choose a background color:",
-  "app-form.title.placeholder": "Title",
+  "app-form.name.placeholder": "Name",
   "app-form.button.continue": "Continue",
   "app-form.button.cancel": "Cancel",
   "app-form.button.done": "Done",
