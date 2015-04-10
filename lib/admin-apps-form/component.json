@@ -10,6 +10,7 @@
   "locals": [
     "applications",
     "config",
+    "countries",
     "panel",
     "request",
     "render",

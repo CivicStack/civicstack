@@ -54,7 +54,7 @@
   "app.name": "Nombre de la app",
   "app.organization-name": "Nombre de la organización",
   "app.description": "Descripción",
-  "app.location": "Ubicación",
+  "app.country": "País",
   "app.website": "Sitio web",
   "app.twitter": "Twitter",
   "app.license": "Licencia",

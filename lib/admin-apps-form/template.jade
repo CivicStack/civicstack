@@ -42,9 +42,13 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       .col-sm-10
         input.form-control(type='text' id='website' placeholder=t('app.website') value='{{ app.website }}')
     .form-group
-      label.col-sm-2.control-label(for='team')=t('app.team')
+      label.col-sm-2.control-label(for='country')=t('app.country')
       .col-sm-10
-        input.form-control(type='text' id='team' placeholder=t('app.team') value='{{ app.team }}')
+        select.form-control(value='{{ app.country }}' id='country')
+          option(value='')=t('app.country')
+          | {{#each countries}}
+          option(value='{{ this.id }}') {{ this.name[config.locale] }}
+          | {{/each}}
     .form-group
       label.col-sm-2.control-label(for='twitter')=t('app.twitter')
       .col-sm-10
@@ -65,10 +69,6 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       label.col-sm-2.control-label(for='contact')=t('app.contact')
       .col-sm-10
         input.form-control(type='text' id='contact' placeholder=t('app.contact') value='{{ app.contact }}')
-    .form-group
-      label.col-sm-2.control-label(for='workingAt')=t('app.working-at')
-      .col-sm-10
-        input.form-control(type='text' id='workingAt' placeholder=t('app.working-at') value='{{ app.workingAt }}')
     .form-group
       label.col-sm-2.control-label(for='comments')=t('app.comments')
       .col-sm-10

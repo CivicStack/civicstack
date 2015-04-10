@@ -38,7 +38,11 @@ section.container
             .form-group
               input.form-control(placeholder=t('app.organization-name') value='{{ app.organization }}')
             .form-group
-              input.form-control(placeholder=t('app.location') value='{{ app.location }}')
+              select.form-control(value='{{ app.country }}')
+                option(value='')=t('app.country')
+                | {{#each countries}}
+                option(value='{{ this.id }}') {{ this.name[config.locale] }}
+                | {{/each}}
             .form-group
               input.form-control(placeholder=t('app.website') value='{{ app.website }}')
             .form-group
@@ -47,19 +51,15 @@ section.container
                 input.form-control(placeholder=t('app.twitter') value='{{ app.twitter }}')
             .form-group
               input.form-control(placeholder=t('app.license') value='{{ app.license }}')
-            .form-group
-              input.form-control(placeholder=t('app.contact') value='{{ app.contact }}')
           .col-xs-12.col-sm-3
             .form-group
               textarea.description.form-control(placeholder=t('app.description') value='{{ app.description[config.locale] }}')
-            .form-group
-              input.form-control(placeholder=t('app.team') value='{{ app.team }}')
             .form-group
               input.form-control(placeholder=t('app.technology') value='{{ app.technology }}')
             .form-group
               input.form-control(placeholder=t('app.github-repository') value='{{ app.github }}')
             .form-group
-              input.form-control(placeholder=t('app.working-at') value='{{ app.workingAt }}')
+              input.form-control(placeholder=t('app.contact') value='{{ app.contact }}')
         .row
           .col-xs-12.col-sm-6.col-sm-offset-3
             .form-group
