@@ -66,5 +66,6 @@
   "app.approved": "Approved",
   "app.description.en": "English description",
   "app.description.es": "Spanish descripción",
-  "app.comments": "Comments"
+  "app.comments": "Comments",
+  "app.uploaded-by": "Uploaded by"
 }
