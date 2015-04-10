@@ -1,0 +1,11 @@
+{
+  "name": "countries",
+  "description": "Collection of countries",
+  "locals": [
+    "collection"
+  ],
+  "scripts": [
+    "countries.js"
+  ],
+  "main": "countries.js"
+}
