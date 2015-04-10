@@ -64,7 +64,11 @@ form.panel.panel-default.form-horizontal(on-submit='save')
     .form-group
       label.col-sm-2.control-label(for='license')=t('app.license')
       .col-sm-10
-        input.form-control(type='text' id='license' placeholder=t('app.license') value='{{ app.license }}')
+        select.form-control(value='{{ app.license }}' id='license')
+          option(value='')=t('app.license')
+          | {{#each licenses}}
+          option(value='{{ this.id }}') {{ this.name }}
+          | {{/each}}
     .form-group
       label.col-sm-2.control-label(for='contact')=t('app.contact')
       .col-sm-10

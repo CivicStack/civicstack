@@ -50,7 +50,11 @@ section.container
                 .input-group-addon @
                 input.form-control(placeholder=t('app.twitter') value='{{ app.twitter }}')
             .form-group
-              input.form-control(placeholder=t('app.license') value='{{ app.license }}')
+              select.form-control(value='{{ app.license }}')
+                option(value='')=t('app.license')
+                | {{#each licenses}}
+                option(value='{{ this.id }}') {{ this.name }}
+                | {{/each}}
             .form-group
               select.form-control(value='{{ app.category }}')
                 option(value='')=t('app.category')
