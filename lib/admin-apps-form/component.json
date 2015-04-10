@@ -9,6 +9,7 @@
   },
   "locals": [
     "applications",
+    "categories",
     "config",
     "countries",
     "panel",
