@@ -14,7 +14,7 @@
       ul.list.list-group
         | {{#each apps }}
         a.list-group-item
-          span.app-title='{{title}}'
+          span.app-name='{{ name }}'
           a.btn-action.pull-right(href='#' on-click='delete:{{id}}')
             img(src='/lib/admin/images/cancel.svg')
           a.btn-action.pull-right(href='/admin/apps/{{id}}')

@@ -51,7 +51,7 @@
 
   "app.logo": "Logo",
   "app.backgroundColor": "Background color",
-  "app.title": "Title",
+  "app.name": "App name",
   "app.organization-name": "Organization name",
   "app.description": "Description",
   "app.location": "Location",
@@ -59,8 +59,7 @@
   "app.twitter": "Twitter",
   "app.license": "License",
   "app.contact": "Contact",
-  "app.working-at": "Working at",
-  "app.team": "Team",
+  "app.category": "What is it for?",
   "app.technology": "Technology",
   "app.github-repository": "Github repository",
   "app.tags": "Tags",

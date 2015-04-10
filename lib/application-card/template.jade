@@ -2,10 +2,10 @@
   | {{#with application }}
   article.application-card
     a.app-logo.logo(href='/apps/{{ id }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})')
-      h1 {{ title }}
+      h1 {{ name }}
     section.app-detail
       header
-        h1: a(href='/apps/{{ id }}')='{{ title }}'
+        h1: a(href='/apps/{{ id }}')='{{ name }}'
         h2='{{ countryName }}'
       p.description='{{ description[config.locale] }}'
       p.working-at='{{ workingAt }}'

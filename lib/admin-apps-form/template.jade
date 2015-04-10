@@ -1,8 +1,8 @@
 .panels
 form.panel.panel-default.form-horizontal(on-submit='save')
   .panel-heading: h4
-    | {{#if app.title }}
-    ='[[ app.title ]]'
+    | {{#if app.name }}
+    ='[[ app.name ]]'
     | {{ else }}
     =t('app-form.new-app')
     | {{/if}}
@@ -22,9 +22,9 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       .col-sm-10
         input.form-control(type='text' id='backgroundColor' placeholder=t('app.backgroundColor') value='{{ app.backgroundColor }}')
     .form-group
-      label.col-sm-2.control-label(for='title')=t('app.title')
+      label.col-sm-2.control-label(for='name')=t('app.name')
       .col-sm-10
-        input.form-control(type='text' id='title' placeholder=t('app.title') value='{{ app.title }}')
+        input.form-control(type='text' id='name' placeholder=t('app.name') value='{{ app.name }}')
     .form-group
       label.col-sm-2.control-label=t('app.description')
       .col-sm-offset-2.col-sm-10

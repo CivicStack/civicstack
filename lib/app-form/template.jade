@@ -11,7 +11,7 @@ section.container
         h1 Logo
         | {{/if}}
       .title-container
-        textarea(placeholder=t('app-form.title.placeholder') value='{{ app.title }}')
+        textarea(placeholder=t('app-form.name.placeholder') value='{{ app.name }}')
     .col-xs-12.col-sm-6.col-sm-offset-3.col-md-offset-0.col-md-3
       h4=t('app-form.cover.logo-title')
       input.logo(type='text' value='{{ app.logo }}')
@@ -32,7 +32,7 @@ section.container
       .container
         .row
           .col-xs-12.col-sm-6.col-sm-offset-3
-            h2.text-center: strong='{{ app.title }}'
+            h2.text-center: strong='{{ app.name }}'
         form.row
           .col-xs-12.col-sm-3.col-sm-offset-3
             .form-group
