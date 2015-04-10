@@ -99,6 +99,13 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       .col-sm-10
         .checkbox
           input(type='checkbox' id='approved' checked='{{ app.approved }}')
+    .form-group
+      label.col-sm-2.control-label(for='uploadedBy')=t('app.uploaded-by')
+      .col-sm-10
+        | {{#with app.uploadedBy }}
+        img.avatar(src='{{ avatar }}')
+        |  {{ firstName }} {{ lastName }}
+        | {{/with}}
   .panel-footer
     .col-sm-offset-2
       button.btn.btn-success(type='submit')=t('Save')
