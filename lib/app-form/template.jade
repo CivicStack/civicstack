@@ -51,6 +51,12 @@ section.container
                 input.form-control(placeholder=t('app.twitter') value='{{ app.twitter }}')
             .form-group
               input.form-control(placeholder=t('app.license') value='{{ app.license }}')
+            .form-group
+              select.form-control(value='{{ app.category }}')
+                option(value='')=t('app.category')
+                | {{#each categories}}
+                option(value='{{ this.id }}') {{ this.name[config.locale] }}
+                | {{/each}}
           .col-xs-12.col-sm-3
             .form-group
               textarea.description.form-control(placeholder=t('app.description') value='{{ app.description[config.locale] }}')

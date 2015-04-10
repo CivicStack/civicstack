@@ -1,0 +1,11 @@
+{
+  "name": "categories",
+  "description": "Collection of categories",
+  "locals": [
+    "collection"
+  ],
+  "scripts": [
+    "categories.js"
+  ],
+  "main": "categories.js"
+}
