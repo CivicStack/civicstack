@@ -5,7 +5,7 @@
     "ractivejs/ractive": "v0.6.1"
   },
   "locals": [
-    "config",
+    "language",
     "render"
   ],
   "templates": [ "template.jade" ],

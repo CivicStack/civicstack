@@ -14,5 +14,5 @@
       .list.list-group
         | {{#each tags }}
         a.list-group-item(href="/admin/tags/{{id}}")
-          span.tag-title='{{name[config.locale]}}'
+          span.tag-title='{{name[lang]}}'
         | {{/each}}

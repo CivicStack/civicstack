@@ -4,7 +4,7 @@
     "ractivejs/ractive": "v0.6.1"
   },
   "locals": [
-    "config",
+    "language",
     "render"
   ],
   "scripts": [ "view.js" ],

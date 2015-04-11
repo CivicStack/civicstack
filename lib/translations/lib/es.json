@@ -1,8 +1,8 @@
 {
   "global.app-name": "Stack cívico",
 
-  "common.english": "Inglés",
-  "common.spanish": "Español",
+  "english": "Inglés",
+  "spanish": "Español",
 
   "Name": "Nombre",
   "Save": "Guardar",
