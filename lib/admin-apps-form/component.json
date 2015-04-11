@@ -10,8 +10,8 @@
   "locals": [
     "applications",
     "categories",
-    "config",
     "countries",
+    "language",
     "licenses",
     "panel",
     "request",

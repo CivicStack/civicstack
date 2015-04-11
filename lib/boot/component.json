@@ -8,12 +8,13 @@
   "local": [
     "about",
     "admin",
+    "app-form",
+    "application-detail",
     "body-classes",
     "config",
     "header",
     "homepage",
-    "app-form",
-    "application-detail",
+    "language",
     "styleguide",
     "translations",
     "user"

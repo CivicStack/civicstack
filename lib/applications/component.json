@@ -2,7 +2,8 @@
   "name": "applications",
   "description": "Collection of applications",
   "locals": [
-    "collection"
+    "collection",
+    "language"
   ],
   "scripts": [
     "applications.js"

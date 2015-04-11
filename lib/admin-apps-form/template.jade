@@ -47,7 +47,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
         select.form-control(value='{{ app.country }}' id='country')
           option(value='')=t('app.country')
           | {{#each countries}}
-          option(value='{{ this.id }}') {{ this.name[config.locale] }}
+          option(value='{{ this.id }}') {{ this.name[lang] }}
           | {{/each}}
     .form-group
       label.col-sm-2.control-label(for='twitter')=t('app.twitter')
@@ -83,7 +83,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
         select.form-control(value='{{ app.category }}' id='category')
           option(value='')=t('app.category')
           | {{#each categories}}
-          option(value='{{ this.id }}') {{ this.name[config.locale] }}
+          option(value='{{ this.id }}') {{ this.name[lang] }}
           | {{/each}}
     .form-group
       label.col-sm-2.control-label=t('app.tags')
@@ -92,7 +92,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
         .checkbox
           label
             input(type='checkbox' name='{{ app.tagids }}' value='{{ this.id }}')
-            | {{ this.name[config.locale] }}
+            | {{ this.name[lang] }}
       | {{/each }}
     .form-group
       label.col-sm-2.control-label(for='approved')=t('app.approved')

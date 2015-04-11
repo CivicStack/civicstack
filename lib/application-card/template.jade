@@ -6,8 +6,8 @@
     section.app-detail
       header
         h1: a(href='/apps/{{ id }}')='{{ name }}'
-        h2='{{ country[config.locale] }}'
-      p.description='{{ description[config.locale] }}'
+        h2='{{ country[lang] }}'
+      p.description='{{ description[lang] }}'
     footer
       .twitter.pull-left
         a(href='http://twitter.com/{{ twitter }}' target='_blank')='@{{ twitter }}'
