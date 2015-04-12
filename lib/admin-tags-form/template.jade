@@ -5,11 +5,11 @@ form.panel.panel-default.form-horizontal(on-submit='save')
     .form-group
       label.col-sm-12.text-left=t('Name')
     .form-group
-      label.col-sm-2.control-label(for='name[en]')=t('common.english')
+      label.col-sm-2.control-label(for='name[en]')=t('english')
       .col-sm-10
         input.form-control(type='text' id='name[en]' placeholder='Name' value='{{ tag.name.en }}')
     .form-group
-      label.col-sm-2.control-label(for='name[es]')=t('common.spanish')
+      label.col-sm-2.control-label(for='name[es]')=t('spanish')
       .col-sm-10
         input.form-control(type='text' id='name[es]' placeholder='Nombre' value='{{ tag.name.es }}')
   .panel-footer
