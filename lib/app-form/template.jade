@@ -11,7 +11,7 @@ section.container
         h1 Logo
         | {{/if}}
       .title-container
-        textarea(placeholder=t('app-form.name.placeholder') value='{{ app.name }}')
+        textarea(placeholder=t('app-form.name.placeholder') value='{{ app.name }}', class='{{ errors.name }}')
     .col-xs-12.col-sm-6.col-sm-offset-3.col-md-offset-0.col-md-3
       h4=t('app-form.cover.logo-title')
       input.logo(type='text' value='{{ app.logo }}')
@@ -36,15 +36,15 @@ section.container
         form.row
           .col-xs-12.col-sm-3.col-sm-offset-3
             .form-group
-              input.form-control(placeholder=t('app.organization-name') value='{{ app.organization }}')
+              input.form-control(placeholder=t('app.organization-name') value='{{ app.organization }}' class='{{ errors.organization }}')
             .form-group
-              select.form-control(value='{{ app.country }}')
+              select.form-control(value='{{ app.country }}' class='{{ errors.country }}')
                 option(value='')=t('app.country')
                 | {{#each countries}}
                 option(value='{{ this.id }}') {{ this.name[lang] }}
                 | {{/each}}
             .form-group
-              input.form-control(placeholder=t('app.website') value='{{ app.website }}')
+              input.form-control(placeholder=t('app.website') value='{{ app.website }}' class='{{ errors.website }}')
             .form-group
               .input-group
                 .input-group-addon @
@@ -56,14 +56,14 @@ section.container
                 option(value='{{ this.id }}') {{ this.name }}
                 | {{/each}}
             .form-group
-              select.form-control(value='{{ app.category }}')
+              select.form-control(value='{{ app.category }}' class='{{ errors.category }}')
                 option(value='')=t('app.category')
                 | {{#each categories}}
                 option(value='{{ this.id }}') {{ this.name[lang] }}
                 | {{/each}}
           .col-xs-12.col-sm-3
             .form-group
-              textarea.description.form-control(placeholder=t('app.description') value='{{ app.description[lang] }}')
+              textarea.description.form-control(placeholder=t('app.description') value='{{ app.description[lang] }}' class='{{ errors.description }}')
             .form-group
               input.form-control(placeholder=t('app.technology') value='{{ app.technology }}')
             .form-group
