@@ -11,7 +11,10 @@
     "request",
     "user"
   ],
-  "images": [ "images/border.png" ],
+  "images": [
+    "images/border.png",
+    "images/logo.svg"
+  ],
   "templates": [ "template.jade" ],
   "scripts": [ "header.js" ],
   "styles": [ "header.styl" ],
