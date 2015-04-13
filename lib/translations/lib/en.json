@@ -71,5 +71,6 @@
   "app.description.en.placeholder": "English description (300 characters max)",
   "app.description.es.placeholder": "Spanish descripción (300 characters max)",
   "app.comments": "Comments",
-  "app.uploaded-by": "Uploaded by"
+  "app.uploaded-by": "Uploaded by",
+  "app.description.exceeded": "Description is limited up to 300 characters"
 }
