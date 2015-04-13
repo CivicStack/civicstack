@@ -24,7 +24,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
     .form-group
       label.col-sm-2.control-label(for='name')=t('app.name')
       .col-sm-10
-        input.form-control(type='text' id='name' placeholder=t('app.name') value='{{ app.name }}')
+        input.form-control(type='text' id='name' placeholder=t('app.name') value='{{ app.name }}' class='{{ errors.name }}')
     .form-group
       label.col-sm-2.control-label=t('app.description')
       .col-sm-offset-2.col-sm-10
@@ -36,15 +36,15 @@ form.panel.panel-default.form-horizontal(on-submit='save')
     .form-group
       label.col-sm-2.control-label(for='organization')=t('app.organization-name')
       .col-sm-10
-        input.form-control(type='text' id='organization' placeholder=t('app.organization-name') value='{{ app.organization }}')
+        input.form-control(type='text' id='organization' placeholder=t('app.organization-name') value='{{ app.organization }}' class='{{ errors.organization }}')
     .form-group
       label.col-sm-2.control-label(for='website')=t('app.website')
       .col-sm-10
-        input.form-control(type='text' id='website' placeholder=t('app.website') value='{{ app.website }}')
+        input.form-control(type='text' id='website' placeholder=t('app.website') value='{{ app.website }}' class='{{ errors.website }}')
     .form-group
       label.col-sm-2.control-label(for='country')=t('app.country')
       .col-sm-10
-        select.form-control(value='{{ app.country }}' id='country')
+        select.form-control(value='{{ app.country }}' id='country' class='{{ errors.country }}')
           option(value='')=t('app.country')
           | {{#each countries}}
           option(value='{{ this.id }}') {{ this.name[lang] }}
@@ -80,7 +80,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
     .form-group
       label.col-sm-2.control-label(for='category')=t('app.category')
       .col-sm-10
-        select.form-control(value='{{ app.category }}' id='category')
+        select.form-control(value='{{ app.category }}' id='category' class='{{ errors.category }}')
           option(value='')=t('app.category')
           | {{#each categories}}
           option(value='{{ this.id }}') {{ this.name[lang] }}

@@ -11,7 +11,7 @@ section.container
         h1 Logo
         | {{/if}}
       .title-container
-        textarea(placeholder=t('app-form.name.placeholder') value='{{ app.name }}', class='{{ errors.name }}')
+        textarea(placeholder=t('app-form.name.placeholder') value='{{ app.name }}' class='{{ errors.name }}')
     .col-xs-12.col-sm-6.col-sm-offset-3.col-md-offset-0.col-md-3
       h4=t('app-form.cover.logo-title')
       input.logo(type='text' value='{{ app.logo }}')

@@ -26,5 +26,6 @@
     "admin-apps-form.js",
     "view.js"
   ],
+  "styles": [ "styles.styl" ],
   "main": "admin-apps-form.js"
 }
