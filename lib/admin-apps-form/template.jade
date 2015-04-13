@@ -58,10 +58,6 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       .col-sm-10
         input.form-control(type='text' id='github' placeholder=t('app.github-repository') value='{{ app.github }}')
     .form-group
-      label.col-sm-2.control-label(for='technology')=t('app.technology')
-      .col-sm-10
-        input.form-control(type='text' id='technology' placeholder=t('app.technology') value='{{ app.technology }}')
-    .form-group
       label.col-sm-2.control-label(for='license')=t('app.license')
       .col-sm-10
         select.form-control(value='{{ app.license }}' id='license')
@@ -93,6 +89,15 @@ form.panel.panel-default.form-horizontal(on-submit='save')
           label
             input(type='checkbox' name='{{ app.tagids }}' value='{{ this.id }}')
             | {{ this.name[lang] }}
+      | {{/each }}
+    .form-group
+      label.col-sm-2.control-label=t('app.technology')
+      | {{#each technologies }}
+      .col-sm-offset-2.col-sm-10
+        .checkbox
+          label
+            input(type='checkbox' name='{{ app.technologyids }}' value='{{ this.id }}')
+            | {{ this.name }}
       | {{/each }}
     .form-group
       label.col-sm-2.control-label(for='approved')=t('app.approved')
