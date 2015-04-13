@@ -1,7 +1,10 @@
 section.container.homepage
   .row
+    .col-xs-12.col-sm-3.filters
+      input.form-control.search(type='text' value='{{ filters.search }}')
+      span.search-icon.glyphicon.glyphicon-search
     | {{#if user.id }}
-    .col-xs-12.col-lg-3.col-lg-offset-9
+    .col-xs-12.col-sm-3.col-lg-offset-6
       a.btn.btn-default.btn-block(href='/apps/new')
         i.glyphicon.glyphicon-plus-sign
         |  #{t('Upload app')}

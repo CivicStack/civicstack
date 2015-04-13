@@ -1,0 +1,5 @@
+{
+  "name": "filters",
+  "scripts": [ "filters.js" ],
+  "main": "filters.js"
+}

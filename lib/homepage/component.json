@@ -8,6 +8,7 @@
   "locals": [
     "applications",
     "application-card",
+    "filters",
     "render",
     "user"
   ],
