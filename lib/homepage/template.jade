@@ -9,4 +9,6 @@ section.container.homepage
   .row
     | {{#each applications}}
     application(application='{{ this }}')
+    | {{ else }}
+    .jumbotron.text-center=t('No apps to show')
     | {{/each applications}}
