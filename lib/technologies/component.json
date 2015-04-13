@@ -1,0 +1,11 @@
+{
+  "name": "technologies",
+  "description": "Collection of technologies",
+  "locals": [
+    "collection"
+  ],
+  "scripts": [
+    "technologies.js"
+  ],
+  "main": "technologies.js"
+}

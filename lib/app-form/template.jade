@@ -65,8 +65,6 @@ section.container
             .form-group
               textarea.description.form-control(placeholder=t('app.description') value='{{ app.description[lang] }}' class='{{ errors.description }}')
             .form-group
-              input.form-control(placeholder=t('app.technology') value='{{ app.technology }}')
-            .form-group
               input.form-control(placeholder=t('app.github-repository') value='{{ app.github }}')
             .form-group
               input.form-control(placeholder=t('app.contact') value='{{ app.contact }}')
@@ -83,6 +81,16 @@ section.container
               label
                 input(type='checkbox' name='{{ app.tags }}' value='{{ this }}')
                 ='{{ this.name[lang] }}'
+            | {{/each }}
+        .row
+          .col-xs-12.col-sm-6.col-sm-offset-3
+            .form-group
+              h4: strong=t('app.technology')
+            | {{#each technologies }}
+            .checkbox
+              label
+                input(type='checkbox' name='{{ app.technology }}' value='{{ this }}')
+                ='{{ this.name }}'
             | {{/each }}
         .row
           .col-xs-12.col-sm-2.col-sm-offset-4

@@ -17,7 +17,8 @@
     "request",
     "render",
     "scroll",
-    "tags"
+    "tags",
+    "technologies"
   ],
   "templates": [
     "template.jade"
