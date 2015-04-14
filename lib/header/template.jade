@@ -21,6 +21,7 @@
         a.navbar-text
           strong=t('header.login-with')
           a.login.twitter(href='/auth/twitter'): i.fa.fa-twitter
+          strong=t('header.or')
           a.login.github(href='/auth/github'): i.fa.fa-github
       | {{ else }}
       | {{#if (user.admin) }}

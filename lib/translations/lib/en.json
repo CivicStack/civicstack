@@ -13,6 +13,7 @@
   "header.about": "About us",
   "header.admin": "Admin",
   "header.login-with": "Login with",
+  "header.or": "or",
   "header.logout": "Logout",
 
   "admin-sidebar.applications.title": "Applications",
