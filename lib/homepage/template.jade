@@ -3,9 +3,11 @@ section.container.homepage
     .col-xs-12.col-sm-3.filters
       input.form-control.search(type='text' value='{{ filters.search }}')
       span.search-icon.glyphicon.glyphicon-search
-    a.btn.btn-link.btn-filter(href='#' on-click='filter:country')=t('app.country')
+    .col-xs-12.col-sm-6
+      a.btn.btn-link.btn-filter(href='#' on-click='filter:country')=t('app.country')
+      a.btn.btn-link.btn-filter(href='#' on-click='filter:technology')=t('app.technology')
     | {{#if user.id }}
-    .col-xs-12.col-sm-3.col-lg-offset-6
+    .col-xs-12.col-sm-3
       a.btn.btn-default.btn-block(href='/apps/new')
         i.glyphicon.glyphicon-plus-sign
         |  #{t('Upload app')}

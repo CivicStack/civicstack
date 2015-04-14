@@ -9,9 +9,11 @@
     "applications",
     "application-card",
     "countries",
-    "filters-country",
     "filters",
+    "filters-country",
+    "filters-technology",
     "render",
+    "technologies",
     "user"
   ],
   "scripts": [ "homepage.js", "view.js" ],
