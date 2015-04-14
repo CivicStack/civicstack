@@ -72,5 +72,9 @@
   "app.description.es.placeholder": "Spanish descripción (300 characters max)",
   "app.comments": "Comments",
   "app.uploaded-by": "Uploaded by",
-  "app.description.exceeded": "Description is limited up to 300 characters"
+  "app.description.exceeded": "Description is limited up to 300 characters",
+
+  "filters.search": "Go",
+  "filters.clear": "Clear all",
+  "filters.country": "Filter by country"
 }
