@@ -1,9 +1,9 @@
 section.container.homepage
   .row
-    .col-xs-12.col-sm-3.filters
+    .col-xs-12.col-sm-4.filters
       input.form-control.search(type='text' value='{{ filters.search }}')
       span.search-icon.glyphicon.glyphicon-search
-    .col-xs-12.col-sm-6
+    .col-xs-12.col-sm-5
       span.btn-filter=t('filters.filter-by')
       a.btn.btn-link.btn-filter(href='#' on-click='filter:country')=t('app.country')
       a.btn.btn-link.btn-filter(href='#' on-click='filter:technology')=t('app.technology')
