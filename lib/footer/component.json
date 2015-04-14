@@ -1,0 +1,14 @@
+{
+  "name": "footer",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "language",
+    "render"
+  ],
+  "templates": [ "template.jade" ],
+  "scripts": [ "footer.js" ],
+  "styles": [ "footer.styl" ],
+  "main": "footer.js"
+}

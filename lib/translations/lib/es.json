@@ -9,6 +9,7 @@
   "Cancel": "Cancelar",
   "Upload app": "Subir aplicación",
   "No apps to show": "No hay apps para mostrar",
+  "and": "y",
 
   "header.about": "Nosotros",
   "header.admin": "Administrador",
@@ -81,5 +82,7 @@
   "filters.country": "Filtrar por país",
   "filters.technology": "Filtrar por tecnología",
   "filters.tags": "Filtrar por etiquetas",
-  "filters.category": "Filtrar por categoría"
+  "filters.category": "Filtrar por categoría",
+
+  "footer.powered-by": "Realizado por"
 }

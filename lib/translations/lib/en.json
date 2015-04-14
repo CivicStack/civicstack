@@ -9,6 +9,7 @@
   "Cancel": "Cancel",
   "Upload app": "Upload app",
   "No apps to show": "No apps to show",
+  "and": "y",
 
   "header.about": "About us",
   "header.admin": "Admin",
@@ -82,5 +83,7 @@
   "filters.country": "Filter by country",
   "filters.technology": "Filter by technology",
   "filters.tags": "Filter by tags",
-  "filters.category": "Filter by category"
+  "filters.category": "Filter by category",
+
+  "footer.powered-by": "Powered by"
 }
