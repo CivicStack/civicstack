@@ -1,0 +1,16 @@
+{
+  "name": "filters-country",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "config",
+    "countries",
+    "filters",
+    "language",
+    "render"
+  ],
+  "scripts": [ "filters-country.js" ],
+  "templates": [ "template.jade" ],
+  "main": "filters-country.js"
+}
