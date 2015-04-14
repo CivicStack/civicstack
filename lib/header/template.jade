@@ -9,12 +9,6 @@
       span.icon-bar
   .collapse.navbar-collapse.ul-navbar-collapse.text-center
     ul.nav.navbar-nav.navbar-right
-      | {{#if lang != 'en' }}
-      li: a(href='#' title=t('english') on-click='lang:en'): img(src='/lib/flags/usa.png')
-      | {{/if}}
-      | {{#if lang != 'es' }}
-      li: a(href='#' title=t('spanish') on-click='lang:es'): img(src='/lib/flags/spain.png')
-      | {{/if}}
       li: a(href='/about')=t('header.about')
       | {{#if !user.logged() }}
       li
@@ -33,3 +27,12 @@
           img.avatar(src='{{ user.avatar }}' title='{{ user.fullName }}')
           =t('header.logout')
       | {{ /if }}
+      li
+        | {{#if lang == 'en' }}
+        a.lang(href='#' title=t('english') on-click='lang:en') EN
+        a.lang.text-mute(href='#' title=t('spanish') on-click='lang:es') ES
+        | {{/if}}
+        | {{#if lang == 'es' }}
+        a.lang.text-mute(href='#' title=t('english') on-click='lang:en') EN
+        a.lang(href='#' title=t('spanish') on-click='lang:es') ES
+        | {{/if}}
