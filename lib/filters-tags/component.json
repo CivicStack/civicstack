@@ -1,0 +1,16 @@
+{
+  "name": "filters-tags",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "config",
+    "tags",
+    "filters",
+    "language",
+    "render"
+  ],
+  "scripts": [ "filters-tags.js" ],
+  "templates": [ "template.jade" ],
+  "main": "filters-tags.js"
+}

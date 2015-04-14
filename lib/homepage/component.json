@@ -12,7 +12,9 @@
     "filters",
     "filters-country",
     "filters-technology",
+    "filters-tags",
     "render",
+    "tags",
     "technologies",
     "user"
   ],

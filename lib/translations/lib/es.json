@@ -73,8 +73,10 @@
   "app.uploaded-by": "Subido por",
   "app.description.exceeded": "La descripción está limitada a 300 caracteres como máximo",
 
+  "filters.filter-by": "Filtrar por: ",
   "filters.search": "Buscar",
   "filters.clear": "Limpiar filtros",
   "filters.country": "Filtrar por país",
-  "filters.technology": "Filtrar por tecnología"
+  "filters.technology": "Filtrar por tecnología",
+  "filters.tags": "Filtrar por etiquetas"
 }

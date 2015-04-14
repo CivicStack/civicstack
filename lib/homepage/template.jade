@@ -4,8 +4,10 @@ section.container.homepage
       input.form-control.search(type='text' value='{{ filters.search }}')
       span.search-icon.glyphicon.glyphicon-search
     .col-xs-12.col-sm-6
+      span.btn-filter=t('filters.filter-by')
       a.btn.btn-link.btn-filter(href='#' on-click='filter:country')=t('app.country')
       a.btn.btn-link.btn-filter(href='#' on-click='filter:technology')=t('app.technology')
+      a.btn.btn-link.btn-filter(href='#' on-click='filter:tags')=t('app.tags')
     | {{#if user.id }}
     .col-xs-12.col-sm-3
       a.btn.btn-default.btn-block(href='/apps/new')
