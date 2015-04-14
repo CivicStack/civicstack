@@ -13,11 +13,17 @@
       "consumerKey": "TwitterConsumerKey",
       "consumerSecret": "TwitterConsumerSecret",
       "callback": "http://127.0.0.1:3000/auth/twitter/callback"
+    },
+    "github": {
+      "clientID": "GithubClientId",
+      "clientSecret": "GithubSecret",
+      "callback": "http://127.0.0.1:3000/auth/github/callback"
     }
   },
   "secret": "civicivicstack",
   "languages": [ "en", "es" ],
   "admins": {
-    "twitter": []
+    "twitter": [],
+    "github": []
   }
 }

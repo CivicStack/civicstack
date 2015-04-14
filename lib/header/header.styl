@@ -20,8 +20,8 @@ header#site-header
     margin-bottom 0
 
   .navbar-brand,
-  .navbar-nav li a,
-  .navbar-nav li p
+  .navbar-nav li a:not(.login),
+  .navbar-nav li .navbar-text
     color #000
     height 90px
     line-height 90px
@@ -30,16 +30,18 @@ header#site-header
     img.avatar
       border-radius 100px
       margin-right 12px
+      max-width 48px
 
-  .navbar-nav li p
+  .navbar-nav li .navbar-text
     margin-top 0
     margin-bottom 0
 
-    &.login
-      font-size 26px
-      margin-left 0
-      a
-        color #55ACEE
+    .login
+      margin-left 6px
+      &.twitter
+        color #55acee
+      &.github
+        color black
 
   .navbar-collapse
     max-height inherit

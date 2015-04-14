@@ -17,10 +17,11 @@
       | {{/if}}
       li: a(href='/about')=t('header.about')
       | {{#if !user.logged() }}
-      li: p.navbar-text
-        strong=t('header.login-with')
-      li: p.navbar-text.login
-        a(href='/auth/twitter'): i.fa.fa-twitter
+      li
+        a.navbar-text
+          strong=t('header.login-with')
+          a.login.twitter(href='/auth/twitter'): i.fa.fa-twitter
+          a.login.github(href='/auth/github'): i.fa.fa-github
       | {{ else }}
       | {{#if (user.admin) }}
       li
