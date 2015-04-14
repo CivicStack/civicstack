@@ -76,5 +76,6 @@
 
   "filters.search": "Go",
   "filters.clear": "Clear all",
-  "filters.country": "Filter by country"
+  "filters.country": "Filter by country",
+  "filters.technology": "Filter by technology"
 }

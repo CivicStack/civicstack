@@ -1,17 +1,17 @@
 .modal.fade(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel', aria-hidden='true')
   .modal-dialog
     .modal-content
-      .modal-header=t('filters.country')
+      .modal-header=t('filters.technology')
         button.close(type='button', data-dismiss='modal', aria-label='Close')
           span(aria-hidden='true') &times;
       .modal-body
         .row
-          | {{#each countries}}
+          | {{#each technologies}}
           .col-xs-12.col-sm-4
             .checkbox
               label
                 input(type='checkbox' name='{{ selected }}' value='[[ id ]]')
-                ='[[ name[lang] ]]'
+                ='[[ name ]]'
           | {{/each}}
       .modal-footer
         button(type='button' class='btn btn-warning' data-dismiss='modal' on-click='clear')=t('filters.clear')

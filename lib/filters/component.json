@@ -1,5 +1,8 @@
 {
   "name": "filters",
+  "dependencies": {
+    "yields/some": "1.0.0"
+  },
   "scripts": [ "filters.js" ],
   "main": "filters.js"
 }

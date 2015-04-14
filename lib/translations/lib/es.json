@@ -75,5 +75,6 @@
 
   "filters.search": "Buscar",
   "filters.clear": "Limpiar filtros",
-  "filters.country": "Filtrar por país"
+  "filters.country": "Filtrar por país",
+  "filters.technology": "Filtrar por tecnología"
 }

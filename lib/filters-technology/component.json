@@ -1,0 +1,15 @@
+{
+  "name": "filters-technology",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "config",
+    "technologies",
+    "filters",
+    "render"
+  ],
+  "scripts": [ "filters-technology.js" ],
+  "templates": [ "template.jade" ],
+  "main": "filters-technology.js"
+}
