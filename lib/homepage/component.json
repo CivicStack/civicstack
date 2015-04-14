@@ -8,8 +8,10 @@
   "locals": [
     "applications",
     "application-card",
+    "categories",
     "countries",
     "filters",
+    "filters-category",
     "filters-country",
     "filters-technology",
     "filters-tags",

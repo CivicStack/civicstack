@@ -1,0 +1,16 @@
+{
+  "name": "filters-category",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "config",
+    "categories",
+    "filters",
+    "language",
+    "render"
+  ],
+  "scripts": [ "filters-category.js" ],
+  "templates": [ "template.jade" ],
+  "main": "filters-category.js"
+}
