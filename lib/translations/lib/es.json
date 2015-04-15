@@ -35,7 +35,8 @@
   "confirmation.title": "Eliminar",
   "confirmation.ok": "Aceptar",
   "confirmation.cancel": "Cancelar",
-  "admin-licenses-form.confirmation.body": "¿Estás seguro de eliminar la licencia {name}?",
+  "admin-licenses-form.confirmation.body": "¿Estás seguro de eliminar la licencia \"{name}\"?",
+  "admin-apps-form.confirmation.body": "¿Estás seguro de eliminar la app \"{name}\"?",
 
   "about.what-is-it.title": "¿Qué es STACK?",
   "about.what-is-it.text": "STACK es el lugar donde juntamos y compartimos herramientas cívicas de distintos países y organizaciones para que puedas adaptarlas y utilizarlas en el lugar donde vivís.",
