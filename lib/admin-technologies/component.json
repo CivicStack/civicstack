@@ -1,0 +1,20 @@
+{
+  "name": "admin-technologies",
+  "description": "Admin technologies view",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
+  },
+  "locals": [
+    "render",
+    "technologies"
+  ],
+  "templates": [
+    "template.jade"
+  ],
+  "scripts": [
+    "admin-technologies.js",
+    "view.js"
+  ],
+  "main": "admin-technologies.js"
+}

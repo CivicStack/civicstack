@@ -16,6 +16,8 @@
     "admin-countries",
     "admin-tags",
     "admin-tags-form",
+    "admin-technologies-form",
+    "admin-technologies",
     "render",
     "tags",
     "user"
