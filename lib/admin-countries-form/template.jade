@@ -1,0 +1,18 @@
+.panels
+form.panel.panel-default.form-horizontal(on-submit='save')
+  .panel-heading: h4='[[ country.name[lang] ]]'
+  .panel-body
+    .form-group
+      label.col-sm-12.text-left=t('Name')
+    .form-group
+      label.col-sm-2.control-label(for='name[en]')=t('english')
+      .col-sm-10
+        input.form-control(type='text' id='name[en]' placeholder='Name' value='{{ country.name.en }}')
+    .form-group
+      label.col-sm-2.control-label(for='name[es]')=t('spanish')
+      .col-sm-10
+        input.form-control(type='text' id='name[es]' placeholder='Nombre' value='{{ country.name.es }}')
+  .panel-footer
+    .col-sm-offset-2
+      button.btn.btn-success(type='submit')=t('Save')
+      a.btn.btn-danger(type='submit' href='/admin/categories')=t('Cancel')

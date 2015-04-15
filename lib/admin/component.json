@@ -12,6 +12,8 @@
     "admin-apps-form",
     "admin-categories-form",
     "admin-categories",
+    "admin-countries-form",
+    "admin-countries",
     "admin-tags",
     "admin-tags-form",
     "render",

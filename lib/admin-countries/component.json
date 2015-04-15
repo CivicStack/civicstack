@@ -1,0 +1,21 @@
+{
+  "name": "admin-countries",
+  "description": "Admin countries view",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
+  },
+  "locals": [
+    "countries",
+    "language",
+    "render"
+  ],
+  "templates": [
+    "template.jade"
+  ],
+  "scripts": [
+    "admin-countries.js",
+    "view.js"
+  ],
+  "main": "admin-countries.js"
+}
