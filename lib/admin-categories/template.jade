@@ -2,7 +2,7 @@
   .categories-admin
     .row.well.well-lg
       .col-xs-12.col-md-2
-        .btn.btn-success.btn-block.new
+        a.btn.btn-success.btn-block.new(href='/admin/categories/create')
           span.glyphicon.glyphicon-plus
           = ' ' + t('admin.list.new')
       .col-xs-12.col-md-7.col-md-offset-3
@@ -13,6 +13,10 @@
     .row
       .list.list-group
         | {{#each categories }}
-        a.list-group-item(href="/admin/categories/{{id}}")
-          span.category-title='{{name[lang]}}'
+        a.list-group-item
+          span.name='{{ name[lang] }}'
+          a.btn-action.pull-right(href='#' on-click='delete:{{id}}')
+            img(src='/lib/admin/images/cancel.svg')
+          a.btn-action.pull-right(href='/admin/categories/{{id}}')
+            img(src='/lib/admin/images/edit.svg')
         | {{/each}}
