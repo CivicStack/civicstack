@@ -20,6 +20,7 @@
   "admin-sidebar.applications.title": "Applications",
   "admin-sidebar.categories.title": "Categories",
   "admin-sidebar.tags.title": "Tags",
+  "admin-sidebar.countries.title": "Countries",
   "admin.list.new": "New",
   "admin.list.search.placeholder": "Search",
   "admin.tags.save.success": "Tag was saved successfully",
