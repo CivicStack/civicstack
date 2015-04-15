@@ -1,0 +1,12 @@
+.panels
+form.panel.panel-default.form-horizontal(on-submit='save')
+  .panel-heading: h4='[[ license.name ]]'
+  .panel-body
+    .form-group
+      label.col-sm-2.control-label(for='name')=t('Name')
+      .col-sm-10
+        input.form-control(type='text' id='name' placeholder=t('Name') value='{{ license.name }}')
+  .panel-footer
+    .col-sm-offset-2
+      button.btn.btn-success(type='submit')=t('Save')
+      a.btn.btn-danger(type='submit' href='/admin/licenses')=t('Cancel')
