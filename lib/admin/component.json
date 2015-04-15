@@ -10,6 +10,8 @@
     "admin-sidebar",
     "admin-apps",
     "admin-apps-form",
+    "admin-categories-form",
+    "admin-categories",
     "admin-tags",
     "admin-tags-form",
     "render",

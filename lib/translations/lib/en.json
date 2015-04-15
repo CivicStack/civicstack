@@ -23,7 +23,8 @@
   "admin.list.new": "New",
   "admin.list.search.placeholder": "Search",
   "admin.tags.save.success": "Tag was saved successfully",
-  "admin.tags.save.success": "App was saved successfully",
+  "admin.app.save.success": "App was saved successfully",
+  "admin.categories.save.success": "Category was saved successfully",
 
   "about.what-is-it.title": "What is STACK?",
   "about.what-is-it.text": "STACK is the place to get together and share civic tools from different countries and organizations for you to be able to adapt and use them in the place where you live.",
