@@ -2,7 +2,8 @@
   "name": "tags",
   "description": "Collection of tags",
   "locals": [
-    "collection"
+    "collection",
+    "language"
   ],
   "scripts": [
     "tags.js"
