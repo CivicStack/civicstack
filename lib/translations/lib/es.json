@@ -37,6 +37,10 @@
   "confirmation.cancel": "Cancelar",
   "admin-licenses-form.confirmation.body": "¿Estás seguro de eliminar la licencia \"{name}\"?",
   "admin-apps-form.confirmation.body": "¿Estás seguro de eliminar la app \"{name}\"?",
+  "admin-categories-form.confirmation.body": "¿Estás seguro de eliminar la categoría \"{name}\"?",
+  "admin-tags-form.confirmation.body": "¿Estás seguro de eliminar la etiqueta \"{name}\"?",
+  "admin-countries-form.confirmation.body": "¿Estás seguro de eliminar el país \"{name}\"?",
+  "admin-technologies-form.confirmation.body": "¿Estás seguro de eliminar la tecnología \"{name}\"?",
 
   "about.what-is-it.title": "¿Qué es STACK?",
   "about.what-is-it.text": "STACK es el lugar donde juntamos y compartimos herramientas cívicas de distintos países y organizaciones para que puedas adaptarlas y utilizarlas en el lugar donde vivís.",

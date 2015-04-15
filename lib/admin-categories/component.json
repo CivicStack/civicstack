@@ -2,13 +2,17 @@
   "name": "admin-categories",
   "description": "Admin categories view",
   "dependencies": {
+    "component/t": "1.0.0",
     "ractivejs/ractive": "v0.6.1",
+    "visionmedia/debug": "2.1.3",
     "visionmedia/page.js": "1.6.1"
   },
   "locals": [
     "categories",
+    "confirmation",
     "language",
-    "render"
+    "render",
+    "request"
   ],
   "templates": [
     "template.jade"
