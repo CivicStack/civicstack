@@ -32,6 +32,11 @@
   "admin.technologies.save.success": "Technology was saved successfully",
   "admin.licenses.save.success": "License was saved successfully",
 
+  "confirmation.title": "Delete",
+  "confirmation.ok": "Ok",
+  "confirmation.cancel": "Cancel",
+  "admin-licenses-form.confirmation.body": "Are you sure to delete the {name} license?",
+
   "about.what-is-it.title": "What is STACK?",
   "about.what-is-it.text": "STACK is the place to get together and share civic tools from different countries and organizations for you to be able to adapt and use them in the place where you live.",
   "about.goal.title": "What is our goal?",
