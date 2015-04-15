@@ -15,7 +15,7 @@
         | {{#each categories }}
         a.list-group-item
           span.name='{{ name[lang] }}'
-          a.btn-action.pull-right(href='#' on-click='delete:{{id}}')
+          a.btn-action.pull-right(href='#' on-click='delete:{{id}}, {{name[lang]}}')
             img(src='/lib/admin/images/cancel.svg')
           a.btn-action.pull-right(href='/admin/categories/{{id}}')
             img(src='/lib/admin/images/edit.svg')
