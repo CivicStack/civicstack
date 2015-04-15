@@ -22,6 +22,7 @@
   "admin-sidebar.tags.title": "Tags",
   "admin-sidebar.countries.title": "Countries",
   "admin-sidebar.technologies.title": "Technologies",
+  "admin-sidebar.licenses.title": "Licenses",
   "admin.list.new": "New",
   "admin.list.search.placeholder": "Search",
   "admin.tags.save.success": "Tag was saved successfully",
@@ -29,6 +30,7 @@
   "admin.categories.save.success": "Category was saved successfully",
   "admin.countries.save.success": "Country was saved successfully",
   "admin.technologies.save.success": "Technology was saved successfully",
+  "admin.licenses.save.success": "License was saved successfully",
 
   "about.what-is-it.title": "What is STACK?",
   "about.what-is-it.text": "STACK is the place to get together and share civic tools from different countries and organizations for you to be able to adapt and use them in the place where you live.",

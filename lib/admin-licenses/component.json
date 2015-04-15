@@ -1,0 +1,20 @@
+{
+  "name": "admin-licenses",
+  "description": "Admin licenses view",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
+  },
+  "locals": [
+    "render",
+    "licenses"
+  ],
+  "templates": [
+    "template.jade"
+  ],
+  "scripts": [
+    "admin-licenses.js",
+    "view.js"
+  ],
+  "main": "admin-licenses.js"
+}
