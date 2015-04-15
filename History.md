@@ -1,4 +1,11 @@
 
+1.0.0rc2 / 2015-04-15
+=====================
+
+  * Add order alphabetically categories, countries, licenses, tags and technologies
+  * Fix deleting empty license from req.body
+  * Fix setting license id to app
+
 1.0.0rc / 2015-04-15
 ====================
 
