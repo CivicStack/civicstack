@@ -8,25 +8,39 @@ article.row.app-detail
         small {{ country.name[lang] }}
       h2 Organization name
         small {{ organization }}
+      | {{#if contact}}
       h3 Contact
         small {{ contact }}
+      | {{/if}}
 
       footer.text-center
-        .twitter: a(href='{{ twitterUrl }}' target='_blank') {{ twitterUsername }}
+        | {{#if twitter}}
+        .twitter: a(href='https://twitter.com/{{ twitter }}' target='_blank') @{{ twitter }}
+        | {{/if}}
+        | {{#if license}}
         .license Lic: {{ license.name }}
+        | {{/if}}
 
   aside.col-xs-12.col-lg-9.more-info-container
     .more-info
       h4 Website:
         small: a.link(href='{{ website }}', target='_blank') {{ website }}
+      | {{#if description[lang]}}
       h4 Description:
         small {{ description[lang] }}
+      | {{/if}}
+      | {{#if technologynames}}
       h4 Technlogy:
         small {{ technologynames }}
+      | {{/if}}
+      | {{#if github}}
       h4 Github code:
         small: a.link(href='{{ github }}', target='_blank') {{ github }}
+      | {{/if}}
+      | {{#if tagnames}}
       h4 Tags:
         small {{ tagnames }}
+      | {{/if}}
   
       a.btn.btn-default.back(href='/')
         span.glyphicon.glyphicon-arrow-left
