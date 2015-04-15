@@ -1,0 +1,21 @@
+{
+  "name": "admin-categories",
+  "description": "Admin categories view",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
+  },
+  "locals": [
+    "categories",
+    "language",
+    "render"
+  ],
+  "templates": [
+    "template.jade"
+  ],
+  "scripts": [
+    "admin-categories.js",
+    "view.js"
+  ],
+  "main": "admin-categories.js"
+}
