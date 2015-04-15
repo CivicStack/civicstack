@@ -35,7 +35,8 @@
   "confirmation.title": "Delete",
   "confirmation.ok": "Ok",
   "confirmation.cancel": "Cancel",
-  "admin-licenses-form.confirmation.body": "Are you sure to delete the {name} license?",
+  "admin-licenses-form.confirmation.body": "Are you sure to delete the \"{name}\" license?",
+  "admin-apps-form.confirmation.body": "Are you sure to delete the \"{name}\" app?",
 
   "about.what-is-it.title": "What is STACK?",
   "about.what-is-it.text": "STACK is the place to get together and share civic tools from different countries and organizations for you to be able to adapt and use them in the place where you live.",
