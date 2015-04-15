@@ -15,7 +15,7 @@
         | {{#each licenses}}
         a.list-group-item
           span.name='{{ name }}'
-          a.btn-action.pull-right(href='#' on-click='delete:{{id}}')
+          a.btn-action.pull-right(href='#' on-click='delete:{{id}},{{name}}')
             img(src='/lib/admin/images/cancel.svg')
           a.btn-action.pull-right(href='/admin/licenses/{{id}}')
             img(src='/lib/admin/images/edit.svg')
