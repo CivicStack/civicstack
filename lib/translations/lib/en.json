@@ -22,6 +22,7 @@
   "admin-sidebar.tags.title": "Tags",
   "admin-sidebar.countries.title": "Countries",
   "admin-sidebar.technologies.title": "Technologies",
+  "admin-sidebar.licenses.title": "Licenses",
   "admin.list.new": "New",
   "admin.list.search.placeholder": "Search",
   "admin.tags.save.success": "Tag was saved successfully",
