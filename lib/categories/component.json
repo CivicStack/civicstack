@@ -2,7 +2,8 @@
   "name": "categories",
   "description": "Collection of categories",
   "locals": [
-    "collection"
+    "collection",
+    "language"
   ],
   "scripts": [
     "categories.js"

@@ -2,7 +2,8 @@
   "name": "countries",
   "description": "Collection of countries",
   "locals": [
-    "collection"
+    "collection",
+    "language"
   ],
   "scripts": [
     "countries.js"
