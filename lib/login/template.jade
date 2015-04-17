@@ -1,0 +1,7 @@
+#login-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel', aria-hidden='true')
+  .modal-dialog.modal-sm
+    .modal-content
+      .modal-header=t('header.login')
+      .modal-body.text-center
+        a.login.twitter(href='/auth/twitter'): i.fa.fa-twitter
+        a.login.github(href='/auth/github'): i.fa.fa-github

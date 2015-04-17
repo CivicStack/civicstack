@@ -1,0 +1,16 @@
+{
+  "name": "login",
+  "description": "Login page",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
+  },
+  "locals": [
+    "render",
+    "user"
+  ],
+  "scripts": [ "login.js", "view.js" ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade" ],
+  "main": "login.js"
+}
