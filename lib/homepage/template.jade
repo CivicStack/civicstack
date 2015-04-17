@@ -19,5 +19,6 @@ section.container.homepage
     | {{#each applications}}
     application(application='{{ this }}')
     | {{ else }}
-    .jumbotron.text-center=t('No apps to show')
+    .jumbotron.text-center
+      p=t('No apps to show yet')
     | {{/each applications}}
