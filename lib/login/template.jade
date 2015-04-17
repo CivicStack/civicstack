@@ -2,6 +2,8 @@
   .modal-dialog.modal-sm
     .modal-content
       .modal-header=t('header.login')
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') &times;
       .modal-body.text-center
         a.login.twitter(href='/auth/twitter'): i.fa.fa-twitter
         a.login.github(href='/auth/github'): i.fa.fa-github
