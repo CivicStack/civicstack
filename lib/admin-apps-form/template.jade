@@ -29,10 +29,10 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       label.col-sm-2.control-label=t('app.description')
       .col-sm-offset-2.col-sm-10
         label(for='description[en]')=t('english')
-        textarea.form-control(type='text' id='description[en]' placeholder=t('app.description.en.placeholder') value='{{ app.description.en }}')
+        textarea.form-control(type='text' id='description[en]' placeholder=t('app.description.en.placeholder') value='{{ app.description.en }}' class='{{ errors.description.en }}')
       .col-sm-offset-2.col-sm-10
         label(for='description[es]')=t('spanish')
-        textarea.form-control(type='text' id='description[es]' placeholder=t('app.description.es.placeholder') value='{{ app.description.es }}')
+        textarea.form-control(type='text' id='description[es]' placeholder=t('app.description.es.placeholder') value='{{ app.description.es }}'  class='{{ errors.description.es }}')
     .form-group
       label.col-sm-2.control-label(for='organization')=t('app.organization-name')
       .col-sm-10

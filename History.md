@@ -1,4 +1,19 @@
 
+1.0.0rc3 / 2015-04-16
+=====================
+
+  * Add reset filters when click on logo
+  * Add closing button. Redirect to / after close
+  * Add 'Asuntos del Sur' link
+  * Add error when description['en'] or description['es'] is longer than 300 characters
+  * Add redirect to /login when anonymous user tries to upload new app
+  * Add login in modal
+  * Update 'STACK' for 'Civic Stack'
+  * Update styles to match .about instead of body.about
+  * Update no redirect to / when modal closes
+  * Fix 'no apps' text
+
+
 1.0.0rc2 / 2015-04-15
 =====================
 

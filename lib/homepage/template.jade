@@ -9,15 +9,21 @@ section.container.homepage
       a.btn.btn-link.btn-filter(href='#' on-click='filter:technology')=t('app.technology')
       a.btn.btn-link.btn-filter(href='#' on-click='filter:tags')=t('app.tags')
       a.btn.btn-link.btn-filter(href='#' on-click='filter:category')=t('app.category.filter')
-    | {{#if user.id }}
     .col-xs-12.col-sm-3
+      | {{#if user.id }}
       a.btn.btn-default.btn-block(href='/apps/new')
         i.glyphicon.glyphicon-plus-sign
         |  #{t('Upload app')}
-    | {{/if}}
+      | {{ else }}
+      a.btn.btn-default.btn-block(href='/login')
+        i.glyphicon.glyphicon-plus-sign
+        |  #{t('Upload app')}
+      | {{/if}}
   .row
     | {{#each applications}}
     application(application='{{ this }}')
     | {{ else }}
-    .jumbotron.text-center=t('No apps to show')
+    .jumbotron.text-center
+      p=t('No apps to show yet')
+      a.btn.btn-default.btn-lg(href='/login')=t('Upload app')
     | {{/each applications}}
