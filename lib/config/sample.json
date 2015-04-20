@@ -5,7 +5,8 @@
   "client": [
     "env",
     "locale",
-    "organization name"
+    "organization name",
+    "google analytics tracking id"
   ],
   "organization name": "Civic Stack",
   "auth": {
@@ -25,5 +26,6 @@
   "admins": {
     "twitter": [],
     "github": []
-  }
+  },
+  "google analytics tracking id": ""
 }

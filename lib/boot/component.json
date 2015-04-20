@@ -3,7 +3,8 @@
   "description": "Application Booting component.",
   "dependencies": {
     "component/t": "1.0.0",
-    "visionmedia/page.js": "1.6.1"
+    "visionmedia/page.js": "1.6.1",
+    "code42day/ga": "1.1.0"
   },
   "local": [
     "about",
