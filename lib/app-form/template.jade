@@ -65,7 +65,7 @@ section.container
             .form-group
               textarea.description.form-control(placeholder=t('app.description.placeholder') value='{{ app.description[lang] }}' class='{{ errors.description }}')
             .form-group
-              input.form-control(placeholder=t('app.github-repository') value='{{ app.github }}')
+              input.form-control(placeholder=t('app.github-repository') value='{{ app.github }}' class='{{ errors.github }}')
             .form-group
               input.form-control(placeholder=t('app.contact.placeholder') value='{{ app.contact }}')
         .row
