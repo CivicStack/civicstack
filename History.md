@@ -1,4 +1,14 @@
 
+1.0.4 / 2015-10-15
+==================
+
+  * [setup] - Fix infinite redirection loop
+
+1.0.3 / 2015-10-15
+==================
+
+  * Fix requiring debug for logging
+
 1.0.2 / 2015-10-15
 ==================
 
