@@ -1,6 +1,6 @@
 {
   "name": "civic-stack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Stack of online civic webapps",
   "paths": [
     "lib"
