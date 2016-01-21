@@ -26,10 +26,17 @@
       | {{ /if }}
       li
         | {{#if lang == 'en' }}
-        a.lang(href='#' title=t('english') on-click='lang:en') EN
-        a.lang.text-mute(href='#' title=t('spanish') on-click='lang:es') ES
-        | {{/if}}
-        | {{#if lang == 'es' }}
         a.lang.text-mute(href='#' title=t('english') on-click='lang:en') EN
         a.lang(href='#' title=t('spanish') on-click='lang:es') ES
+        a.lang(href='#' title=t('french') on-click='lang:fr') FR
+        | {{/if}}
+        | {{#if lang == 'es' }}
+        a.lang(href='#' title=t('english') on-click='lang:en') EN
+        a.lang.text-mute(href='#' title=t('spanish') on-click='lang:es') ES
+        a.lang(href='#' title=t('french') on-click='lang:fr') FR
+        | {{/if}}
+        | {{#if lang == 'fr' }}
+        a.lang(href='#' title=t('english') on-click='lang:en') EN
+        a.lang(href='#' title=t('spanish') on-click='lang:es') ES
+        a.lang.text-mute(href='#' title=t('french') on-click='lang:fr') FR
         | {{/if}}
