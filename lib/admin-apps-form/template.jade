@@ -33,6 +33,9 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       .col-sm-offset-2.col-sm-10
         label(for='description[es]')=t('spanish')
         textarea.form-control(type='text' id='description[es]' placeholder=t('app.description.es.placeholder') value='{{ app.description.es }}'  class='{{ errors.description.es }}')
+      .col-sm-offset-2.col-sm-10
+        label(for='description[fr]')=t('french')
+        textarea.form-control(type='text' id='description[fr]' placeholder=t('app.description.fr.placeholder') value='{{ app.description.fr }}'  class='{{ errors.description.fr }}')
     .form-group
       label.col-sm-2.control-label(for='organization')=t('app.organization-name')
       .col-sm-10

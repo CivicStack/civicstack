@@ -3,6 +3,7 @@
 
   "english": "Anglais",
   "spanish": "Espagnol",
+  "french": "Français",
 
   "Name": "Nom",
   "Save": "Sauvegarder",
@@ -90,6 +91,7 @@
   "app.description.fr": "Description en français",
   "app.description.en.placeholder": "Description en anglais (max 300 caractères)",
   "app.description.es.placeholder": "Description en espagnol (max 300 caractères)",
+  "app.description.fr.placeholder": "Description en français (max 300 caractères)",
   "app.comments": "Commentaires",
   "app.uploaded-by": "Proposé par",
   "app.description.exceeded": "La description est limitée à 300 caractères",

@@ -4,7 +4,8 @@
   "scripts": [ "index.js" ],
   "json": [
     "lib/en.json",
-    "lib/es.json"
+    "lib/es.json",
+    "lib/fr.json"
     ],
   "main": "index.js"
 }
