@@ -1,6 +1,6 @@
 {
   "name": "civic-stack",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Stack of online civic webapps",
   "main": "index.js",
   "repository": {
