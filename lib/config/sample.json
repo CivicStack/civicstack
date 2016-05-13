@@ -1,4 +1,5 @@
 {
+  "host": "http://localhost:3000",
   "port": 3000,
   "mongoUrl": "mongodb://localhost/civicivicstack-dev",
   "locale": "en",
@@ -6,7 +7,8 @@
     "env",
     "locale",
     "organization name",
-    "google analytics tracking id"
+    "google analytics tracking id",
+    "host"
   ],
   "organization name": "Civic Stack",
   "auth": {

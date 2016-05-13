@@ -21,3 +21,14 @@ html
     script(src='/app.js')
     script.
       require('./lib/boot')
+
+    script.
+      var disqus_developer = #{ Number(config.env === 'development') };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//civicstack.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+
+    script#dsq-count-scr(src="//civicstack.disqus.com/count.js", async)
