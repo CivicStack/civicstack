@@ -21,6 +21,10 @@
       "clientID": "GithubClientId",
       "clientSecret": "GithubSecret",
       "callback": "http://127.0.0.1:3000/auth/github/callback"
+    },
+    "disqus": {
+      "clientID": "DisqusClientID",
+      "clientSecret": "DisqusSecret"
     }
   },
   "secret": "civicivicstack",
