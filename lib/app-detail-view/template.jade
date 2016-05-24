@@ -22,7 +22,7 @@ article.row.app-detail
         | {{/if}}
 
   aside.col-xs-12.col-lg-9.more-info-container
-    .more-info
+    .more-info.col-md-6
       h4 Website:
         small: a.link(href='{{ website }}', target='_blank') {{ website }}
       | {{#if description[lang]}}
@@ -41,10 +41,16 @@ article.row.app-detail
       h4 Tags:
         small {{ tagnames }}
       | {{/if}}
-  
+
       a.btn.btn-default.back(href='/')
         span.glyphicon.glyphicon-arrow-left
         |  Back
+
+    | {{#if video}}
+    .cover-video.col-md-6
+      .embed-container
+        iframe(src='{{ video }}', width='100%', height='100%' frameborder='0', allowfullscreen)
+    | {{/if}}
 
   | {{#if showDisqus}}
   section.comments.container
