@@ -77,6 +77,8 @@
   "app.organization-name": "Nombre de la organización",
   "app.description": "Descripción",
   "app.description.placeholder": "Descripción (máx. 300 caracteres)",
+  "app.video": "Vídeo",
+  "app.video.placeholder": "URL de YouTube del video de cubierta",
   "app.country": "País",
   "app.website": "Sitio web",
   "app.twitter": "Twitter",
