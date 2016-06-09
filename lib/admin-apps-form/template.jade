@@ -99,6 +99,27 @@ form.panel.panel-default.form-horizontal(on-submit='save')
             | {{ this.name }}
       | {{/each }}
     .form-group
+      label.col-sm-2.control-label=t('app.links')
+      | {{#each links }}
+      .col-sm-offset-2.col-sm-10
+        .row
+          .col-sm-8
+            span(class="{{# this.editing}}hide{{/}}") {{ this.value }}
+            input(type='url', value='{{ this.value }}', class="{{# !this.editing}}hide{{/}}")
+          .col-sm-2(class="{{# !this.editing}}hide{{/}}")
+            .btn.btn-success.btn-links.save('on-click'='saveEditedLink')
+              span.glyphicon.glyphicon-ok
+          .col-sm-1(class="{{# this.editing}}hide{{/}}")
+            .btn.btn-primary.btn-links.edit('on-click'='editLink')
+              span.glyphicon.glyphicon-pencil
+          .col-sm-1(class="{{# this.editing}}hide{{/}}")
+            .btn.btn-danger.btn-links.remove('on-click'='removeLink')
+              span.glyphicon.glyphicon-trash
+      | {{/each }}
+      .col-sm-offset-2.col-sm-10
+        .btn.btn-success.btn-links.add('on-click'='addLink', class="{{# this.adding}}hide{{/}}")
+          span.glyphicon.glyphicon-plus
+    .form-group
       label.col-sm-2.control-label(for='approved')=t('app.approved')
       .col-sm-10
         .checkbox
