@@ -98,10 +98,10 @@ form.panel.panel-default.form-horizontal(on-submit='save')
             input(type='checkbox' name='{{ app.technologyids }}' value='{{ this.id }}')
             | {{ this.name }}
       | {{/each }}
-    .form-group
+    .form-group.related-links
       label.col-sm-2.control-label=t('app.links')
       | {{#each links }}
-      .col-sm-offset-2.col-sm-10
+      .col-sm-offset-2.col-sm-10.related-link
         .row
           .col-sm-8
             .row.related-link-description
@@ -116,14 +116,14 @@ form.panel.panel-default.form-horizontal(on-submit='save')
             .btn.btn-success.btn-links.save('on-click'='saveEditedLink')
               span.glyphicon.glyphicon-ok
           .col-sm-1(class="{{# this.editing}}hide{{/}}")
-            .btn.btn-primary.btn-links.edit('on-click'='editLink')
+            .btn.btn-link.btn-links.edit('on-click'='editLink')
               span.glyphicon.glyphicon-pencil
           .col-sm-1(class="{{# this.editing}}hide{{/}}")
-            .btn.btn-danger.btn-links.remove('on-click'='removeLink')
+            .btn.btn-link.btn-links.remove('on-click'='removeLink')
               span.glyphicon.glyphicon-trash
       | {{/each }}
-      .col-sm-offset-2.col-sm-10
-        .btn.btn-success.btn-links.add('on-click'='addLink', class="{{# this.adding}}hide{{/}}")
+      .col-sm-offset-1.col-sm-11.related-links-commands
+        button.btn.btn-success.btn-links.add('on-click'='addLink', class="{{# this.adding}}hide{{/}}")
           span.glyphicon.glyphicon-plus
     .form-group
       label.col-sm-2.control-label(for='approved')=t('app.approved')
