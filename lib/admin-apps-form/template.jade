@@ -37,6 +37,10 @@ form.panel.panel-default.form-horizontal(on-submit='save')
         label(for='description[fr]')=t('french')
         textarea.form-control(type='text' id='description[fr]' placeholder=t('app.description.fr.placeholder') value='{{ app.description.fr }}'  class='{{ errors.description.fr }}')
     .form-group
+      label.col-sm-2.control-label(for='video')=t('app.video')
+      .col-sm-10
+        input.form-control(type='url' id='video' placeholder=t('app.video.placeholder') value='{{ app.video }}' class='{{ errors.video }}')
+    .form-group
       label.col-sm-2.control-label(for='organization')=t('app.organization-name')
       .col-sm-10
         input.form-control(type='text' id='organization' placeholder=t('app.organization-name') value='{{ app.organization }}' class='{{ errors.organization }}')
