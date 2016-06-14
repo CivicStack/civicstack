@@ -46,7 +46,9 @@ article.row.app-detail
         span.glyphicon.glyphicon-arrow-left
         |  Back
 
+  | {{#if showDisqus}}
   section.comments.container
     #disqus_thread
+  | {{/if}}
 
   | {{/application}}

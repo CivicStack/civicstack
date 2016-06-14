@@ -103,7 +103,7 @@ section.container
               i.glyphicon.glyphicon-ok-circle
   | {{/if}}
   | {{#if step == 3 }}
-  appdetail(application='{{ app }}')
+  appdetail(application='{{ app }}', disqus=false)
   .row
     .col-xs-12.col-sm-2.col-sm-offset-4
       button.btn.btn-danger.btn-block.continue(on-click='goto: 2')
