@@ -41,6 +41,22 @@ article.row.app-detail
       h4 Tags:
         small {{ tagnames }}
       | {{/if}}
+      h4 Links:
+      | {{#if linksLoading}}
+      small Loading...
+      | {{/if}}
+      ul
+        | {{#each links}}
+        li
+          .row
+            a(href='{{this.url}}', target='_blank') {{ this.description || this.url }}
+          .row
+            {{ this.og.title }}
+          .row
+            {{ this.og.description }}
+          .row
+            {{ this.og.image }}
+        | {{/each}}
 
       a.btn.btn-default.back(href='/')
         span.glyphicon.glyphicon-arrow-left
