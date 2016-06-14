@@ -5,7 +5,8 @@
   },
   "locals": [
     "language",
-    "render"
+    "render",
+    "config"
   ],
   "scripts": [ "view.js" ],
   "styles": [ "styles.styl" ],

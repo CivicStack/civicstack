@@ -45,4 +45,10 @@ article.row.app-detail
       a.btn.btn-default.back(href='/')
         span.glyphicon.glyphicon-arrow-left
         |  Back
+
+  | {{#if showDisqus}}
+  section.comments.container
+    #disqus_thread
+  | {{/if}}
+
   | {{/application}}
