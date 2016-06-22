@@ -9,7 +9,6 @@
   },
   "locals": [
     "app-detail-view",
-    "categories",
     "color-picker",
     "countries",
     "language",

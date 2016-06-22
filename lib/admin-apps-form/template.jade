@@ -81,14 +81,6 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       .col-sm-10
         textarea.form-control(type='text' id='comments' placeholder=t('app.comments') value='{{ app.comments }}')
     .form-group
-      label.col-sm-2.control-label(for='category')=t('app.category')
-      .col-sm-10
-        select.form-control(value='{{ app.category }}' id='category' class='{{ errors.category }}')
-          option(value='')=t('app.category')
-          | {{#each categories}}
-          option(value='{{ this.id }}') {{ this.name[lang] }}
-          | {{/each}}
-    .form-group
       label.col-sm-2.control-label=t('app.tags')
       | {{#each tags }}
       .col-sm-offset-2.col-sm-10

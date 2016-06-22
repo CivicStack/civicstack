@@ -19,7 +19,6 @@
   "header.logout": "Logout",
 
   "admin-sidebar.applications.title": "Applications",
-  "admin-sidebar.categories.title": "Categories",
   "admin-sidebar.tags.title": "Tags",
   "admin-sidebar.countries.title": "Countries",
   "admin-sidebar.technologies.title": "Technologies",
@@ -28,7 +27,6 @@
   "admin.list.search.placeholder": "Search",
   "admin.tags.save.success": "Tag was saved successfully",
   "admin.app.save.success": "App was saved successfully",
-  "admin.categories.save.success": "Category was saved successfully",
   "admin.countries.save.success": "Country was saved successfully",
   "admin.technologies.save.success": "Technology was saved successfully",
   "admin.licenses.save.success": "License was saved successfully",
@@ -38,7 +36,6 @@
   "confirmation.cancel": "Cancel",
   "admin-licenses-form.confirmation.body": "Are you sure to delete the \"{name}\" license?",
   "admin-apps-form.confirmation.body": "Are you sure to delete the \"{name}\" app?",
-  "admin-categories-form.confirmation.body": "Are you sure to delete the \"{name}\" category?",
   "admin-tags-form.confirmation.body": "Are you sure to delete the \"{name}\" tag?",
   "admin-countries-form.confirmation.body": "Are you sure to delete the \"{name}\" country?",
   "admin-technologies-form.confirmation.body": "Are you sure to delete the \"{name}\" technology?",
@@ -85,7 +82,6 @@
   "app.license": "License",
   "app.contact": "Contact",
   "app.contact.placeholder": "Contact email",
-  "app.category": "What is it for?",
   "app.technology": "Technology",
   "app.github-repository": "Github repository",
   "app.tags": "Tags",
@@ -97,7 +93,6 @@
   "app.comments": "Comments",
   "app.uploaded-by": "Uploaded by",
   "app.description.exceeded": "Description is limited up to 300 characters",
-  "app.category.filter": "Category",
 
   "filters.filter-by": "Filter by: ",
   "filters.search": "Go",
@@ -105,7 +100,6 @@
   "filters.country": "Filter by country",
   "filters.technology": "Filter by technology",
   "filters.tags": "Filter by tags",
-  "filters.category": "Filter by category",
 
   "footer.powered-by": "Powered by"
 }
