@@ -55,12 +55,6 @@ section.container
                 | {{#each licenses}}
                 option(value='{{ this.id }}') {{ this.name }}
                 | {{/each}}
-            .form-group
-              select.form-control(value='{{ app.category }}' class='{{ errors.category }}')
-                option(value='')=t('app.category')
-                | {{#each categories}}
-                option(value='{{ this.id }}') {{ this.name[lang] }}
-                | {{/each}}
           .col-xs-12.col-sm-3
             .form-group
               textarea.description.form-control(placeholder=t('app.description.placeholder') value='{{ app.description[lang] }}' class='{{ errors.description }}')

@@ -19,7 +19,6 @@
   "header.logout": "Salir",
 
   "admin-sidebar.applications.title": "Aplicaciones",
-  "admin-sidebar.categories.title": "Categorías",
   "admin-sidebar.tags.title": "Etiquetas",
   "admin-sidebar.countries.title": "Países",
   "admin-sidebar.technologies.title": "Tecnologías",
@@ -28,7 +27,6 @@
   "admin.list.search.placeholder": "Buscar",
   "admin.tags.save.success": "La etiqueta se ha guardado con éxito",
   "admin.apps.save.success": "La aplicación se ha guardado con éxito",
-  "admin.categories.save.success": "La categoría se ha guardado con éxito",
   "admin.countries.save.success": "El país se ha guardado con éxito",
   "admin.technologies.save.success": "La tecnología se ha guardado con éxito",
   "admin.licenses.save.success": "La licencia se ha guardado con éxito",
@@ -38,7 +36,6 @@
   "confirmation.cancel": "Cancelar",
   "admin-licenses-form.confirmation.body": "¿Estás seguro de eliminar la licencia \"{name}\"?",
   "admin-apps-form.confirmation.body": "¿Estás seguro de eliminar la app \"{name}\"?",
-  "admin-categories-form.confirmation.body": "¿Estás seguro de eliminar la categoría \"{name}\"?",
   "admin-tags-form.confirmation.body": "¿Estás seguro de eliminar la etiqueta \"{name}\"?",
   "admin-countries-form.confirmation.body": "¿Estás seguro de eliminar el país \"{name}\"?",
   "admin-technologies-form.confirmation.body": "¿Estás seguro de eliminar la tecnología \"{name}\"?",
@@ -85,7 +82,6 @@
   "app.license": "Licencia",
   "app.contact": "Contacto",
   "app.contact.placeholder": "Email de contacto",
-  "app.category": "¿Para qué se utiliza?",
   "app.technology": "Tecnología",
   "app.github-repository": "Repositorio de Github",
   "app.tags": "Etiquetas",
@@ -96,7 +92,6 @@
   "app.comments": "Comentarios",
   "app.uploaded-by": "Subido por",
   "app.description.exceeded": "La descripción está limitada a 300 caracteres como máximo",
-  "app.category.filter": "Categoría",
 
   "filters.filter-by": "Filtrar por: ",
   "filters.search": "Buscar",
@@ -104,7 +99,6 @@
   "filters.country": "Filtrar por país",
   "filters.technology": "Filtrar por tecnología",
   "filters.tags": "Filtrar por etiquetas",
-  "filters.category": "Filtrar por categoría",
 
   "footer.powered-by": "Realizado por"
 }

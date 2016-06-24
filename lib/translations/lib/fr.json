@@ -19,7 +19,6 @@
   "header.logout": "Déconnexion",
 
   "admin-sidebar.applications.title": "Applications",
-  "admin-sidebar.categories.title": "Catégories",
   "admin-sidebar.tags.title": "Tags",
   "admin-sidebar.countries.title": "Pays",
   "admin-sidebar.technologies.title": "Technologies",
@@ -28,7 +27,6 @@
   "admin.list.search.placeholder": "Rechercher",
   "admin.tags.save.success": "Le tag a été sauvegardée avec succès",
   "admin.app.save.success": "L'application a été sauvegardée avec succès",
-  "admin.categories.save.success": "La catégorie été sauvegardée avec succès",
   "admin.countries.save.success": "Le pays été sauvegardé avec succès",
   "admin.technologies.save.success": "La technologie été sauvegardée avec succès",
   "admin.licenses.save.success": "La License été sauvegardée avec succès",
@@ -38,7 +36,6 @@
   "confirmation.cancel": "Annuler",
   "admin-licenses-form.confirmation.body": "Êtes vous sûr de vouloir supprimer la license \"{nom}\"?",
   "admin-apps-form.confirmation.body": "Êtes vous sûr de vouloir supprimer l'application \"{nom}\"?",
-  "admin-categories-form.confirmation.body": "Êtes vous sûr de vouloir supprimer la catégorie \"{nom}\"?",
   "admin-tags-form.confirmation.body": "Êtes vous sûr de vouloir supprimer le tag \"{nom}\"?",
   "admin-countries-form.confirmation.body": "Êtes vous sûr de vouloir supprimer le pays \"{nom}\"?",
   "admin-technologies-form.confirmation.body": "Êtes vous sûr de vouloir supprimer la technologie  \"{nom}\"?",
@@ -85,7 +82,6 @@
   "app.license": "License",
   "app.contact": "Contact",
   "app.contact.placeholder": "Email de contact",
-  "app.category": "A quoi ca sert?",
   "app.technology": "Technologie",
   "app.github-repository": "Repository Github",
   "app.tags": "Tags",
@@ -97,7 +93,6 @@
   "app.comments": "Commentaires",
   "app.uploaded-by": "Proposé par",
   "app.description.exceeded": "La description est limitée à 300 caractères",
-  "app.category.filter": "Catégorie",
 
   "filters.filter-by": "Filtrer par: ",
   "filters.search": "Aller",
@@ -105,7 +100,6 @@
   "filters.country": "Filtrer par pays",
   "filters.technology": "Filtrer par technologie",
   "filters.tags": "Filtrer par tag",
-  "filters.category": "Filter par catégorie",
 
   "footer.powered-by": "Réalisé par"
 }

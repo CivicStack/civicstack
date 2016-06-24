@@ -9,7 +9,6 @@
   },
   "locals": [
     "applications",
-    "categories",
     "countries",
     "language",
     "licenses",
