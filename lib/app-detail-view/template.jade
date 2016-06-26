@@ -41,21 +41,20 @@ article.row.app-detail
       h4 Tags:
         small {{ tagnames }}
       | {{/if}}
+      | {{#if links}}
       h4 Links:
-      | {{#if linksLoading}}
-      small Loading...
       | {{/if}}
-      ul
+      ul.list-group
         | {{#each links}}
-        li
-          .row
-            a(href='{{this.url}}', target='_blank') {{ this.description || this.url }}
-          .row
-            {{ this.og.title }}
-          .row
-            {{ this.og.description }}
-          .row
-            {{ this.og.image }}
+        li.list-group-item
+          .media
+            .media-left
+              img.media-object(width='64px' height='64px' src='{{ this.og.image }}')
+            .media-body
+              a(href='{{this.url}}', target='_blank') {{ this.description || this.url }}
+              h4.media-heading {{ this.og.title }}
+              {{ this.og.description }}
+            .row.related-link.description
         | {{/each}}
 
       a.btn.btn-default.back(href='/')
