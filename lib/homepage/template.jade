@@ -18,6 +18,16 @@ section.container.homepage
         i.glyphicon.glyphicon-plus-sign
         |  #{t('Upload app')}
       | {{/if}}
+  .row.filters
+    | {{#each selectedCountries}}
+    span.badge.filter-country {{ this.name[lang] }}
+    | {{/each selectedCountries}}
+    | {{#each selectedTechnologies}}
+    span.badge.filter-technology {{ this.name }}
+    | {{/each selectedTechnologies}}
+    | {{#each selectedTags}}
+    span.badge.filter-tag {{ this.name[lang] }}
+    | {{/each selectedTags}}
   .row
     | {{#each applications}}
     application(application='{{ this }}')
