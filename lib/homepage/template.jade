@@ -21,12 +21,18 @@ section.container.homepage
   .row.filters
     | {{#each selectedCountries}}
     span.badge.filter-country {{ this.name[lang] }}
+      span.filter-remove
+        a(on-click="removeFilter:{{'country'}},{{this.id}}") ×
     | {{/each selectedCountries}}
     | {{#each selectedTechnologies}}
     span.badge.filter-technology {{ this.name }}
+      span.filter-remove
+        a(on-click="removeFilter:{{'technology'}},{{this.id}}") ×
     | {{/each selectedTechnologies}}
     | {{#each selectedTags}}
     span.badge.filter-tag {{ this.name[lang] }}
+      span.filter-remove
+        a(on-click="removeFilter:{{'tag'}},{{this.id}}") ×
     | {{/each selectedTags}}
   .row
     | {{#each applications}}
