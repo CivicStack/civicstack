@@ -1,13 +1,29 @@
 .homepage
   .row
     margin-bottom 22px
-  
+
+    &.filters
+      text-align center
+
+      .badge
+        margin 0 5px
+
+        .filter-remove
+          margin-left 10px
+
+          a
+            color white
+
+            &:hover
+              text-decoration none
+              cursor pointer
+
   .filters
     input.search
       border 1px solid #b3b3b3
       border-bottom 3px solid #b3b3b3
       outline 0
-      padding 20px 20px 20px 30px 
+      padding 20px 20px 20px 30px
     .search-icon
       color #b3b3b3
       position absolute
