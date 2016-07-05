@@ -75,7 +75,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
     .form-group
       label.col-sm-2.control-label(for='contact')=t('app.contact')
       .col-sm-10
-        input.form-control(type='text' id='contact' placeholder=t('app.contact') value='{{ app.contact }}')
+        input.form-control(type='text' id='contact' placeholder=t('app.contact') value='{{ app.contact }}', class='{{ errors.contact }}')
     .form-group
       label.col-sm-2.control-label(for='comments')=t('app.comments')
       .col-sm-10
