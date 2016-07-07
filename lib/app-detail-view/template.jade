@@ -47,14 +47,15 @@ article.row.app-detail
       ul.list-group
         | {{#each links}}
         li.list-group-item
-          .media
-            .media-left
-              img.media-object(width='64px' height='64px' src='{{ this.og.image }}')
-            .media-body
-              a(href='{{this.url}}', target='_blank') {{ this.description || this.url }}
-              h4.media-heading {{ this.og.title }}
-              {{ this.og.description }}
-            .row.related-link.description
+          a(href='{{this.url}}', target='_blank')
+            .media
+              .media-left
+                img.media-object(width='64px' height='64px' src='{{ this.og.image }}')
+              .media-body
+                a(href='{{this.url}}', target='_blank') {{ this.description || this.url }}
+                h4.media-heading {{ this.og.title }}
+                {{ this.og.description }}
+              .row.related-link.description
         | {{/each}}
 
       a.btn.btn-default.back(href='/')
