@@ -100,31 +100,7 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       | {{/each }}
     .form-group.related-links
       label.col-sm-2.control-label=t('app.links')
-      | {{#each links }}
-      .col-sm-offset-2.col-sm-10.related-link
-        .row
-          .col-sm-8
-            .row.related-link-description
-              span(class="{{# this.editing}}hide{{/}}")
-                strong {{ this.description }}
-              input(type='text', value='{{ this.description }}', class="{{# !this.editing}}hide{{/}}",
-                placeholder=t('app.links.description.placeholder'))
-            .row.related-link-url
-              span(class="{{# this.editing}}hide{{/}}") {{ this.url }}
-              input(type='url', value='{{ this.url }}', class="{{# !this.editing}}hide{{/}}")
-          .col-sm-2(class="{{# !this.editing}}hide{{/}}")
-            .btn.btn-success.btn-links.save('on-click'='saveEditedLink')
-              span.glyphicon.glyphicon-ok
-          .col-sm-1(class="{{# this.editing}}hide{{/}}")
-            .btn.btn-link.btn-links.edit('on-click'='editLink')
-              span.glyphicon.glyphicon-pencil
-          .col-sm-1(class="{{# this.editing}}hide{{/}}")
-            .btn.btn-link.btn-links.remove('on-click'='removeLink')
-              span.glyphicon.glyphicon-trash
-      | {{/each }}
-      .col-sm-offset-1.col-sm-11.related-links-commands
-        button.btn.btn-success.btn-links.add('on-click'='addLink', class="{{# this.adding}}hide{{/}}")
-          span.glyphicon.glyphicon-plus
+      relatedlinks(links='{{links}}')
     .form-group
       label.col-sm-2.control-label(for='approved')=t('app.approved')
       .col-sm-10

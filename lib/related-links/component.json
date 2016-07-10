@@ -1,0 +1,13 @@
+{
+  "name": "related-links",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "render"
+  ],
+  "scripts": [ "related-links.js" ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade" ],
+  "main": "related-links.js"
+}

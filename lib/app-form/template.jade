@@ -87,6 +87,11 @@ section.container
                 ='{{ this.name }}'
             | {{/each }}
         .row
+        .col-xs-12.col-sm-6.col-sm-offset-3
+          .form-group
+            h4: strong=t('app.links')
+            relatedlinks(links='{{app.links}}')
+        .row
           .col-xs-12.col-sm-2.col-sm-offset-4
             button.btn.btn-danger.btn-block.continue(on-click='goto: 1')
               i.glyphicon.glyphicon-remove-circle
