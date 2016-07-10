@@ -6,7 +6,8 @@
   },
   "locals": [
     "language",
-    "render"
+    "render",
+    "request"
   ],
   "templates": [ "template.jade" ],
   "scripts": [ "view.js" ],
