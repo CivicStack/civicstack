@@ -20,6 +20,19 @@ article.row.app-detail
         | {{#if license}}
         .license Lic: {{ license.name }}
         | {{/if}}
+        | {{#application.id}}
+        .upvotes
+          {{#upvoted}}
+          a.btn-upvote.btn.btn-success.active(on-click='undoUpvote')
+            span.glyphicon.glyphicon-triangle-top
+            span {{application.upvotesCount}}
+          {{/upvoted}}
+          {{^upvoted}}
+          a.btn-upvote.btn.btn-primary(on-click='upvote')
+            span.glyphicon.glyphicon-triangle-top
+            span {{application.upvotesCount}}
+          {{/upvoted}}
+        | {{/application.id}}
 
   aside.col-xs-12.col-lg-9.more-info-container
     .more-info.col-md-6
