@@ -15,4 +15,16 @@
       .twitter.pull-left
         a(href='http://twitter.com/{{ twitter }}' target='_blank')='@{{ twitter }}'
       | {{/if}}
+      .upvotes.pull-right
+        {{#upvoted}}
+        a.btn-upvote.btn.btn-sm.btn-success.active(on-click='undoUpvote')
+          span.glyphicon.glyphicon-triangle-top
+          span {{application.upvotesCount}}
+        {{/upvoted}}
+        {{^upvoted}}
+        a.btn-upvote.btn.btn-sm.btn-primary(on-click='upvote')
+          span.glyphicon.glyphicon-triangle-top
+          span {{application.upvotesCount}}
+        {{/upvoted}}
+
   | {{/with application}}
