@@ -78,6 +78,29 @@ article.row.app-detail
             | {{/application.id}}
         | {{/each}}
 
+      .row.social-badges
+        | {{#website}}
+        .fb-like(data-href="{{website}}", data-layout="button_count",
+          data-action="like",
+          data-size="small",
+          data-show-faces="true",
+          data-share="false")
+        | {{/website}}
+
+        | {{#twitter}}
+        a.twitter-follow-button(href="https://twitter.com/{{twitter}}", data-show-count="true")
+          | Follow @{{twitter}}
+        | {{/twitter}}
+
+        | {{#github}}
+        a.github-button(href="{{github}}",
+          data-count-href="/{{githubShort}}/stargazers",
+          data-count-api="/repos/{{githubShort}}#stargazers_count",
+          data-count-aria-label="# stargazers on GitHub",
+          aria-label="Star {{githubShort}} on GitHub")
+          | Star
+        | {{/github}}
+
       a.btn.btn-default.back(href='/')
         span.glyphicon.glyphicon-arrow-left
         |  Back

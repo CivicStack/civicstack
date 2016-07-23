@@ -18,6 +18,16 @@ html
     link(rel='stylesheet', href='/app.css')
 
   body
+    #fb-root
+    script.
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1666258773620023";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
     #wrap
       header#site-header.navbar.navbar-fixed-top
       section.container.site-content
@@ -40,5 +50,8 @@ html
       })();
 
     script#dsq-count-scr(src="//civicstack.disqus.com/count.js", async)
+    script(async, defer, src="https://buttons.github.io/buttons.js")
+    script(async, src="//platform.twitter.com/widgets.js", charset="utf-8")
+
     - if (config.segmentKey)
       include includes/segment
