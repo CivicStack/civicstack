@@ -1,7 +1,7 @@
 section.container.homepage
   .row
     .col-xs-12.col-sm-4.filters
-      input.form-control.search(type='text' value='{{ filters.search }}')
+      input.form-control.search(type='text' value='{{ filters.search }}' on-keyup='search')
       span.search-icon.glyphicon.glyphicon-search
     .col-xs-12.col-sm-5
       span.btn-filter=t('filters.filter-by')
