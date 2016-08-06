@@ -34,6 +34,19 @@ section.container.homepage
       span.filter-remove
         a(on-click="removeFilter:{{'tag'}},{{this.id}}") ×
     | {{/each selectedTags}}
+  .row.text-center
+    span
+      a(on-click="sortBy:{{'upvotesCount'}},{{'desc'}}") More upvoted
+      &nbsp;
+    span
+      a(on-click="sortBy:{{'upvotesCount'}},{{'asc'}}") Less upvoted first
+      &nbsp;
+    span
+      a(on-click="sortBy:{{'_id'}},{{'desc'}}") Newest first
+      &nbsp;
+    span
+      a(on-click="sortBy:{{'_id'}},{{'asc'}}") Oldest first
+      &nbsp;
   .row
     | {{#each applications}}
     application(application='{{ this }}' user='{{ user }}')
