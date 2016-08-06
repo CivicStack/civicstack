@@ -48,6 +48,10 @@ section.container.homepage
       a(on-click="sortBy:{{'_id'}},{{'asc'}}") Oldest first
       &nbsp;
   .row
+    | {{#filterUpdating}}
+    .loading-overlay
+    | {{/filterUpdating}}
+
     | {{#each applications}}
     application(application='{{ this }}' user='{{ user }}')
     | {{ else }}
