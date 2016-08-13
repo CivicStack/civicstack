@@ -1,7 +1,8 @@
 {
   "name": "app-detail-view",
   "dependencies": {
-    "ractivejs/ractive": "v0.6.1"
+    "ractivejs/ractive": "v0.6.1",
+    "visionmedia/page.js": "1.6.1"
   },
   "locals": [
     "language",

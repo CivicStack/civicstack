@@ -36,7 +36,7 @@ section.container.homepage
     | {{/each selectedTags}}
   .row
     | {{#each applications}}
-    application(application='{{ this }}')
+    application(application='{{ this }}' user='{{ user }}')
     | {{ else }}
     .jumbotron.text-center
       p=t('No apps to show yet')
