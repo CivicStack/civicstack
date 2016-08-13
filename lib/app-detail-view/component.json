@@ -5,6 +5,7 @@
     "visionmedia/page.js": "1.6.1"
   },
   "locals": [
+    "applications",
     "language",
     "render",
     "config",
