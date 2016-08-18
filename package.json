@@ -22,7 +22,7 @@
     "url": "https://github.com/democracyos/civic-stack/issues"
   },
   "engines": {
-    "node": "0.10.28",
+    "node": "4.5.0",
     "npm": "2.7.6"
   },
   "dependencies": {
