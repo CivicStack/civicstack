@@ -1,7 +1,7 @@
 section.container.homepage
   .row
     .col-xs-12.col-sm-4.filters
-      input.form-control.search(type='text' value='{{ filters.search }}')
+      input.form-control.search(type='text' value='{{ filters.search }}' on-keyup='search')
       span.search-icon.glyphicon.glyphicon-search
     .col-xs-12.col-sm-5
       span.btn-filter=t('filters.filter-by')
@@ -34,7 +34,24 @@ section.container.homepage
       span.filter-remove
         a(on-click="removeFilter:{{'tag'}},{{this.id}}") ×
     | {{/each selectedTags}}
+  .row.text-center
+    span
+      a(on-click="sortBy:{{'upvotesCount'}},{{'desc'}}") More upvoted
+      &nbsp;
+    span
+      a(on-click="sortBy:{{'upvotesCount'}},{{'asc'}}") Less upvoted first
+      &nbsp;
+    span
+      a(on-click="sortBy:{{'_id'}},{{'desc'}}") Newest first
+      &nbsp;
+    span
+      a(on-click="sortBy:{{'_id'}},{{'asc'}}") Oldest first
+      &nbsp;
   .row
+    | {{#filterUpdating}}
+    .loading-overlay
+    | {{/filterUpdating}}
+
     | {{#each applications}}
     application(application='{{ this }}' user='{{ user }}')
     | {{ else }}
