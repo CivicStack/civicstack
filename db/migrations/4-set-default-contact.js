@@ -18,7 +18,9 @@ module.exports.up = function (done) {
       applications.findOneAndUpdate({
         _id: doc._id
       }, {
-        contact: 'contacto@democraciaenred.org'
+        $set: {
+          contact: 'contacto@democraciaenred.org'
+        }
       }, function (err, result) {
         if (err) {
           return done(err);
