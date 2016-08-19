@@ -1,62 +1,67 @@
-section.container.homepage
-  .row
-    .col-xs-12.col-sm-4.filters
-      input.form-control.search(type='text' value='{{ filters.search }}' on-keyup='search')
-      span.search-icon.glyphicon.glyphicon-search
-    .col-xs-12.col-sm-5
-      span.btn-filter=t('filters.filter-by')
-      a.btn.btn-link.btn-filter(href='#' on-click='filter:country')=t('app.country')
-      a.btn.btn-link.btn-filter(href='#' on-click='filter:technology')=t('app.technology')
-      a.btn.btn-link.btn-filter(href='#' on-click='filter:tags')=t('app.tags')
-    .col-xs-12.col-sm-3
-      | {{#if user.id }}
-      a.btn.btn-default.btn-block(href='/apps/new')
-        i.glyphicon.glyphicon-plus-sign
-        |  #{t('Upload app')}
-      | {{ else }}
-      a.btn.btn-default.btn-block(href='/login')
-        i.glyphicon.glyphicon-plus-sign
-        |  #{t('Upload app')}
-      | {{/if}}
-  .row.filters
-    | {{#each selectedCountries}}
-    span.badge.filter-country {{ this.name[lang] }}
-      span.filter-remove
-        a(on-click="removeFilter:{{'country'}},{{this.id}}") ×
-    | {{/each selectedCountries}}
-    | {{#each selectedTechnologies}}
-    span.badge.filter-technology {{ this.name }}
-      span.filter-remove
-        a(on-click="removeFilter:{{'technology'}},{{this.id}}") ×
-    | {{/each selectedTechnologies}}
-    | {{#each selectedTags}}
-    span.badge.filter-tag {{ this.name[lang] }}
-      span.filter-remove
-        a(on-click="removeFilter:{{'tag'}},{{this.id}}") ×
-    | {{/each selectedTags}}
-  .row.text-center
-    span
-      a(on-click="sortBy:{{'upvotesCount'}},{{'desc'}}") More upvoted
-      &nbsp;
-    span
-      a(on-click="sortBy:{{'upvotesCount'}},{{'asc'}}") Less upvoted first
-      &nbsp;
-    span
-      a(on-click="sortBy:{{'_id'}},{{'desc'}}") Newest first
-      &nbsp;
-    span
-      a(on-click="sortBy:{{'_id'}},{{'asc'}}") Oldest first
-      &nbsp;
-  .row
+section.homepage
+  .container
+    .row
+      .col-xs-12.col-sm-4.filters
+        input.form-control.search(type='text' value='{{ filters.search }}' on-keyup='search')
+        span.search-icon.glyphicon.glyphicon-search
+      .col-xs-12.col-sm-5
+        span.btn-filter=t('filters.filter-by')
+        a.btn.btn-link.btn-filter(href='#' on-click='filter:country')=t('app.country')
+        a.btn.btn-link.btn-filter(href='#' on-click='filter:technology')=t('app.technology')
+        a.btn.btn-link.btn-filter(href='#' on-click='filter:tags')=t('app.tags')
+      .col-xs-12.col-sm-3
+        | {{#if user.id }}
+        a.btn.btn-default.btn-block(href='/apps/new')
+          i.glyphicon.glyphicon-plus-sign
+          |  #{t('Upload app')}
+        | {{ else }}
+        a.btn.btn-default.btn-block(href='/login')
+          i.glyphicon.glyphicon-plus-sign
+          |  #{t('Upload app')}
+        | {{/if}}
+    .row.filters
+      | {{#each selectedCountries}}
+      span.badge.filter-country {{ this.name[lang] }}
+        span.filter-remove
+          a(on-click="removeFilter:{{'country'}},{{this.id}}") ×
+      | {{/each selectedCountries}}
+      | {{#each selectedTechnologies}}
+      span.badge.filter-technology {{ this.name }}
+        span.filter-remove
+          a(on-click="removeFilter:{{'technology'}},{{this.id}}") ×
+      | {{/each selectedTechnologies}}
+      | {{#each selectedTags}}
+      span.badge.filter-tag {{ this.name[lang] }}
+        span.filter-remove
+          a(on-click="removeFilter:{{'tag'}},{{this.id}}") ×
+      | {{/each selectedTags}}
+    .row.text-center
+      span
+        a(on-click="sortBy:{{'upvotesCount'}},{{'desc'}}") More upvoted
+        &nbsp;
+      span
+        a(on-click="sortBy:{{'upvotesCount'}},{{'asc'}}") Less upvoted first
+        &nbsp;
+      span
+        a(on-click="sortBy:{{'_id'}},{{'desc'}}") Newest first
+        &nbsp;
+      span
+        a(on-click="sortBy:{{'_id'}},{{'asc'}}") Oldest first
+        &nbsp;
+        
+  .applications-wrapper
     | {{#filterUpdating}}
     .loading-overlay
     | {{/filterUpdating}}
-
-    | {{#each applications}}
-    application(application='{{ this }}' user='{{ user }}')
+    
+    | {{#if applications}}
+    .applications-container
+      | {{#each applications}}
+      application(application='{{ this }}' user='{{ user }}')
+      | {{/each applications}}
     | {{ else }}
     .jumbotron.text-center
-      p=t('No apps to show yet')
+      p= t('No apps to show yet')
       | {{#if user.id }}
       a.btn.btn-default.btn-lg(href='/apps/new')
         i.glyphicon.glyphicon-plus-sign
@@ -66,4 +71,4 @@ section.container.homepage
         i.glyphicon.glyphicon-plus-sign
         |  #{t('Upload app')}
       | {{/if}}
-    | {{/each applications}}
+    | {{/if}}
