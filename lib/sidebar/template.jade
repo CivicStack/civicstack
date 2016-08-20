@@ -13,7 +13,10 @@
     | {{#if user.logged() }}
     p: a(href='/logout', on-click="close()")= t('header.logout')
     | {{ else }}
-    p: a(href='/login', on-click="close()")= t('header.login')
+    p: a(href='/login', on-click="close()")
+      .fa.fa-sign-in
+      | &nbsp;
+      = t('header.login')
     | {{/if}}
     .divider
     p: a(href='/', on-click="close()") Home
