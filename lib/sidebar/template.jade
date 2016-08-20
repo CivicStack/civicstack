@@ -1,0 +1,24 @@
+#sidebar
+  nav(on-click="stopPropagation()")
+    .close.fa.fa-times(on-click="close()")
+    | {{#if user.logged() }}
+    .user
+      img.avatar(src='{{ user.avatar }}' title='{{ user.fullName }}')
+      p {{ user.fullName }}
+    .divider
+    | {{/if}}
+    | {{#if (user.admin) }}
+    p: a(href='/admin', on-click="close()")= t('header.admin')
+    | {{/if}}
+    | {{#if user.logged() }}
+    p: a(href='/logout', on-click="close()")= t('header.logout')
+    | {{ else }}
+    p: a(href='/login', on-click="close()")= t('header.login')
+    | {{/if}}
+    .divider
+    p: a(href='/', on-click="close()") Home
+    p: a(href='/about', on-click="close()")= t('header.about')
+    .divider
+    p: a.lang(href='#', title=t('english'), on-click='lang:en')= t('english')
+    p: a.lang(href='#', title=t('spanish'), on-click='lang:es')= t('spanish')
+    p: a.lang(href='#', title=t('french'), on-click='lang:fr')= t('french')

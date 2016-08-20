@@ -1,8 +1,0 @@
-{
-  "name": "close-navbar",
-  "dependencies": {
-    "visionmedia/page.js": "1.6.1"
-  },
-  "scripts": [ "close.js" ],
-  "main": "close.js"
-}
