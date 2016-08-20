@@ -1,14 +1,6 @@
 doctype html
 html
   head
-    script.
-      var disqus_config = function () {
-        // The generated payload which authenticates users with Disqus
-        this.page.remote_auth_s3 = '#{ disqus.auth }';
-        this.page.api_key = '#{ disqus.pubKey }';
-        this.language = '#{ lang }';
-      };
-
     title= t('global.app-name')
     meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 
@@ -17,16 +9,6 @@ html
     link(rel='stylesheet', href='/app.css')
 
   body
-    #fb-root
-    script.
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1666258773620023';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    
     header#site-header.navbar.navbar-fixed-top
     section.site-content
     footer#site-footer
@@ -34,21 +16,9 @@ html
     script(src='https://code.jquery.com/jquery-2.1.3.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
     script(src='/app.js')
-    script.
-      require('./lib/boot')
-
-    script.
-      var disqus_developer = #{ Number(config.env === 'development') };
-      (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://civicstack.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-
-    script#dsq-count-scr(src='https://civicstack.disqus.com/count.js', async)
-    script(src='https://buttons.github.io/buttons.js', async, defer)
-    script(src='https://platform.twitter.com/widgets.js', async)
+    script require('./lib/boot')
 
     - if (config.segmentKey)
       include includes/segment
+    include includes/disqus
+    include includes/social
