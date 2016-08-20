@@ -102,5 +102,8 @@
   "filters.technology": "Filter by technology",
   "filters.tags": "Filter by tags",
 
+  "sort.by.popular": "Popular",
+  "sort.by.newest": "Newest",
+
   "footer.powered-by": "Powered by"
 }
