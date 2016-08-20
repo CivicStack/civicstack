@@ -1,8 +1,13 @@
 .container
-  a(href='/').navbar-brand
+  a.navbar-brand(href='/')
     img(src='/lib/header/images/logo.svg' title='Civic Stack')
     | Civic Stack
-  button.toggle-sidebar(type='button' on-click='openSidebar()')
-    span.icon-bar
-    span.icon-bar
-    span.icon-bar
+  .menu
+    a.add-app.btn.btn-default(href='{{#if user.logged()}}/apps/new{{else}}/login{{/if}}')
+      .fa.fa-plus-circle
+      | &nbsp;
+      = t('Upload app')
+    button.toggle-sidebar(type='button' on-click='openSidebar()')
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar

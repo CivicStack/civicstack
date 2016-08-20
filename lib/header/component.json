@@ -5,6 +5,7 @@
   },
   "locals": [
     "render",
+    "user",
     "sidebar"
   ],
   "images": [
