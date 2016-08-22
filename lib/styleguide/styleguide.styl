@@ -29,10 +29,27 @@ a
     color #333
 
 .btn
-  &.btn-default
-    background-color #e76056
-    border-color #cb694b
+  border-radius 1px
+  box-shadow none
+  border 0
+
+.btn-primary
+  color #fafafa
+  border-color #cb694b
+  background-color #e76056
+
+  &:hover,
+  &:active,
+  &:focus,
+  &.active
     color #fafafa
+    background-color darken(#e76056, 10%)
+
+  &:hover:active,
+  &:active:focus
+    color #fafafa
+    box-shadow inset 0 3px 5px rgba(0,0,0,.125)
+    background-color darken(#e76056, 15%)
 
 .app-logo
   background-repeat no-repeat
