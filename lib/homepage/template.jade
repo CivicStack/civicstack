@@ -1,21 +1,32 @@
 section.homepage
   .container
     .row.homepage-navigation
-      .col-xs-12.col-sm-4.filters
+      .col-xs-12.col-sm-4
         input.form-control.search(type='text' value='{{ filters.search }}' on-keyup='search')
         span.search-icon.glyphicon.glyphicon-search
       .col-xs-12.col-sm-4
-        span.btn-filter=t('filters.filter-by')
-        a.btn.btn-link.btn-filter(href='#' on-click='filter:country')=t('app.country')
-        a.btn.btn-link.btn-filter(href='#' on-click='filter:technology')=t('app.technology')
-        a.btn.btn-link.btn-filter(href='#' on-click='filter:tags')=t('app.tags')
-      .col-xs-12.col-sm-4.sort
-        span: a(on-click="sortBy:{{'upvotesCount'}},{{'desc'}}")
-          = t('sort.by.popular')
-        | &nbsp;
-        span: a(on-click="sortBy:{{'_id'}},{{'desc'}}")
-          = t('sort.by.newest')
-    .row.filters
+        //- span= t('filters.filter-by')
+        button.btn.btn-link(type='button' on-click='filter:country')
+          = t('app.country')
+          | &nbsp;
+          span.caret
+        button.btn.btn-link(type='button' on-click='filter:technology')
+          = t('app.technology')
+          | &nbsp;
+          span.caret
+        button.btn.btn-link(type='button' on-click='filter:tags')
+          = t('app.tags')
+          | &nbsp;
+          span.caret
+      .col-xs-12.col-sm-4.sort.text-right
+        {{#sorts}}
+        button(
+          type='button',
+          class='btn btn-link sort-btn {{isSortActive(key)}}',
+          on-click="sortBy:{{key}},{{order}}")
+          {{title}}
+        {{/sorts}}
+    .row.filters: .col-xs-12
       | {{#each selectedCountries}}
       span.badge.filter-country {{ this.name[lang] }}
         span.filter-remove
@@ -32,7 +43,7 @@ section.homepage
           a(on-click="removeFilter:{{'tag'}},{{this.id}}") ×
       | {{/each selectedTags}}
         
-  .applications-wrapper
+  .container.applications-wrapper
     | {{#filterUpdating}}
     .loading-overlay
     | {{/filterUpdating}}

@@ -1,10 +1,5 @@
 .homepage
-  .homepage-navigation
-    margin-bottom 30px
-
   .filters
-    text-align center
-
     .badge
       margin 0 5px
 
@@ -18,31 +13,6 @@
           text-decoration none
           cursor pointer
 
-  .filters
-    input.search
-      outline 0
-      padding 20px 20px 20px 30px
-      border 0
-      border-radius 1px
-      box-shadow 0px 1px 2px rgba(0,0,0, .1)
-      background-color #fff
-      transition all .3s linear
-
-      &:active,
-      &:focus
-        box-shadow 0px 1px 3px rgba(0,0,0, .25)
-
-    .search-icon
-      color #b3b3b3
-      position absolute
-      left 25px
-      top 13px
-
-  a.btn-filter
-    color #4d4d4d
-    font-weight bold
-    text-transform capitalize
-
   .loading-overlay
     position fixed
     height 100%
@@ -51,7 +21,60 @@
     background-color #dfdfdf
     z-index 10
 
+  .applications-wrapper
+    padding 0
+
   .applications-container
     display flex
     flex-wrap wrap
-    justify-content center
+
+.homepage-navigation
+  margin-bottom 30px
+
+  .btn
+    line-height 28px
+
+  .btn-link
+    color #333
+
+    &:hover
+      color inherit
+
+  .search
+    outline 0
+    padding 20px 20px 20px 30px
+    border 0
+    border-radius 1px
+    box-shadow 0px 1px 2px rgba(0,0,0, .1)
+    background-color #fff
+    transition all .3s linear
+
+    &:active,
+    &:focus
+      box-shadow 0px 1px 3px rgba(0,0,0, .25)
+
+  .search-icon
+    color #b3b3b3
+    position absolute
+    left 25px
+    top 13px
+
+  .sort-btn
+    position relative
+    color #999
+    text-decoration none
+
+    &.active
+      color #333
+      font-weight 900
+
+    & + .sort-btn
+      &:before
+        content ''
+        display block
+        position absolute
+        left 0
+        top 1em
+        height 1em
+        width 1px
+        background-color #ccc
