@@ -101,8 +101,8 @@
   "filters.technology": "Filtrar por tecnología",
   "filters.tags": "Filtrar por etiquetas",
 
-  "sort.by.popular": "Más Populares",
-  "sort.by.newest": "Más Nuevas",
+  "sort.by.popular": "Populares",
+  "sort.by.newest": "Nuevas",
 
   "footer.powered-by": "Realizado por"
 }

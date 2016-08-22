@@ -2,6 +2,7 @@
   "name": "homepage",
   "description": "Homepage page.",
   "dependencies": {
+    "component/t": "1.0.0",
     "ractivejs/ractive": "v0.6.1",
     "visionmedia/page.js": "1.6.1"
   },
