@@ -24,7 +24,7 @@ section.container
     .col-xs-12.col-sm-4.col-sm-offset-4
       button.btn.btn-success.btn-block.continue(on-click='goto: 2')
         =t('app-form.button.continue') + ' '
-        i.glyphicon.glyphicon-ok-circle
+        i.fa.fa-check-circle
   | {{/if}}
   | {{#if step == 2 }}
   .row.step.step-2
@@ -94,22 +94,22 @@ section.container
         .row
           .col-xs-12.col-sm-2.col-sm-offset-4
             button.btn.btn-danger.btn-block.continue(on-click='goto: 1')
-              i.glyphicon.glyphicon-remove-circle
+              i.fa.fa-times-circle-o
               =' ' + t('app-form.button.cancel')
           .col-xs-12.col-sm-2
             button.btn.btn-success.btn-block.continue(on-click='goto: 3')
               =t('app-form.button.continue') + ' '
-              i.glyphicon.glyphicon-ok-circle
+              i.fa.fa-check-circle
   | {{/if}}
   | {{#if step == 3 }}
   appdetail(application='{{ app }}', disqus=false)
   .row
     .col-xs-12.col-sm-2.col-sm-offset-4
       button.btn.btn-danger.btn-block.continue(on-click='goto: 2')
-        i.glyphicon.glyphicon-edit
+        i.fa.fa-pencil-square-o
         =' ' + t('app-form.button.edit')
     .col-xs-12.col-sm-2
       button.btn.btn-success.btn-block.continue(on-click='save')
         =t('app-form.button.done') + ' '
-        i.glyphicon.glyphicon-ok
+        i.fa.fa-check
   | {{/if}}

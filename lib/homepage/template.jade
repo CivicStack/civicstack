@@ -57,11 +57,11 @@ section.homepage
       p= t('No apps to show yet')
       | {{#if user.id }}
       a.btn.btn-default.btn-lg(href='/apps/new')
-        i.glyphicon.glyphicon-plus-sign
+        i.fa.fa-plus-circle
         |  #{t('Upload app')}
       | {{ else }}
       a.btn.btn-default.btn-lg(href='/login')
-        i.glyphicon.glyphicon-plus-sign
+        i.fa.fa-plus-circle
         |  #{t('Upload app')}
       | {{/if}}
     | {{/if}}

@@ -25,12 +25,12 @@
           .upvotes
             {{#upvoted}}
             a.btn-upvote.btn.btn-success.active(on-click='undoUpvote')
-              span.glyphicon.glyphicon-triangle-top
+              span.fa.fa-caret-up
               span {{application.upvotesCount}}
             {{/upvoted}}
             {{^upvoted}}
             a.btn-upvote.btn.btn-default(on-click='upvote')
-              span.glyphicon.glyphicon-triangle-top
+              span.fa.fa-caret-up
               span {{application.upvotesCount}}
             {{/upvoted}}
           | {{/application.id}}
@@ -103,7 +103,7 @@
           | {{/github}}
 
         a.btn.btn-default.back(on-click='back')
-          span.glyphicon.glyphicon-arrow-left
+          span.fa.fa-arrow-left
           |  Back
 
       | {{#if video}}

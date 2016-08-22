@@ -12,14 +12,14 @@
         input(type='url', value='{{ this.url }}', class="{{# !this.editing}}hide{{/}}")
     .col-sm-2(class="{{# !this.editing}}hide{{/}}")
       .btn.btn-success.btn-links.save('on-click'='saveEditedLink')
-        span.glyphicon.glyphicon-ok
+        span.fa.fa-check
     .col-sm-1(class="{{# this.editing}}hide{{/}}")
       .btn.btn-link.btn-links.edit('on-click'='editLink')
-        span.glyphicon.glyphicon-pencil
+        span.fa.fa-pencil
     .col-sm-1(class="{{# this.editing}}hide{{/}}")
       .btn.btn-link.btn-links.remove('on-click'='removeLink')
-        span.glyphicon.glyphicon-trash
+        span.fa.fa-trash
 | {{/each }}
 .col-sm-offset-1.col-sm-11.related-links-commands
   button.btn.btn-success.btn-links.add('on-click'='addLink', class="{{# this.adding}}hide{{/}}")
-    span.glyphicon.glyphicon-plus
+    span.fa.fa-plus
