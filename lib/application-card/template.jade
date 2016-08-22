@@ -17,12 +17,14 @@
     .upvotes.pull-right
       {{#upvoted}}
       a.btn-upvote.btn.btn-sm.btn-primary(on-click='undoUpvote')
-        span.fa.fa-caret-up
+        i.fa.fa-caret-up
+        |&nbsp;
         span {{application.upvotesCount}}
       {{/upvoted}}
       {{^upvoted}}
       a.btn-upvote.btn.btn-sm.btn-default(on-click='upvote')
-        span.fa.fa-caret-up
+        i.fa.fa-caret-up
+        |&nbsp;
         span {{application.upvotesCount}}
       {{/upvoted}}
 

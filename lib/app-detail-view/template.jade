@@ -25,12 +25,14 @@
           .upvotes
             {{#upvoted}}
             a.btn-upvote.btn.btn-success.active(on-click='undoUpvote')
-              span.fa.fa-caret-up
+              i.fa.fa-caret-up
+              |&nbsp;
               span {{application.upvotesCount}}
             {{/upvoted}}
             {{^upvoted}}
             a.btn-upvote.btn.btn-default(on-click='upvote')
-              span.fa.fa-caret-up
+              i.fa.fa-caret-up
+              |&nbsp;
               span {{application.upvotesCount}}
             {{/upvoted}}
           | {{/application.id}}
