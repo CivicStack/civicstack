@@ -3,7 +3,7 @@ section.homepage
     .row.homepage-navigation
       .col-xs-12.col-sm-4
         input.form-control.search(type='text' value='{{ filters.search }}' on-keyup='search')
-        span.search-icon.glyphicon.glyphicon-search
+        span.search-icon.fa.fa-search
       .col-xs-12.col-sm-4
         button.btn.btn-link(type='button' on-click='filter:country')
           = t('app.country')
