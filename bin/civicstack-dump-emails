@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var fs = require('fs');
+var write = fs.writeFileSync;
+var program = require('commander');
+var MongoClient = require('mongodb').MongoClient;
+
+program
+  .option('-o, --out <f>', 'file name to write')
+  .option('-d, --db <d>', 'database URL')
+  .parse(process.argv);
+
+MongoClient.connect(program.db, function (err, db) {
+  if (err) {
+    console.error(err);
+    process.exit(1);
+  }
+
+  var users = db.collection('users');
+  console.log('Fetching users...');
+  users.find().toArray(function (err, docs) {
+    var userList = docs.filter(function (doc) {
+      return doc.email;
+    }).map(function (doc) {
+      return (doc.firstName || '') + ',' + (doc.lastName || '') + ',' + (doc.email || '');
+    });
+
+    console.log('Writing file...')
+    write(program.out, userList.join('\n'));
+    console.log('Wrote ' + userList.length + ' entries.')
+    process.exit(0);
+  });
+});
