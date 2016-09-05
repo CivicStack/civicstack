@@ -21,7 +21,7 @@
     "technologies",
     "user"
   ],
-  "scripts": [ "homepage.js", "view.js" ],
+  "scripts": [ "homepage.js", "view.js", "prefilters.js" ],
   "styles": [ "styles.styl" ],
   "templates": [ "template.jade" ],
   "main": "homepage.js"
