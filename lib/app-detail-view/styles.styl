@@ -1,40 +1,30 @@
-article.app-detail
-  a.link
+.app-detail
+  .link
     color #0071bb
 
-  [class*="col-"]
-    @media (min-width: 768px)
-      float none
-      display table-cell
-      vertical-align top
+  .app-info
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
 
-  .main-info
-    .app-data
-      background-color #efefef
-      height 300px
-      padding 25px 40px
+  .app-data-text
+    padding 25px 40px
+    background-color #efefef
 
-      h1, h2, h3
-        margin 0
-        margin-bottom 22px
-        font-size 22px
+    h1,
+    h2,
+    h3
+      margin 0
+      margin-bottom 22px
+      font-size 22px
 
-        small
-          display block
-          font-size 16px
+      small
+        display block
+        font-size 16px
 
-      footer
-        font-size 14px
-        margin-top 40px
-
-        .twitter,
-        .license
-          display block
-
-  section.comments
-    padding 20px 20px
-
-  .more-info-container
+  .more-info
+    flex-grow: 2
+    padding 45px 30px
     background-color white
 
     .cover-video
@@ -56,30 +46,27 @@ article.app-detail
           width 100%
           height 100%
 
-    .more-info
-      padding 45px 30px
+    .social-badges
+      padding-left 15px
+      margin-bottom 15px
 
-      .social-badges
-        padding-left 15px
-        margin-bottom 15px
+      .fb_iframe_widget
+        top -5px
 
-        .fb_iframe_widget
-          top -5px
+    .list-group
+      .list-group-item
+        a
+          &:hover
+            text-decoration none
+          .no-og
+            h4
+              margin-bottom 0
 
-      .list-group
-        .list-group-item
-          a
-            &:hover
-              text-decoration none
-            .no-og
-              h4
-                margin-bottom 0
+    h4
+      font-size 20px
+      font-weight bold
+      margin-bottom 22px
 
-      h4
-        font-size 20px
-        font-weight bold
-        margin-bottom 22px
-
-        small
-          font-size 14px
-          margin-left 6px
+      small
+        font-size 14px
+        margin-left 6px

@@ -7,7 +7,7 @@ body
 body
   background-color #dfdfdf
   font-family "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif
-  padding-top 112px
+  padding-top 80px
   transition all ease .3s
   -webkit-font-smoothing antialiased
 
@@ -52,12 +52,23 @@ a
     background-color darken(#e76056, 15%)
 
 .app-logo
+  position relative
+  display block
+  width 100%
   background-repeat no-repeat
   background-size 70%
   background-position center center
-  display block
-  height 175px
-  width 100%
+
+  h1
+    position absolute
+    visibility hidden
+    opacity 0
+    pointer-events none
+
+  &:after
+    content ''
+    display block
+    padding-top 64%
 
 textarea
   resize none
@@ -69,3 +80,6 @@ textarea
 
   .modal-header
     font-weight bold
+
+.site-content
+  padding-top: 30px
