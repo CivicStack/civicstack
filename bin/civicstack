@@ -7,7 +7,8 @@
 var program = require('commander');
 
 program
-  .version('0.0.1')
+  .version('0.0.2')
   .command('install', "Install client components.")
   .command('build', "Builds client application and compiles assets.")
+  .command('dump-emails', "Exports all user's emails on database to a CSV file")
   .parse(process.argv)
