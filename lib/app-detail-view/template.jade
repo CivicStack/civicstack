@@ -33,13 +33,16 @@ main.app-detail.container
 
   .app-content
     .app-info
-      {{#tagnames}}
-      p {{tagnames}}
-      {{/tagnames}}
-      
       {{#description[lang]}}
       p.description {{description[lang]}}
       {{/description[lang]}}
+      
+      {{#if tagnames}}
+      .app-tags
+        {{#each tagnames}}
+        span.label.label-default {{this}}
+        {{/each}}
+      {{/if}}
       
       {{#video}}
       .cover-video
