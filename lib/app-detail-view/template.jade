@@ -100,16 +100,16 @@ main.app-detail.container
           {{/github}}
     
     .app-more-info
-      p.sup Country
+      p.sup= t('app.country')
       p.sub {{country.name[lang]}}
-      p.sup Organization
+      p.sup= t('app.organization-name')
       p.sub {{organization}}
       {{#license}}
-      p.sup License
+      p.sup= t('app.license')
       p.sub {{license.name}}
       {{/license}}
       {{#technologynames}}
-      p.sup Tech
+      p.sup= t('app.technology')
       p.sub {{technologynames}}
       {{/technologynames}}
 
