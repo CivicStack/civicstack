@@ -69,6 +69,20 @@
     "postinstall": "node ./bin/civicstack-install --config && node ./bin/civicstack-config && node ./bin/civicstack-build"
   },
   "devDependencies": {
-    "mongodb-migrations": "^0.5.2"
+    "mongodb-migrations": "^0.5.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "space": 2,
+    "env": [
+      "node",
+      "es6",
+      "browser"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": 0,
+      "curly": ["error", "multi-line"],
+      "space-before-function-paren": ["error", "always"]
+    }
   }
 }
