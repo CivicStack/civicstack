@@ -36,7 +36,12 @@
     line-height 28px
 
   .btn-link
+    padding-left 0
+    padding-right 0
     color #333
+
+    & + .btn-link
+      margin-left 30px
 
     &:hover
       color inherit
@@ -70,6 +75,9 @@
       font-weight 900
 
     & + .sort-btn
+      padding-left 10px
+      margin-left 10px
+
       &:before
         content ''
         display block
