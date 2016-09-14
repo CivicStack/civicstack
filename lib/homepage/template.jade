@@ -1,5 +1,17 @@
 section.homepage
   .container
+    // Prefilters
+    .row.prefilters.col-xs-12.text-center
+      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:transparency')
+        = t('app.prefilter.transparency')
+      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:data')
+        = t('app.prefilter.data')
+      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:argie')
+        = t('app.prefilter.argie')
+      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:web')
+        = t('app.prefilter.web')
+
+    // Search and filters
     .row.homepage-navigation
       .col-xs-12.col-sm-4
         input.form-control.search(type='text' value='{{ filters.search }}' on-keyup='search')
@@ -25,6 +37,8 @@ section.homepage
           on-click="sortBy:{{key}},{{order}}")
           {{title}}
         {{/sorts}}
+
+    // Applied filters badges
     .row.filters: .col-xs-12
       | {{#each selectedCountries}}
       span.badge.filter-country {{ this.name[lang] }}
@@ -41,7 +55,8 @@ section.homepage
         span.filter-remove
           a(on-click="removeFilter:{{'tag'}},{{this.id}}") ×
       | {{/each selectedTags}}
-        
+
+  // Application list
   .container.applications-wrapper
     | {{#filterUpdating}}
     .loading-overlay
