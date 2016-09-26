@@ -1,7 +1,9 @@
 section.homepage
   .container
     // Prefilters
-    .row.prefilters.col-xs-12.text-center
+    .prefilters.text-center
+      h1.global-description
+        != t('global.description')
       button.btn.btn-sm.btn-default(type='button', on-click='prefilter:transparency')
         = t('app.prefilter.transparency')
       button.btn.btn-sm.btn-default(type='button', on-click='prefilter:data')

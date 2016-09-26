@@ -1,5 +1,6 @@
 {
-  "global.app-name": "Civic Stack",
+  "global.app-name": "CivicStack",
+  "global.description": "Herramientas de <strong>código abierto</strong> para acciones políticas y sociales. ¿Qué estás buscando?",
 
   "english": "Inglés",
   "spanish": "Español",
