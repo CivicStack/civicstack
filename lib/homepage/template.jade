@@ -30,13 +30,13 @@ section.homepage
           | &nbsp;
           span.caret
       .col-xs-12.col-sm-4.sort.text-right
-        {{#sorts}}
+        | {{#sorts}}
         button(
           type='button',
           class='btn btn-link sort-btn {{isSortActive(key)}}',
           on-click="sortBy:{{key}},{{order}}")
-          {{title}}
-        {{/sorts}}
+          | {{title}}
+        | {{/sorts}}
 
     // Applied filters badges
     .row.filters: .col-xs-12
