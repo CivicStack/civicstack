@@ -10,6 +10,7 @@
     "applications",
     "application-card",
     "countries",
+    "config",
     "filters",
     "filters-country",
     "filters-technology",

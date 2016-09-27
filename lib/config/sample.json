@@ -8,7 +8,8 @@
     "locale",
     "organization name",
     "google analytics tracking id",
-    "host"
+    "host",
+    "languages"
   ],
   "organization name": "Civic Stack",
   "auth": {
@@ -28,7 +29,7 @@
     }
   },
   "secret": "civicivicstack",
-  "languages": [ "en", "es" ],
+  "languages": [ "en", "es", "fr" ],
   "admins": {
     "twitter": [],
     "github": []

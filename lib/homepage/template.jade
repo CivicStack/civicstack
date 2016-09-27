@@ -4,14 +4,10 @@ section.homepage
     .prefilters.text-center
       h1.global-description
         != t('global.description')
-      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:transparency')
-        = t('app.prefilter.transparency')
-      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:data')
-        = t('app.prefilter.data')
-      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:argie')
-        = t('app.prefilter.argie')
-      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:web')
-        = t('app.prefilter.web')
+      | {{#prefilters:i}}
+      button.btn.btn-sm.btn-default(type='button', on-click='prefilter:{{i}}')
+        | {{title[lang]}}
+      | {{/prefilters}}
 
     // Search and filters
     .row.homepage-navigation
