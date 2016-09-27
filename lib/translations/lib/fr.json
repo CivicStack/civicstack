@@ -1,6 +1,6 @@
 {
-  "global.app-name": "CivicStack",
-  "global.description": "<strong>Open technologies</strong> for political and civic movements, ¿What are you looking for?",
+  "global.app-name": "Civic Stack",
+  "global.description": "<strong>Open source</strong> tools for social change.",
 
   "english": "Anglais",
   "spanish": "Espagnol",
@@ -42,13 +42,12 @@
   "admin-technologies-form.confirmation.body": "Êtes vous sûr de vouloir supprimer la technologie  \"{nom}\"?",
 
   "about.what-is-it.title": "Civic stack: qu'est ce que c'est?",
-  "about.what-is-it.text": "Civic Stack est l'endroit idéal pour se réunir et partager des outils civiques de differents pays et organisations afin de vous permettre de les adapter et utiliser là où vous vivez",
+  "about.what-is-it.text": "Civic Stack est l'endroit idéal pour se réunir et partager des outils civiques de différents pays et organisations afin de vous permettre de les adapter et utiliser là où vous vivez.",
   "about.goal.title": "Quel est notre objectif?",
-  "about.goal.1": "Notre objectif est de fournir un accès simple aux outils numériques civiques pour les organisations militantes afin d'encourager la participation citoyenne et de renforcer leur processus organisationel et decisionnel.",
+  "about.goal.1": "Notre objectif est de fournir un accès simple aux outils numériques civiques pour les organisations militantes afin d'encourager la participation citoyenne et de renforcer leur processus organisationnel et décisionnel.",
   "about.goal.2": "Dans le même temps, nous souhaitons que les organisatons qui se développent sur une base technologique inspirée d'autres travaux, collaborent avec ces derniers plutôt que de \"réinventer la roue\".",
   "about.what-information-is-available.title": "Quelles informations apparaissent sur Civic Stack?",
-  "about.what-information-is-available.text.1": "Sur Civic Stack, vous trouverez des informations utiles sur chaque outil (application ou site internet): objectifs, portée, origines, code Github. Il s'agit de données crowdsourcées; les organisations peuvent créer leur propre profil et proposer leurs outils.",
-  "about.what-information-is-available.text.2": "Sur Civic Stack, tous les outils que vous trouvez - et tout ceux que vous trouverez dans le futur - sont <strong>open source</strong>",
+  "about.what-information-is-available.text": "Sur Civic Stack, vous trouverez des informations utiles sur chaque outil (application ou site internet): objectifs, portée, origines, code Github, créateurs.<br><br>Les organisations peuvent s'identifier et proposer leurs outils.<br><br>Sur Civic Stack, tous les outils que vous trouvez - et tout ceux que vous trouverez dans le futur - sont open source.",
 
   "panel.heading.error": "Erreur",
   "panel.body.error": "Une erreur est survenue, veuillez réessayer plus tard",
