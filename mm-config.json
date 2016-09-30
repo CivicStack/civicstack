@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "port": 27017,
+  "db": "civicstack",
+  "collection": "migrations",
+  "directory": "./db/migrations"
+}

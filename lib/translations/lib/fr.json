@@ -1,5 +1,6 @@
 {
-  "global.app-name": "Civic stack",
+  "global.app-name": "Civic Stack",
+  "global.description": "<strong>Open source</strong> tools for social change.",
 
   "english": "Anglais",
   "spanish": "Espagnol",
@@ -19,7 +20,6 @@
   "header.logout": "Déconnexion",
 
   "admin-sidebar.applications.title": "Applications",
-  "admin-sidebar.categories.title": "Catégories",
   "admin-sidebar.tags.title": "Tags",
   "admin-sidebar.countries.title": "Pays",
   "admin-sidebar.technologies.title": "Technologies",
@@ -28,7 +28,6 @@
   "admin.list.search.placeholder": "Rechercher",
   "admin.tags.save.success": "Le tag a été sauvegardée avec succès",
   "admin.app.save.success": "L'application a été sauvegardée avec succès",
-  "admin.categories.save.success": "La catégorie été sauvegardée avec succès",
   "admin.countries.save.success": "Le pays été sauvegardé avec succès",
   "admin.technologies.save.success": "La technologie été sauvegardée avec succès",
   "admin.licenses.save.success": "La License été sauvegardée avec succès",
@@ -38,19 +37,17 @@
   "confirmation.cancel": "Annuler",
   "admin-licenses-form.confirmation.body": "Êtes vous sûr de vouloir supprimer la license \"{nom}\"?",
   "admin-apps-form.confirmation.body": "Êtes vous sûr de vouloir supprimer l'application \"{nom}\"?",
-  "admin-categories-form.confirmation.body": "Êtes vous sûr de vouloir supprimer la catégorie \"{nom}\"?",
   "admin-tags-form.confirmation.body": "Êtes vous sûr de vouloir supprimer le tag \"{nom}\"?",
   "admin-countries-form.confirmation.body": "Êtes vous sûr de vouloir supprimer le pays \"{nom}\"?",
   "admin-technologies-form.confirmation.body": "Êtes vous sûr de vouloir supprimer la technologie  \"{nom}\"?",
 
   "about.what-is-it.title": "Civic stack: qu'est ce que c'est?",
-  "about.what-is-it.text": "Civic Stack est l'endroit idéal pour se réunir et partager des outils civiques de differents pays et organisations afin de vous permettre de les adapter et utiliser là où vous vivez",
+  "about.what-is-it.text": "Civic Stack est l'endroit idéal pour se réunir et partager des outils civiques de différents pays et organisations afin de vous permettre de les adapter et utiliser là où vous vivez.",
   "about.goal.title": "Quel est notre objectif?",
-  "about.goal.1": "Notre objectif est de fournir un accès simple aux outils numériques civiques pour les organisations militantes afin d'encourager la participation citoyenne et de renforcer leur processus organisationel et decisionnel.",
+  "about.goal.1": "Notre objectif est de fournir un accès simple aux outils numériques civiques pour les organisations militantes afin d'encourager la participation citoyenne et de renforcer leur processus organisationnel et décisionnel.",
   "about.goal.2": "Dans le même temps, nous souhaitons que les organisatons qui se développent sur une base technologique inspirée d'autres travaux, collaborent avec ces derniers plutôt que de \"réinventer la roue\".",
   "about.what-information-is-available.title": "Quelles informations apparaissent sur Civic Stack?",
-  "about.what-information-is-available.text.1": "Sur Civic Stack, vous trouverez des informations utiles sur chaque outil (application ou site internet): objectifs, portée, origines, code Github. Il s'agit de données crowdsourcées; les organisations peuvent créer leur propre profil et proposer leurs outils.",
-  "about.what-information-is-available.text.2": "Sur Civic Stack, tous les outils que vous trouvez - et tout ceux que vous trouverez dans le futur - sont <strong>open source</strong>",
+  "about.what-information-is-available.text": "Sur Civic Stack, vous trouverez des informations utiles sur chaque outil (application ou site internet): objectifs, portée, origines, code Github, créateurs.<br><br>Les organisations peuvent s'identifier et proposer leurs outils.<br><br>Sur Civic Stack, tous les outils que vous trouvez - et tout ceux que vous trouverez dans le futur - sont open source.",
 
   "panel.heading.error": "Erreur",
   "panel.body.error": "Une erreur est survenue, veuillez réessayer plus tard",
@@ -77,13 +74,15 @@
   "app.organization-name": "Nom de l'organisation",
   "app.description": "Description",
   "app.description.placeholder": "Description (300 caractères max)",
+  "app.video": "Vidéo",
+  "app.video.placeholder": "YouTube URL de la couverture vidéo",
   "app.country": "Pays",
   "app.website": "Site Internet",
   "app.twitter": "Twitter",
   "app.license": "License",
+  "app.links": "Liens connexes",
   "app.contact": "Contact",
   "app.contact.placeholder": "Email de contact",
-  "app.category": "A quoi ca sert?",
   "app.technology": "Technologie",
   "app.github-repository": "Repository Github",
   "app.tags": "Tags",
@@ -95,15 +94,15 @@
   "app.comments": "Commentaires",
   "app.uploaded-by": "Proposé par",
   "app.description.exceeded": "La description est limitée à 300 caractères",
-  "app.category.filter": "Catégorie",
 
-  "filters.filter-by": "Filtrer par: ",
   "filters.search": "Aller",
   "filters.clear": "Supprimer tout",
   "filters.country": "Filtrer par pays",
   "filters.technology": "Filtrer par technologie",
   "filters.tags": "Filtrer par tag",
-  "filters.category": "Filter par catégorie",
+
+  "sort.by.popular": "Popular",
+  "sort.by.newest": "Newest",
 
   "footer.powered-by": "Réalisé par"
 }

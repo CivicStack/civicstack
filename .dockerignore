@@ -1,0 +1,10 @@
+.git
+.gitignore
+.env
+.DS_Store
+.dockerignore
+docker
+node_modules
+components
+Procfile
+!LICENSE.txt

@@ -2,25 +2,27 @@
   "name": "homepage",
   "description": "Homepage page.",
   "dependencies": {
+    "component/t": "1.0.0",
     "ractivejs/ractive": "v0.6.1",
     "visionmedia/page.js": "1.6.1"
   },
   "locals": [
     "applications",
     "application-card",
-    "categories",
     "countries",
+    "config",
     "filters",
-    "filters-category",
     "filters-country",
     "filters-technology",
     "filters-tags",
+    "language",
     "render",
+    "request",
     "tags",
     "technologies",
     "user"
   ],
-  "scripts": [ "homepage.js", "view.js" ],
+  "scripts": [ "homepage.js", "view.js", "prefilters.js" ],
   "styles": [ "styles.styl" ],
   "templates": [ "template.jade" ],
   "main": "homepage.js"

@@ -1,0 +1,18 @@
+{
+  "name": "sidebar",
+  "dependencies": {
+    "ractivejs/ractive": "v0.6.1"
+  },
+  "locals": [
+    "language",
+    "render",
+    "request",
+    "user"
+  ],
+  "images": [
+  ],
+  "templates": [ "template.jade" ],
+  "scripts": [ "sidebar.js" ],
+  "styles": [ "styles.styl" ],
+  "main": "sidebar.js"
+}

@@ -9,7 +9,6 @@
   },
   "locals": [
     "app-detail-view",
-    "categories",
     "color-picker",
     "countries",
     "language",
@@ -17,6 +16,7 @@
     "modal",
     "tags",
     "technologies",
+    "related-links",
     "render",
     "request",
     "user"

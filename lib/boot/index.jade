@@ -1,23 +1,24 @@
 doctype html
 html
   head
-    title=t('global.app-name')
-    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    title= t('global.app-name')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 
-    link(href='http://fonts.googleapis.com/css?family=Abel', rel='stylesheet', type='text/css')
-    link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", rel="stylesheet", media="screen")
-    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet", media="screen")
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', rel='stylesheet', media='screen')
     link(rel='stylesheet', href='/app.css')
 
   body
-    #wrap
-      header#site-header.navbar.navbar-fixed-top
-      section.container.site-content
-      #push
+    header#site-header.navbar.navbar-fixed-top
+    section.site-content
     footer#site-footer
 
-    script(src='//code.jquery.com/jquery-2.1.3.min.js')
-    script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+    script(src='https://code.jquery.com/jquery-2.1.3.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
     script(src='/app.js')
-    script.
-      require('./lib/boot')
+    script require('./lib/boot')
+
+    - if (config.segmentKey)
+      include includes/segment
+    include includes/disqus
+    include includes/social

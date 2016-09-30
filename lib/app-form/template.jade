@@ -24,7 +24,7 @@ section.container
     .col-xs-12.col-sm-4.col-sm-offset-4
       button.btn.btn-success.btn-block.continue(on-click='goto: 2')
         =t('app-form.button.continue') + ' '
-        i.glyphicon.glyphicon-ok-circle
+        i.fa.fa-check-circle
   | {{/if}}
   | {{#if step == 2 }}
   .row.step.step-2
@@ -55,19 +55,13 @@ section.container
                 | {{#each licenses}}
                 option(value='{{ this.id }}') {{ this.name }}
                 | {{/each}}
-            .form-group
-              select.form-control(value='{{ app.category }}' class='{{ errors.category }}')
-                option(value='')=t('app.category')
-                | {{#each categories}}
-                option(value='{{ this.id }}') {{ this.name[lang] }}
-                | {{/each}}
           .col-xs-12.col-sm-3
             .form-group
               textarea.description.form-control(placeholder=t('app.description.placeholder') value='{{ app.description[lang] }}' class='{{ errors.description }}')
             .form-group
               input.form-control(placeholder=t('app.github-repository') value='{{ app.github }}' class='{{ errors.github }}')
             .form-group
-              input.form-control(placeholder=t('app.contact.placeholder') value='{{ app.contact }}')
+              input.form-control(placeholder=t('app.contact.placeholder') value='{{ app.contact }}' class='{{ errors.contact }}')
         .row
           .col-xs-12.col-sm-6.col-sm-offset-3
             .form-group
@@ -93,24 +87,29 @@ section.container
                 ='{{ this.name }}'
             | {{/each }}
         .row
+        .col-xs-12.col-sm-6.col-sm-offset-3
+          .form-group
+            h4: strong=t('app.links')
+            relatedlinks(links='{{app.links}}')
+        .row
           .col-xs-12.col-sm-2.col-sm-offset-4
             button.btn.btn-danger.btn-block.continue(on-click='goto: 1')
-              i.glyphicon.glyphicon-remove-circle
+              i.fa.fa-times-circle-o
               =' ' + t('app-form.button.cancel')
           .col-xs-12.col-sm-2
             button.btn.btn-success.btn-block.continue(on-click='goto: 3')
               =t('app-form.button.continue') + ' '
-              i.glyphicon.glyphicon-ok-circle
+              i.fa.fa-check-circle
   | {{/if}}
   | {{#if step == 3 }}
-  appdetail(application='{{ app }}')
+  appdetail(application='{{ app }}', disqus=false)
   .row
     .col-xs-12.col-sm-2.col-sm-offset-4
       button.btn.btn-danger.btn-block.continue(on-click='goto: 2')
-        i.glyphicon.glyphicon-edit
+        i.fa.fa-pencil-square-o
         =' ' + t('app-form.button.edit')
     .col-xs-12.col-sm-2
       button.btn.btn-success.btn-block.continue(on-click='save')
         =t('app-form.button.done') + ' '
-        i.glyphicon.glyphicon-ok
+        i.fa.fa-check
   | {{/if}}

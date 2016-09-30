@@ -37,6 +37,10 @@ form.panel.panel-default.form-horizontal(on-submit='save')
         label(for='description[fr]')=t('french')
         textarea.form-control(type='text' id='description[fr]' placeholder=t('app.description.fr.placeholder') value='{{ app.description.fr }}'  class='{{ errors.description.fr }}')
     .form-group
+      label.col-sm-2.control-label(for='video')=t('app.video')
+      .col-sm-10
+        input.form-control(type='url' id='video' placeholder=t('app.video.placeholder') value='{{ app.video }}' class='{{ errors.video }}')
+    .form-group
       label.col-sm-2.control-label(for='organization')=t('app.organization-name')
       .col-sm-10
         input.form-control(type='text' id='organization' placeholder=t('app.organization-name') value='{{ app.organization }}' class='{{ errors.organization }}')
@@ -71,19 +75,11 @@ form.panel.panel-default.form-horizontal(on-submit='save')
     .form-group
       label.col-sm-2.control-label(for='contact')=t('app.contact')
       .col-sm-10
-        input.form-control(type='text' id='contact' placeholder=t('app.contact') value='{{ app.contact }}')
+        input.form-control(type='text' id='contact' placeholder=t('app.contact') value='{{ app.contact }}', class='{{ errors.contact }}')
     .form-group
       label.col-sm-2.control-label(for='comments')=t('app.comments')
       .col-sm-10
         textarea.form-control(type='text' id='comments' placeholder=t('app.comments') value='{{ app.comments }}')
-    .form-group
-      label.col-sm-2.control-label(for='category')=t('app.category')
-      .col-sm-10
-        select.form-control(value='{{ app.category }}' id='category' class='{{ errors.category }}')
-          option(value='')=t('app.category')
-          | {{#each categories}}
-          option(value='{{ this.id }}') {{ this.name[lang] }}
-          | {{/each}}
     .form-group
       label.col-sm-2.control-label=t('app.tags')
       | {{#each tags }}
@@ -102,6 +98,9 @@ form.panel.panel-default.form-horizontal(on-submit='save')
             input(type='checkbox' name='{{ app.technologyids }}' value='{{ this.id }}')
             | {{ this.name }}
       | {{/each }}
+    .form-group.related-links
+      label.col-sm-2.control-label=t('app.links')
+      relatedlinks(links='{{links}}')
     .form-group
       label.col-sm-2.control-label(for='approved')=t('app.approved')
       .col-sm-10

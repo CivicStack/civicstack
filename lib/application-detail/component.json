@@ -7,7 +7,8 @@
   },
   "locals": [
     "app-detail-view",
-    "request"
+    "request",
+    "user"
   ],
   "scripts": [ "application-detail.js"],
   "main": "application-detail.js"

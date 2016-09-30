@@ -9,11 +9,11 @@
   },
   "locals": [
     "applications",
-    "categories",
     "countries",
     "language",
     "licenses",
     "panel",
+    "related-links",
     "request",
     "render",
     "scroll",

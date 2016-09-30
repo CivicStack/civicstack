@@ -1,0 +1,25 @@
+| {{#each links }}
+.col-sm-offset-2.col-sm-10.related-link
+  .row
+    .col-sm-8
+      .row.related-link-description
+        span(class="{{# this.editing}}hide{{/}}")
+          strong {{ this.description }}
+        input(type='text', value='{{ this.description }}', class="{{# !this.editing}}hide{{/}}",
+          placeholder=t('app.links.description.placeholder'))
+      .row.related-link-url
+        span(class="{{# this.editing}}hide{{/}}") {{ this.url }}
+        input(type='url', value='{{ this.url }}', class="{{# !this.editing}}hide{{/}}")
+    .col-sm-2(class="{{# !this.editing}}hide{{/}}")
+      .btn.btn-success.btn-links.save('on-click'='saveEditedLink')
+        span.fa.fa-check
+    .col-sm-1(class="{{# this.editing}}hide{{/}}")
+      .btn.btn-link.btn-links.edit('on-click'='editLink')
+        span.fa.fa-pencil
+    .col-sm-1(class="{{# this.editing}}hide{{/}}")
+      .btn.btn-link.btn-links.remove('on-click'='removeLink')
+        span.fa.fa-trash
+| {{/each }}
+.col-sm-offset-1.col-sm-11.related-links-commands
+  button.btn.btn-success.btn-links.add('on-click'='addLink', class="{{# this.adding}}hide{{/}}")
+    span.fa.fa-plus

@@ -1,6 +1,6 @@
 {
   "name": "civic-stack",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Stack of online civic webapps",
   "main": "index.js",
   "repository": {
@@ -22,36 +22,42 @@
     "url": "https://github.com/democracyos/civic-stack/issues"
   },
   "engines": {
-    "node": "0.10.28",
+    "node": "4.5.0",
     "npm": "2.7.6"
   },
   "dependencies": {
+    "autoprefixer-stylus": "^0.9.4",
     "batch": "0.5.2",
+    "bluebird": "^3.4.0",
     "body-parser": "1.12.0",
     "builder-jade": "1.0.1",
-    "compression": "1.2.1",
     "commander": "2.5.0",
     "component": "1.0.0",
     "component-builder": "1.2.0",
     "component-resolver": "1.2.7",
+    "compression": "1.2.1",
     "connect-mongo": "0.8.2",
     "cookie-parser": "1.3.4",
     "crypto": "0.0.3",
     "debug": "2.1.3",
+    "disqus-sso-express": "^0.1.0",
     "errorhandler": "1.3.0",
     "express": "4.12.0",
     "express-session": "v1.9.2",
     "jade": "1.7.0 ",
     "merge-util": "0.1.0",
     "mkdirp": "0.5.0",
+    "mongodb": "^2.2.9",
     "mongoose": "3.8.24",
     "mongoose-type-url": "1.0.0",
     "mongoose-validator": "1.0.3",
+    "node-cache": "^3.2.1",
     "node-path": "0.0.3",
     "nowww": "1.1.3",
+    "open-graph-scraper": "^2.1.0",
     "passport": "0.2.0",
-    "passport-twitter": "1.0.2",
     "passport-github": "0.1.5",
+    "passport-twitter": "1.0.2",
     "ready": "0.1.1",
     "serve-favicon": "2.1.7",
     "string-to-js": "0.0.1",
@@ -61,5 +67,22 @@
   },
   "scripts": {
     "postinstall": "node ./bin/civicstack-install --config && node ./bin/civicstack-config && node ./bin/civicstack-build"
+  },
+  "devDependencies": {
+    "mongodb-migrations": "^0.5.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "space": 2,
+    "env": [
+      "node",
+      "es6",
+      "browser"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": 0,
+      "curly": ["error", "multi-line"],
+      "space-before-function-paren": ["error", "always"]
+    }
   }
 }

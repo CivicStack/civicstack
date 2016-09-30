@@ -1,4 +1,14 @@
 
+1.1.0 / 2016-07-10
+==================
+
+  * Add comment system (backed by Disqus)
+  * Add video cover
+  * Add related links
+  * Add Segment
+  * Merge tags and categories
+  * Show applied filters
+
 1.0.6 / 2016-01-21
 ==================
 

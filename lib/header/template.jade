@@ -1,42 +1,13 @@
 .container
-  .navbar-header
-    a(href='/').navbar-brand
-      img(src='/lib/header/images/logo.svg' title='Civic Stack')
-      | Civic Stack
-    button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='.ul-navbar-collapse')
+  a.navbar-brand(href='/')
+    img(src='/lib/header/images/logo.svg' title='Civic Stack')
+    span Civic Stack
+  .menu
+    a.add-app.btn.btn-primary(href='{{#if user.logged()}}/apps/new{{else}}/login{{/if}}')
+      .fa.fa-plus-circle
+      | &nbsp;
+      = t('Upload app')
+    button.toggle-sidebar(type='button' on-click='openSidebar()')
       span.icon-bar
       span.icon-bar
       span.icon-bar
-  .collapse.navbar-collapse.ul-navbar-collapse.text-center#header-collapse
-    ul.nav.navbar-nav.navbar-right
-      li: a(href='/about')=t('header.about')
-      | {{#if !user.logged() }}
-      li
-        a.navbar-text(href='/login')
-          strong=t('header.login')
-      | {{ else }}
-      | {{#if (user.admin) }}
-      li
-        a(href='/admin')=t('header.admin')
-      | {{/if}}
-      li
-        a(href='/logout')
-          img.avatar(src='{{ user.avatar }}' title='{{ user.fullName }}')
-          =t('header.logout')
-      | {{ /if }}
-      li
-        | {{#if lang == 'en' }}
-        a.lang.text-mute(href='#' title=t('english') on-click='lang:en') EN
-        a.lang(href='#' title=t('spanish') on-click='lang:es') ES
-        a.lang(href='#' title=t('french') on-click='lang:fr') FR
-        | {{/if}}
-        | {{#if lang == 'es' }}
-        a.lang(href='#' title=t('english') on-click='lang:en') EN
-        a.lang.text-mute(href='#' title=t('spanish') on-click='lang:es') ES
-        a.lang(href='#' title=t('french') on-click='lang:fr') FR
-        | {{/if}}
-        | {{#if lang == 'fr' }}
-        a.lang(href='#' title=t('english') on-click='lang:en') EN
-        a.lang(href='#' title=t('spanish') on-click='lang:es') ES
-        a.lang.text-mute(href='#' title=t('french') on-click='lang:fr') FR
-        | {{/if}}

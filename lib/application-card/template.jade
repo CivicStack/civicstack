@@ -1,18 +1,31 @@
-.col-xs-12.col-sm-6.col-md-3
-  | {{#with application }}
-  article.application-card
-    a.app-logo.logo(href='/apps/{{ id }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})')
-      h1 {{ name }}
-    section.app-detail
-      header
-        h1: a(href='/apps/{{ id }}')='{{ name }}'
-        h2='{{ country.name[lang] }}'
-      | {{#if description[lang]}}
-      p.description='{{ description[lang] }}'
-      | {{/if}}
-    footer
-      | {{#if twitter}}
-      .twitter.pull-left
-        a(href='http://twitter.com/{{ twitter }}' target='_blank')='@{{ twitter }}'
-      | {{/if}}
-  | {{/with application}}
+| {{#with application }}
+.application-container: article.application-card
+  a.app-logo(href='/apps/{{ id }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})')
+    h1 {{ name }}
+  section.app-detail
+    header
+      h1: a(href='/apps/{{ id }}')='{{ name }}'
+      h2='{{ country.name[lang] }}'
+    | {{#if description[lang]}}
+    p.description='{{ description[lang] }}'
+    | {{/if}}
+  footer
+    | {{#if twitter}}
+    .twitter.pull-left
+      a(href='http://twitter.com/{{ twitter }}' target='_blank')='@{{ twitter }}'
+    | {{/if}}
+    .upvotes.pull-right
+      | {{#upvoted}}
+      a.btn-upvote.btn.btn-sm.btn-primary(on-click='undoUpvote')
+        i.fa.fa-caret-up
+        |&nbsp;
+        span {{application.upvotesCount}}
+      | {{/upvoted}}
+      | {{^upvoted}}
+      a.btn-upvote.btn.btn-sm.btn-default(on-click='upvote')
+        i.fa.fa-caret-up
+        |&nbsp;
+        span {{application.upvotesCount}}
+      | {{/upvoted}}
+
+| {{/with application}}

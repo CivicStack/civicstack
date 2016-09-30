@@ -1,48 +1,119 @@
-article.row.app-detail
-  | {{#application}}
-  section.main-info.col-xs-12.col-lg-3
-    a.app-logo.logo(href='{{ website }}', style='background-color: {{ backgroundColor }}; background-image: url({{ logo }})', target='_blank')
-      h1 {{ name }}
-    .app-data
-      h1 {{ name }}
-        small {{ country.name[lang] }}
-      h2 Organization name
-        small {{ organization }}
-      | {{#if contact}}
-      h3 Contact
-        small {{ contact }}
-      | {{/if}}
+| {{#application}}
+main.app-detail.container
+  .app-header
+    .app-logo(style='background-color: {{backgroundColor}}; background-image: url({{logo}})', target='_blank')
+    .app-details
+      h1 {{name}}
+      p.link: a(href='{{website}}', target='_blank') {{website}}
+      .actions-wrapper: .actions
+        | {{#application.id}}
+        | {{#upvoted}}
+        a.btn-upvote.btn.btn-success.active(on-click='undoUpvote')
+          i.fa.fa-caret-up
+          |&nbsp;
+          span {{application.upvotesCount}}
+        | {{/upvoted}}
+        | {{^upvoted}}
+        a.btn-upvote.btn.btn-default(on-click='upvote')
+          i.fa.fa-caret-up
+          |&nbsp;
+          span {{application.upvotesCount}}
+        | {{/upvoted}}
+        | {{/application.id}}
+        .social
+          | {{#github}}
+          a.fa.fa-github(href='{{github}}', target='_blank')
+          | {{/github}}
+          | {{#twitter}}
+          a.fa.fa-twitter(href='https://twitter.com/{{twitter}}', title='@{{twitter}}', target='_blank')
+          | {{/twitter}}
+          | {{#contact}}
+          a.fa.fa-envelope-o(href='mailto:{{contact}}', title='{{contact}}', target='_blank')
+          | {{/contact}}
 
-      footer.text-center
-        | {{#if twitter}}
-        .twitter: a(href='https://twitter.com/{{ twitter }}' target='_blank') @{{ twitter }}
-        | {{/if}}
-        | {{#if license}}
-        .license Lic: {{ license.name }}
-        | {{/if}}
-
-  aside.col-xs-12.col-lg-9.more-info-container
-    .more-info
-      h4 Website:
-        small: a.link(href='{{ website }}', target='_blank') {{ website }}
-      | {{#if description[lang]}}
-      h4 Description:
-        small {{ description[lang] }}
-      | {{/if}}
-      | {{#if technologynames}}
-      h4 Technlogy:
-        small {{ technologynames }}
-      | {{/if}}
-      | {{#if github}}
-      h4 Github code:
-        small: a.link(href='{{ github }}', target='_blank') {{ github }}
-      | {{/if}}
+  .app-content
+    .app-info
+      | {{#description[lang]}}
+      p.description {{description[lang]}}
+      | {{/description[lang]}}
+      
       | {{#if tagnames}}
-      h4 Tags:
-        small {{ tagnames }}
+      .app-tags
+        | {{#each tagnames}}
+        span.label.label-default {{this}}
+        | {{/each}}
       | {{/if}}
-  
-      a.btn.btn-default.back(href='/')
-        span.glyphicon.glyphicon-arrow-left
-        |  Back
-  | {{/application}}
+      
+      | {{#video}}
+      .cover-video
+        .embed-container
+          iframe(src='{{video}}', width='100%', height='100%' frameborder='0', allowfullscreen)
+      | {{/video}}
+      
+      | {{#links}}
+      .app-links
+        h4.sup Links:
+        ul.list-group
+          | {{#each links}}
+          li.list-group-item
+            a(href='{{this.url}}', target='_blank')
+              | {{#application.id}}
+              .media
+                .media-left
+                  img.media-object(width='64px' height='64px' src='{{this.og.image}}')
+                .media-body
+                  a(href='{{this.url}}', target='_blank') {{this.description |this.url}}
+                  h4.media-heading {{this.og.title}}
+                  | {{this.og.description}}
+                .row.related-link.description
+              | {{/application.id}}
+              | {{^application.id}}
+              .no-og
+                h4 {{this.description}}
+                small {{this.url}}
+              | {{/application.id}}
+          | {{/each}}
+      | {{/links}}
+      
+      //-
+        .social-badges
+          | {{#website}}
+          .fb-like(data-href='{{website}}', data-layout='button_count',
+            data-action='like',
+            data-size='small',
+            data-show-faces='true',
+            data-share='false')
+          | {{/website}}
+
+          | {{#twitter}}
+          a.twitter-follow-button(href='https://twitter.com/{{twitter}}', data-show-count='true')
+            | Follow @{{twitter}}
+          | {{/twitter}}
+
+          | {{#github}}
+          a.github-button(href='{{github}}',
+            data-count-href='/{{githubShort}}/stargazers',
+            data-count-api='/repos/{{githubShort}}#stargazers_count',
+            data-count-aria-label='# stargazers on GitHub',
+            aria-label='Star {{githubShort}} on GitHub')
+            | Star
+          | {{/github}}
+    
+    .app-more-info
+      p.sup= t('app.country')
+      p.sub {{country.name[lang]}}
+      p.sup= t('app.organization-name')
+      p.sub {{organization}}
+      | {{#license}}
+      p.sup= t('app.license')
+      p.sub {{license.name}}
+      | {{/license}}
+      | {{#technologynames}}
+      p.sup= t('app.technology')
+      p.sub {{technologynames}}
+      | {{/technologynames}}
+
+  | {{#showDisqus}}
+  #disqus_thread.app-comments.hide
+  | {{/showDisqus}}
+| {{/application}}

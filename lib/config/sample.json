@@ -1,4 +1,5 @@
 {
+  "host": "http://localhost:3000",
   "port": 3000,
   "mongoUrl": "mongodb://localhost/civicivicstack-dev",
   "locale": "en",
@@ -6,7 +7,9 @@
     "env",
     "locale",
     "organization name",
-    "google analytics tracking id"
+    "google analytics tracking id",
+    "host",
+    "languages"
   ],
   "organization name": "Civic Stack",
   "auth": {
@@ -19,10 +22,14 @@
       "clientID": "GithubClientId",
       "clientSecret": "GithubSecret",
       "callback": "http://127.0.0.1:3000/auth/github/callback"
+    },
+    "disqus": {
+      "clientID": "DisqusClientID",
+      "clientSecret": "DisqusSecret"
     }
   },
   "secret": "civicivicstack",
-  "languages": [ "en", "es" ],
+  "languages": [ "en", "es", "fr" ],
   "admins": {
     "twitter": [],
     "github": []

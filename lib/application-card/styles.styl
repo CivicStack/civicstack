@@ -1,21 +1,31 @@
-article.application-card
-  box-shadow 0px 5px 5px #a4a4a4
-  margin-bottom 22px
+.application-container
+  display inline-block
+  position relative
+  margin 15px
+  width 262px
+
+.application-card
+  display flex
+  flex-direction column
+  height 100%
+  box-shadow 0px 2px 5px rgba(#000, .1)
 
   .app-logo
     height 175px
     width 100%
 
   .app-detail
-    background white
+    flex-grow 2
     font-size 12px
     padding 12px
     min-height 190px
+    background white
 
     header
       margin-bottom 12px
 
-      h1, h2
+      h1,
+      h2
         margin 0
 
       h1
@@ -24,8 +34,9 @@ article.application-card
       h2
         font-size 14px
 
-    .description
-      height 100px
+  .description
+    margin: 0
+    font-size: 1em
 
   footer
     background-color #efefef
