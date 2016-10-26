@@ -62,7 +62,7 @@ main.app-detail.container
                 .media-left
                   img.media-object(width='64px' height='64px' src='{{this.og.image}}')
                 .media-body
-                  a(href='{{this.url}}', target='_blank') {{this.description |this.url}}
+                  a(href='{{this.url}}', target='_blank') {{this.description || this.url}}
                   h4.media-heading {{this.og.title}}
                   | {{this.og.description}}
                 .row.related-link.description
