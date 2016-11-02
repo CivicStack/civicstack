@@ -20,5 +20,7 @@ html
 
     - if (config.segmentKey)
       include includes/segment
+    - if (config['google analytics tracking id'])
+      include includes/analytics
     include includes/disqus
     include includes/social
