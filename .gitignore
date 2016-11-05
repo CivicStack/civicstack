@@ -20,6 +20,4 @@ node_modules
 /mm-config.*.json
 
 # Extra ignores
-components
-public
 .DS_Store

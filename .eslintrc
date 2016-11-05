@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-react"],
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "react/jsx-curly-spacing": [2, "never"],
+    "space-before-function-paren": [2, "never"],
+    "object-curly-spacing": [2, "always"],
+    "array-bracket-spacing": [2, "never"],
+    "no-console": 2
+  }
+}

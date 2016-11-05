@@ -27,6 +27,14 @@
   },
   "dependencies": {
     "autoprefixer-stylus": "^0.9.4",
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
     "batch": "0.5.2",
     "bluebird": "^3.4.0",
     "body-parser": "1.12.0",
@@ -44,6 +52,9 @@
     "errorhandler": "1.3.0",
     "express": "4.12.0",
     "express-session": "v1.9.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "glamor": "^2.17.14",
+    "isomorphic-fetch": "^2.2.1",
     "jade": "1.7.0 ",
     "merge-util": "0.1.0",
     "mkdirp": "0.5.0",
@@ -58,18 +69,36 @@
     "passport": "0.2.0",
     "passport-github": "0.1.5",
     "passport-twitter": "1.0.2",
+    "pug": "^2.0.0-beta6",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
     "ready": "0.1.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0",
     "serve-favicon": "2.1.7",
     "string-to-js": "0.0.1",
     "stylus": "0.49.3",
     "t-component": "1.0.0",
-    "type-component": "0.0.1"
+    "type-component": "0.0.1",
+    "webpack": "^1.13.3"
   },
   "scripts": {
+    "start": "node ./lib/app/server",
+    "build": "webpack -p --colors --config webpack.config.babel.js",
     "postinstall": "node ./bin/civicstack-install --config && node ./bin/civicstack-config && node ./bin/civicstack-build"
   },
   "devDependencies": {
+    "eslint": "^3.9.1",
     "mongodb-migrations": "^0.5.2",
+    "react-transform-hmr": "^1.0.4",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-config-standard-react": "^4.0.0",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-react": "^6.3.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.1",
     "xo": "^0.16.0"
   },
   "xo": {
@@ -81,8 +110,14 @@
     ],
     "rules": {
       "import/no-extraneous-dependencies": 0,
-      "curly": ["error", "multi-line"],
-      "space-before-function-paren": ["error", "always"]
+      "curly": [
+        "error",
+        "multi-line"
+      ],
+      "space-before-function-paren": [
+        "error",
+        "always"
+      ]
     }
   }
 }
