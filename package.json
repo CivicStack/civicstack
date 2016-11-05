@@ -86,7 +86,7 @@
   "scripts": {
     "start": "node ./lib/app/server",
     "build": "webpack -p --colors --config webpack.config.babel.js",
-    "postinstall": "node ./bin/civicstack-install --config && node ./bin/civicstack-config && node ./bin/civicstack-build"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "eslint": "^3.9.1",

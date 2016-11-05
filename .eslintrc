@@ -16,7 +16,7 @@
   },
   "rules": {
     "react/jsx-curly-spacing": [2, "never"],
-    "space-before-function-paren": [2, "never"],
+    "space-before-function-paren": [2, "always"],
     "object-curly-spacing": [2, "always"],
     "array-bracket-spacing": [2, "never"],
     "no-console": 2
