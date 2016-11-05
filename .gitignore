@@ -20,4 +20,6 @@ node_modules
 /mm-config.*.json
 
 # Extra ignores
+dist
+public
 .DS_Store
