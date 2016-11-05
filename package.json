@@ -84,7 +84,7 @@
     "webpack": "^1.13.3"
   },
   "scripts": {
-    "start": "node ./lib/app/server",
+    "start": "node ./lib/server",
     "build": "webpack -p --colors --config webpack.config.babel.js",
     "lint": "eslint ."
   },
