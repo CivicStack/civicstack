@@ -21,5 +21,4 @@ node_modules
 
 # Extra ignores
 dist
-public
 .DS_Store
