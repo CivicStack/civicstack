@@ -22,8 +22,8 @@
     "url": "https://github.com/civicstack/civicstack/issues"
   },
   "engines": {
-    "node": "6.9.1",
-    "npm": "4.0.2"
+    "node": ">= 6.9.1",
+    "npm": ">= 4.0.2"
   },
   "dependencies": {
     "babel-cli": "^6.18.0",
@@ -48,6 +48,8 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "glamor": "^2.17.14",
     "isomorphic-fetch": "^2.2.1",
+    "lodash.orderby": "^4.6.0",
+    "lodash.some": "^4.6.0",
     "merge-util": "0.1.0",
     "mkdirp": "0.5.0",
     "mongodb": "^2.2.9",
