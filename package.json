@@ -1,5 +1,5 @@
 {
-  "name": "civic-stack",
+  "name": "civicstack",
   "version": "2.0.0",
   "description": "Stack of online civic webapps",
   "main": "index.js",
