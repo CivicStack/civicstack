@@ -1,6 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const paths = {
   app: path.join(__dirname, 'lib', 'app'),
@@ -35,14 +34,11 @@ module.exports = {
   entry: entry(['babel-polyfill', 'webpack-hot-middleware/client']),
   resolve,
   output,
-  // https://github.com/webpack/webpack/issues/91
-  // devtool: '#cheap-module-eval-source-map',
   module: { loaders },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new ExtractTextPlugin('[name].css')
+    new webpack.NoErrorsPlugin()
   ]
 }
