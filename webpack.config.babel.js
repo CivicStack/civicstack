@@ -20,7 +20,7 @@ const resolve = {
 const output = {
   path: paths.build,
   filename: '[name].js',
-  publicPath: '/dist/'
+  publicPath: '/dist/',
 }
 
 const loaders = [
@@ -36,7 +36,7 @@ module.exports = {
   resolve,
   output,
   // https://github.com/webpack/webpack/issues/91
-  devtool: '#cheap-module-eval-source-map',
+  // devtool: '#cheap-module-eval-source-map',
   module: { loaders },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
