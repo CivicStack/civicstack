@@ -4,7 +4,7 @@ main.app-detail.container
     .app-logo(style='background-color: {{backgroundColor}}; background-image: url({{logo}})', target='_blank')
     .app-details
       h1 {{name}}
-      p.link: a(href='{{website}}', target='_blank') {{website}}
+      p.link: a(href='http://{{website}}', target='_blank') {{website}}
       .actions-wrapper: .actions
         | {{#application.id}}
         | {{#upvoted}}
@@ -36,20 +36,20 @@ main.app-detail.container
       | {{#description[lang]}}
       p.description {{description[lang]}}
       | {{/description[lang]}}
-      
+
       | {{#if tagnames}}
       .app-tags
         | {{#each tagnames}}
         span.label.label-default {{this}}
         | {{/each}}
       | {{/if}}
-      
+
       | {{#video}}
       .cover-video
         .embed-container
           iframe(src='{{video}}', width='100%', height='100%' frameborder='0', allowfullscreen)
       | {{/video}}
-      
+
       | {{#links}}
       .app-links
         h4.sup Links:
@@ -74,7 +74,7 @@ main.app-detail.container
               | {{/application.id}}
           | {{/each}}
       | {{/links}}
-      
+
       //-
         .social-badges
           | {{#website}}
@@ -98,7 +98,7 @@ main.app-detail.container
             aria-label='Star {{githubShort}} on GitHub')
             | Star
           | {{/github}}
-    
+
     .app-more-info
       p.sup= t('app.country')
       p.sub {{country.name[lang]}}
