@@ -2,7 +2,7 @@
   "name": "civicstack",
   "version": "2.0.0",
   "description": "Stack of online civic webapps",
-  "main": "index.js",
+  "main": "lib/server",
   "repository": {
     "type": "git",
     "url": "git://github.com/civicstack/civicstack.git"
@@ -84,7 +84,7 @@
     "webpack": "^1.13.3"
   },
   "scripts": {
-    "start": "node ./lib/server",
+    "start": "node .",
     "debug": "node debug ./lib/server",
     "build": "webpack -p --colors --config webpack.config.babel.js",
     "lint": "eslint ."
