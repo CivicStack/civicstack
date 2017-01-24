@@ -87,6 +87,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "babel-eslint": "~7.1.1",
     "eslint": "^3.9.1",
     "eslint-config-standard": "^6.0.0",
     "eslint-config-standard-react": "^4.0.0",
