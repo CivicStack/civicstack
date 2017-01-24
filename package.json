@@ -58,7 +58,7 @@
     "merge-util": "0.1.0",
     "mkdirp": "0.5.0",
     "mongodb": "^2.2.9",
-    "mongoose": "^4.6.6",
+    "mongoose": "4.7.8",
     "mongoose-type-url": "^1.0.0",
     "mongoose-validator": "^1.2.5",
     "node-cache": "^3.2.1",
