@@ -1,14 +1,9 @@
 #!/usr/bin/env node
 
-/**
- * Module dependencies.
- */
-
-var program = require('commander');
+const program = require('commander')
+const version = require('../package.json').version
 
 program
-  .version('0.0.2')
-  .command('install', "Install client components.")
-  .command('build', "Builds client application and compiles assets.")
+  .version(version)
   .command('dump-emails', "Exports all user's emails on database to a CSV file")
   .parse(process.argv)
