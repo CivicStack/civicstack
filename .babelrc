@@ -1,0 +1,25 @@
+{
+  "presets": ["es2015", "stage-0", "react"],
+  "plugins": [
+    "transform-runtime",
+    "glamor/babel"
+  ],
+  "env": {
+    "start": {
+      "plugins": [
+        "react-transform"
+      ]
+    },
+    "extra": {
+      "react-transform": {
+        "transforms": [
+          {
+            "transform": "react-transform-hmr",
+            "imports": ["react"],
+            "locals": ["module"]
+          }
+        ]
+      }
+    }
+  }
+}
