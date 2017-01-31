@@ -70,12 +70,6 @@
     "type-component": "0.0.1",
     "webpack": "1.14.0"
   },
-  "scripts": {
-    "start": "node .",
-    "debug": "node debug ./lib/server",
-    "build": "webpack -p --colors --config webpack.config.babel.js",
-    "lint": "eslint ."
-  },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "3.14.0",
@@ -88,5 +82,14 @@
     "react-transform-hmr": "^1.0.4",
     "webpack-dev-middleware": "1.9.0",
     "webpack-hot-middleware": "2.15.0"
+  },
+  "browser": {
+    "lib/config": "lib/config/config"
+  },
+  "scripts": {
+    "start": "node .",
+    "debug": "node debug ./lib/server",
+    "build": "webpack -p --colors --config webpack.config.babel.js",
+    "lint": "eslint ."
   }
 }
