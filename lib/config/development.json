@@ -1,0 +1,43 @@
+{
+  "host": "http://localhost:3000",
+  "port": 3000,
+  "mongoUrl": "mongodb://localhost/civicstack2",
+  "locale": "en",
+  "client": [
+    "env",
+    "locale",
+    "organization name",
+    "google analytics tracking id",
+    "host"
+  ],
+  "organization name": "Civic Stack",
+  "auth": {
+    "twitter": {
+      "consumerKey": "t9gm8KcNIiA3Qt3od0Y4HlFOO",
+      "consumerSecret": "9AopSdCBMugEWThGDKL2bh1hecHHCZKItbgNlavMUDLn7niVoK",
+      "callback": "http://localhost:3000/auth/twitter/callback"
+    },
+    "github": {
+      "clientID": "61742f297746354d7679",
+      "clientSecret": "1f34fbfadaa235917afe66ad05bd3de3eda040d3",
+      "callback": "http://localhost:3000/auth/github/callback"
+    },
+    "disqus": {
+      "clientID": "tlmLD9OtoeeAA7tZ3QLjliL3sb6FY0nfTsr6iTftu3F1EBYp5QnzbqSJdnnRthPo",
+      "clientSecret": "lUmGR6IqWZ6FVEcBFjHjMH38evayTOhydqS7a6Ff8CSvQWwVoABsnaJUsupxt17j"
+    }
+  },
+  "secret": "civicivicstack",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "admins": {
+    "twitter": [
+      "138120571"
+    ],
+    "github": []
+  },
+  "google analytics tracking id": "",
+  "segmentKey": ""
+}
