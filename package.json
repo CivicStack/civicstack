@@ -40,6 +40,7 @@
     "commander": "2.9.0",
     "cookie-parser": "1.4.3",
     "debug": "2.6.0",
+    "democracyos-config": "^1.1.0",
     "express": "4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "glamor": "2.20.22",
