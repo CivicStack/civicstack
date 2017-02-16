@@ -42,7 +42,7 @@
     "debug": "2.1.3",
     "disqus-sso-express": "^0.1.0",
     "errorhandler": "1.3.0",
-    "express": "4.12.0",
+    "express": "4.13.3",
     "express-session": "v1.9.2",
     "jade": "1.7.0 ",
     "merge-util": "0.1.0",
@@ -81,8 +81,14 @@
     ],
     "rules": {
       "import/no-extraneous-dependencies": 0,
-      "curly": ["error", "multi-line"],
-      "space-before-function-paren": ["error", "always"]
+      "curly": [
+        "error",
+        "multi-line"
+      ],
+      "space-before-function-paren": [
+        "error",
+        "always"
+      ]
     }
   }
 }
