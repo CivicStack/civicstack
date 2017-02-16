@@ -90,8 +90,8 @@
     "lib/config": "lib/config/config"
   },
   "scripts": {
-    "start": "node .",
-    "debug": "node debug ./lib/server",
+    "start": "DEBUG=civicstack* node .",
+    "debug": "DEBUG=civicstack* node debug ./lib/server",
     "build": "webpack -p --colors --config webpack.config.babel.js",
     "lint": "eslint ."
   }
