@@ -1,0 +1,50 @@
+{
+  "global.app-name": "Civic Stack",
+  "global.description": "Ferramentas <strong>livres</strong> para mudança social.",
+
+  "english": "Inglês",
+  "spanish": "Espanhol",
+  "french": "Francês",
+  "portuguese": "Português",
+
+  "Name": "Nome",
+  "Save": "Salvar",
+  "Cancel": "Cancelar",
+  "Upload app": "Enviar app",
+  "No apps to show yet": "Nenhum app para mostrar ainda",
+  "and": "e",
+
+  "header.about": "Sobre nós",
+  "header.admin": "Administrador",
+  "header.login": "Entrar",
+  "header.or": "ou",
+  "header.logout": "Sair",
+
+  "admin-sidebar.applications.title": "Aplicações",
+  "admin-sidebar.tags.title": "Etiquetas",
+  "admin-sidebar.countries.title": "Países",
+  "admin-sidebar.technologies.title": "Tecnologias",
+  "admin-sidebar.licenses.title": "Licenças",
+  "admin.list.new": "Novo",
+  "admin.list.search.placeholder": "Pesquisar",
+  "admin.tags.save.success": "Etiqueta foi salva com sucesso",
+  "admin.app.save.success": "App foi salva com sucesso",
+  "admin.countries.save.success": "País foi salvo com sucesso",
+  "admin.technologies.save.success": "Tecnologia foi salva com sucesso",
+  "admin.licenses.save.success": "Licença foi salva com sucesso",
+
+  "confirmation.title": "Excluir",
+  "confirmation.ok": "Ok",
+  "confirmation.cancel": "Cancelar",
+  "admin-licenses-form.confirmation.body": "Você tem certeza de que quer excluir a licença \"{name}\"?",
+  "admin-apps-form.confirmation.body": "Você tem certeza de que quer excluir a aplicação \"{name}\"?",
+  "admin-tags-form.confirmation.body": "Você tem certeza de que quer excluir a etiqueta \"{name}\"?",
+  "admin-countries-form.confirmation.body": "Você tem certeza de que quer excluir o país \"{name}\"?",
+  "admin-technologies-form.confirmation.body": "Você tem certeza de que quer excluir a tecnologia \"{name}\"?",
+
+  "about.what-is-it.title": "O que é Civic Stack?",
+  "about.what-is-it.text": "Civic Stack é o lugar para descobrir e compartilhar ferramentas cívicas de código aberto para que você possa adaptá-las para diferentes cenários.",
+  "about.goal.title": "Qual é o nosso objetivo?",
+
+  "footer.powered-by": "Impulsionado por"
+}
