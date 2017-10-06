@@ -16,6 +16,10 @@ form.panel.panel-default.form-horizontal(on-submit='save')
       label.col-sm-2.control-label(for='name[fr]')=t('french')
       .col-sm-10
         input.form-control(type='text' id='name[fr]' placeholder='Nom' value='{{ tag.name.fr }}')
+    .form-group
+      label.col-sm-2.control-label(for='name[pt]')=t('portuguese')
+      .col-sm-10
+        input.form-control(type='text' id='name[pt]' placeholder='Nom' value='{{ tag.name.pt }}')
   .panel-footer
     .col-sm-offset-2
       button.btn.btn-success(type='submit')=t('Save')
